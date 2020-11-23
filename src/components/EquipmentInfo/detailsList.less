@@ -1,0 +1,96 @@
+.detailsList {
+  width: 100%;
+  .title {
+    width: 100%;
+    font-size: 16px;
+    background-color: #F7F8FC;
+    .titleItem {
+      display: inline-block;
+      width: 15%;
+      padding: 10px 0;
+      border-right: 1px solid #fff;
+    }
+  }
+  .tabs {
+    display: flex;
+    padding: 10px 0;
+    .showTabs {
+      cursor: pointer;
+      margin-right: 15px;
+      color: #fff;
+      background-color: #D21429;
+      padding: 4px 11px;
+      font-size: 12px;
+    }
+    .hiddenTabs {
+      cursor: pointer;
+      margin-right: 15px;
+      color: #D21429;
+      padding: 4px 11px;
+      font-size: 12px;
+      outline: 1px solid #D21429;
+    }
+    .icon {
+      margin-right: 10px;
+      font-size: 14px;
+    }
+  }
+  .detailsContent {
+    width: 100%;
+    border-bottom: 1px solid #D7D7D7;
+    .basicItem {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      font-size: 16px;
+      background-color: #F7F8FC;
+      border: 1px solid #D7D7D7;
+      border-bottom: none;
+      .name {
+        width: 25%;
+        padding: 15px 0;
+        border-right: 1px solid #D7D7D7;
+      }
+    }
+    .detailItem {
+      width: 100%;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #D7D7D7;
+      .title {
+        padding: 10px 0 10px 20px;
+        width: 100%;
+        font-size: 20px;
+        color: #D21429;
+        background-color: #F7F8FC;
+        border: 1px solid #D7D7D7;
+        border-bottom: none;
+      }
+      .detailInnerItem {
+        display: flex;
+        font-size: 16px;
+        background-color: #F7F8FC;
+        border: 1px solid #D7D7D7;
+        border-bottom: none;
+        .name {
+          width: 25%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-right: 1px solid #D7D7D7;
+        }
+        .innerItemValue {
+          width: 75%;
+          min-height: 44px;
+          padding: 10px 0 10px 30px;
+        }
+      }
+    }
+    .detailItem:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+    .hidden {
+      display: none;
+    }
+  }
+}

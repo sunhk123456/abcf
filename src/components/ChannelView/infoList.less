@@ -1,0 +1,66 @@
+.infoListContent{
+  background-color: rgba(249, 249, 249, 1);
+  padding-top: 20px;
+  padding-left: 20px;
+
+  .infoListItem{
+    float: left;
+    width: 50%;
+    font-size: 12px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+
+  .circleRed{
+    margin-right: 8px;
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    background-color: #C91717;
+    border-radius: 25px;
+    margin-bottom: 2px;
+  }
+
+  .itemUl{
+    margin: 0;
+    padding: 0;
+  }
+  .itemUl:after {
+    content: '';
+    height: 0;
+    display: block;
+    clear: both;
+  }
+  .itemLi{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-right: 50px;
+  }
+  .name{
+    //text-align: right;
+    display:inline-block;
+    width:100px;
+    color: #999;
+  }
+  .name:after {
+    content: ':';
+    position: relative;
+    top: -0.5px;
+    margin: 0 8px 0 2px;
+  }
+  .value{
+    //text-align: right;
+    display: inline-block;
+    width: calc(100% - 100px);
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+.infoListContent:after {
+  content: '';
+  height: 0;
+  display: block;
+  clear: both;
+}
+

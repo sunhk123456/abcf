@@ -1,0 +1,214 @@
+.cityRankCon {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .title {
+    //height: 13%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .smallTitle {
+    height: 13%;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    float: left;
+  }
+  .tableContainer {
+    padding: 10px 10px; // xingxiaodong 2019.5.23改 padding: 0 10px;
+    box-sizing: border-box;
+  }
+  .tableLeft,
+  .tableRight {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    font-size: 14px;
+  }
+  .table {
+    width: 100%;
+    thead th {
+      text-align: center;
+      color: #999;
+      font-size: 15px;
+    }
+    .th {
+      width: 30%;
+    }
+    tbody td {
+      text-align: center;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+      padding: 4px 0;
+    }
+  }
+  .thImg {
+    width: 18px;
+    height: 15px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .rank-first {
+    color: #f00;
+  }
+  .rank-secound {
+    color: #f60;
+  }
+  .rank-third {
+    color: #096;
+  }
+  .green {
+    color: #390;
+  }
+  .clear {
+    clear: both;
+  }
+
+  .smallTableContainer {
+    height: 87%;
+    .tableLeft {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    .table {
+      width: 100%;
+      position: absolute;
+      top: -73px;
+      left: 2px;
+      transform: scale(0.7, 0.35);
+      thead th {
+        font-size: 12px;
+        width: 25%;
+        overflow: hidden;
+      }
+      tbody td {
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+  }
+  .sortIcon {
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  .pageCon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  .upPage, .downPage {
+    padding: 0 5px;
+    border-radius: 5px;
+    border: 1px solid #f00;
+    font-size: 12px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .downloadName{
+    position: absolute;
+    top:5px;
+    right: 5px;
+    z-index: 10;
+    :global{
+      .ant-btn > .anticon + span, .ant-btn > span + .anticon{
+        margin: 0;
+      }
+      .ant-btn-sm {
+        padding: 0 4px;
+        font-size: 12px;
+        height: 20px;
+      }
+      .ant-btn{
+        height: 25px;
+        padding: 0 7px;
+      }
+      .ant-btn-lg {
+        font-size: 18px;
+        height: 35px;
+        padding: 0 10px;
+      }
+    }
+  }
+  .btnUl{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 10;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      font-size: 13px;
+      background: #f8f7f8;
+      cursor: pointer;
+      padding: 2px 8px;
+      border-color: #e0dfe0;
+      border-style: solid;
+    }
+    li:nth-child(1) {
+      border-width: 1px 0 1px 1px;
+      border-radius: 5px 0 0 5px;
+    }
+    li:nth-child(2) {
+      border-width: 1px;
+      border-radius: 0 5px 5px 0;
+    }
+    .select {
+      background: #6f6e6f;
+      color: #fff;
+    }
+
+  }
+}
+
+// <1240分辨率
+@media only screen and(max-width: 1243px) {
+  .cityRankCon{
+    .tableLeft,
+    .tableRight {
+      display: inline-block;
+      float: left;
+      width: 100%;
+      font-size: 12px;
+      line-height: 1.3;
+    }
+  }
+}
+// >1240分辨率
+@media only screen and(min-width: 1244px)and(max-width: 1770px) {
+  .cityRankCon{
+    .tableLeft,
+    .tableRight {
+      display: inline-block;
+      float: left;
+      width: 100%;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+  }
+}
+// 1920分辨率
+@media only screen and(min-width: 1870px) {
+  .cityRankCon{
+    .btnUl{
+      li {
+        font-size: 18px;
+      }
+    }
+    .table {
+      thead th {
+        font-size: 16px;
+      }
+    }
+    .upPage, .downPage {
+      font-size: 14px;
+    }
+  }
+}

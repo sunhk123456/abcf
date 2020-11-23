@@ -1,0 +1,140 @@
+.indexTransparent{
+  height: 78vh;
+  display: flex;
+  justify-content: space-between;
+  .edgpkpisso{
+    //margin-top: 10px;
+    padding-left: 15px;
+  }
+}
+.leftTree{
+  width: 20%;
+  height: 100%;
+  overflow: auto;
+  background-color: #f7f7f7;
+  :global {
+    .ant-tree.ant-tree-directory > li.ant-tree-treenode-selected > span.ant-tree-node-content-wrapper::before, .ant-tree.ant-tree-directory .ant-tree-child-tree > li.ant-tree-treenode-selected > span.ant-tree-node-content-wrapper::before{
+      background: #f7f7f7;
+    }
+    .ant-tree.ant-tree-directory > li span.ant-tree-node-content-wrapper::before, .ant-tree.ant-tree-directory .ant-tree-child-tree > li span.ant-tree-node-content-wrapper::before{
+      height: 0;
+    }
+    .ant-tree.ant-tree-directory > li span.ant-tree-node-content-wrapper > span, .ant-tree.ant-tree-directory .ant-tree-child-tree > li span.ant-tree-node-content-wrapper > span{
+      color: #999;
+      font-size: 13px;
+    }
+    .ant-tree-node-content-wrapper.ant-tree-node-content-wrapper-normal.ant-tree-node-selected>.ant-tree-title>span{
+      color: #c81716;
+    }
+    .ant-tree-switcher.ant-tree-switcher_close{
+      //visibility: hidden;
+    }
+    .ant-tree-switcher.ant-tree-switcher_open{
+      //visibility: hidden;
+    }
+    .ant-input-affix-wrapper .ant-input:hover{
+      border: 1px dotted #a7a7a7;
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+}
+.indexInfo{
+  width: 78%;
+  height: 100%;
+  font-size: 14px;
+  overflow-y: auto;
+  .infoTitle{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 2%;
+  }
+  .font{
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .corn{
+    width: 5px;
+    height: 13px;
+    background-color: #c91717;
+    display: inline-block;
+    margin-right: 6px;
+  }
+  .download{
+    color:#1890FF;
+    border-bottom: 1px solid #1890FF;
+    font-weight: bold;
+    margin-left: 1%;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 960px){
+  .leftTree{
+    width: 25%;
+    :global{
+      .ant-tree.ant-tree-directory > li span.ant-tree-node-content-wrapper > span, .ant-tree.ant-tree-directory .ant-tree-child-tree > li span.ant-tree-node-content-wrapper > span{
+        font-size: 12px;
+      }
+    }
+  }
+  .indexInfo{
+    width: 73%;
+    font-size: 12px;
+    .infoTitle{
+      font-size: 14px;
+    }
+    .font{
+      font-size: 13px;
+    }
+  }
+}
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+  .leftTree{
+    width: 25%;
+    :global{
+      .ant-tree.ant-tree-directory > li span.ant-tree-node-content-wrapper > span, .ant-tree.ant-tree-directory .ant-tree-child-tree > li span.ant-tree-node-content-wrapper > span{
+        font-size: 12px;
+      }
+    }
+  }
+  .indexInfo{
+    width: 73%;
+    font-size: 12px;
+    .infoTitle{
+      font-size: 16px;
+    }
+    .font{
+      font-size: 14px;
+    }
+  }
+}
+@media only screen and (min-width: 1316px) and (max-width: 1869px){
+  .indexInfo{
+    width: 73%;
+    font-size: 14px;
+    .infoTitle{
+      font-size: 18px;
+    }
+    .font{
+      font-size: 16px;
+    }
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .leftTree{
+    width: 20%;
+    :global{
+      .ant-tree.ant-tree-directory > li span.ant-tree-node-content-wrapper > span, .ant-tree.ant-tree-directory .ant-tree-child-tree > li span.ant-tree-node-content-wrapper > span{
+        font-size: 16px;
+      }
+    }
+  }
+  .indexInfo{
+    width: 78%;
+    font-size: 16px;
+    .infoTitle{
+      font-size: 18px;
+    }
+  }
+}

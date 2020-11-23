@@ -1,0 +1,192 @@
+.foldTable {
+  width: 100%;
+  :global{
+    .ant-table-body {
+      &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+      }
+      // 正常情况下滑块的样式
+      &::-webkit-scrollbar-thumb {
+        background-color: rgba(0,0,0,.05);
+        border-radius: 10px;
+        -webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1);
+      }
+      // 鼠标悬浮在该类指向的控件上时滑块的样式
+      &:hover::-webkit-scrollbar-thumb {
+        background-color: rgba(0,0,0,.2);
+        border-radius: 10px;
+        -webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1);
+      }
+      // 鼠标悬浮在滑块上时滑块的样式
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(0,0,0,.4);
+        -webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1);
+      }
+      // 正常时候的主干部分
+      &::-webkit-scrollbar-track {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+        background-color: white;
+      }
+      // 鼠标悬浮在滚动条上的主干部分
+      &::-webkit-scrollbar-track:hover {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.4);
+        background-color: rgba(0,0,0,.01);
+      }
+    }
+    .ant-table-header {
+      &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+      }
+      // 正常情况下滑块的样式
+      &::-webkit-scrollbar-thumb {
+        background-color: rgba(0,0,0,.05);
+        border-radius: 10px;
+        -webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1);
+      }
+      // 鼠标悬浮在该类指向的控件上时滑块的样式
+      &:hover::-webkit-scrollbar-thumb {
+        background-color: rgba(0,0,0,.2);
+        border-radius: 10px;
+        -webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1);
+      }
+      // 鼠标悬浮在滑块上时滑块的样式
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(0,0,0,.4);
+        -webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1);
+      }
+      // 正常时候的主干部分
+      &::-webkit-scrollbar-track {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+        background-color: white;
+      }
+      // 鼠标悬浮在滚动条上的主干部分
+      &::-webkit-scrollbar-track:hover {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.4);
+        background-color: rgba(0,0,0,.01);
+      }
+    }
+    .ant-table-thead > tr > th {
+      background: white;
+      text-align: center;
+    }
+  }
+  tbody {
+    tr.trStyle {
+      background-color: #fafafa;
+      td {
+        padding: 0;
+        border-bottom: 5px solid #fff;
+      }
+    }
+    tr.trStyle:hover td {
+      background-color: #f0f0f0;
+    }
+  }
+  thead {
+    tr.trStyle {
+      background-color: white;
+      td {
+        padding: 0;
+        border-bottom: 5px solid #fff;
+      }
+    }
+    tr.trStyle:hover td {
+      background-color: #f0f0f0;
+    }
+  }
+  .trGreen0 {
+    .tdColor0 {
+      color: rgb(51, 153, 0);
+    }
+  }
+  .trRed0 {
+    .tdColor0 {
+      color: rgb(255, 0, 0);
+    }
+  }
+
+  .trGreen1 {
+    .tdColor1 {
+      color: rgb(51, 153, 0);
+    }
+  }
+  .trRed1 {
+    .tdColor1 {
+      color: rgb(255, 0, 0);
+    }
+  }
+
+  .trGreen2 {
+    .tdColor2 {
+      color: rgb(51, 153, 0);
+    }
+  }
+  .trRed2 {
+    .tdColor2 {
+      color: rgb(255, 0, 0);
+    }
+  }
+
+  .trGreen3 {
+    .tdColor3 {
+      color: rgb(51, 153, 0);
+    }
+  }
+  .trRed3 {
+    .tdColor3 {
+      color: rgb(255, 0, 0);
+    }
+  }
+
+  .trGreen4 {
+    .tdColor4 {
+      color: rgb(51, 153, 0);
+    }
+  }
+  .trRed4 {
+    .tdColor4 {
+      color: rgb(255, 0, 0);
+    }
+  }
+
+  .trGreen5 {
+    .tdColor5 {
+      color: rgb(51, 153, 0);
+    }
+  }
+  .trRed5 {
+    .tdColor5 {
+      color: rgb(255, 0, 0);
+    }
+  }
+  .trGreen2 .trGreen3 {
+    .tdColor2 {
+       color: rgb(51, 153, 0);
+     }
+    .tdColor3 {
+      color: rgb(51, 153, 0);
+    }
+  }
+}
+@media screen and (min-width: 800px) and(max-width: 1023px){
+  .foldTable{
+    :global{
+      .ant-table{
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .foldTable{
+    :global{
+      .ant-table{
+        font-size: 20px;
+      }
+    }
+  }
+}

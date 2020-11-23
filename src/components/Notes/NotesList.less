@@ -1,0 +1,632 @@
+
+@media only screen and (min-width: 700px) and (max-width: 960px){
+  .notesListContent{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.298039);
+    z-index: 10000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .npContent{
+      width: 70%;
+      height: 65%;
+      background-color: #FAFAFA;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .npNotesTitle{
+        width: 90%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'MicrosoftYaHei', 'Microsoft YaHei', serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        color: #666;
+      }
+
+      .npNotesContent{
+        width: 90%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+      }
+
+      .npBtns{
+        width: 90%;
+        height: 10%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        font-family: 'MicrosoftYaHei', 'Microsoft YaHei', serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12px;
+        color: #FAFAFA;
+        padding-top: 8px;
+        .npBtnsBtn{
+          background-color: #c91717;
+          height: 70%;
+          width: 12%;
+          margin-left: 5%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 2px;
+          cursor: pointer;
+        }
+      }
+    }
+    :global {
+      .ant-table table{
+        width: 100%;
+        table-layout: fixed;
+        font-size:12px;
+
+      }
+      .ant-table-fixed-header .ant-table-scroll .ant-table-header{
+        overflow-x: scroll;
+        overflow: auto;
+      }
+      .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th{
+        background-color: #F0F3F7
+      }
+      .ant-table-fixed-header > .ant-table-content > .ant-table-scroll > .ant-table-body{
+        margin-top: 17px;
+      }
+    }
+
+    .resultColumns{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-decoration: solid;
+
+      .resContent{
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+  .notesListContent{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.298039);
+    z-index: 10000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    :global {
+      .ant-table table{
+        width: 100%;
+        table-layout: fixed;
+        font-size:14px;
+      }
+
+      .ant-table-fixed-header .ant-table-scroll .ant-table-header{
+        overflow-x: scroll;
+        overflow: auto;
+      }
+      .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th{
+        background-color: #F0F3F7
+      }
+      .ant-table-fixed-header > .ant-table-content > .ant-table-scroll > .ant-table-body{
+        margin-top: 17px;
+      }
+    }
+
+    .resultColumns{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-decoration: solid;
+
+      .resContent{
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+    .npContent{
+      width: 70%;
+      height: 65%;
+      background-color: #FAFAFA;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .npNotesTitle{
+        width: 90%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'MicrosoftYaHei', 'Microsoft YaHei', serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        color: #666;
+      }
+
+      .npNotesContent{
+        width: 90%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+
+      }
+
+      .npBtns{
+        width: 90%;
+        height: 10%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        font-family: 'MicrosoftYaHei', 'Microsoft YaHei', serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+        color: #FAFAFA;
+        padding-top: 8px;
+        .npBtnsBtn{
+          background-color: #c91717;
+          height: 70%;
+          width: 12%;
+          margin-left: 5%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 2px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1315px){
+  .notesListContent{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.298039);
+    z-index: 10000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    :global {
+      .ant-table table{
+        width: 100%;
+        table-layout: fixed;
+        font-size:14px;
+      }
+
+      .ant-table-fixed-header .ant-table-scroll .ant-table-header{
+        overflow-x: scroll;
+        overflow: auto;
+      }
+      .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th{
+        background-color: #F0F3F7
+      }
+      .ant-table-fixed-header > .ant-table-content > .ant-table-scroll > .ant-table-body{
+        margin-top: 17px;
+      }
+    }
+
+    .resultColumns{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-decoration: solid;
+
+      .resContent{
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+
+    .npContent{
+      width: 70%;
+      height: 65%;
+      background-color: #FAFAFA;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .npNotesTitle{
+        width: 90%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'MicrosoftYaHei', 'Microsoft YaHei', serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        color: #666;
+      }
+
+      .npNotesContent{
+        width: 90%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+
+      }
+
+      .npBtns{
+        width: 90%;
+        height: 10%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        font-family: 'MicrosoftYaHei', 'Microsoft YaHei', serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+        color: #FAFAFA;
+        padding-top: 8px;
+        .npBtnsBtn{
+          background-color: #c91717;
+          height: 70%;
+          width: 12%;
+          margin-left: 5%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 2px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1316px) and (max-width: 1389px){
+  .notesListContent{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.298039);
+    z-index: 10000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    :global {
+      .ant-table table{
+        width: 100%;
+        table-layout: fixed;
+        font-size:14px;
+      }
+
+      .ant-table-fixed-header .ant-table-scroll .ant-table-header{
+        overflow-x: scroll;
+        overflow: auto;
+      }
+      .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th{
+        background-color: #F0F3F7
+      }
+      .ant-table-fixed-header > .ant-table-content > .ant-table-scroll > .ant-table-body{
+        margin-top: 17px;
+      }
+    }
+
+    .resultColumns{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-decoration: solid;
+
+      .resContent{
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+
+    .npContent{
+      width: 70%;
+      height: 65%;
+      background-color: #FAFAFA;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .npNotesTitle{
+        width: 90%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'MicrosoftYaHei', 'Microsoft YaHei', serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 24px;
+        color: #666;
+      }
+
+      .npNotesContent{
+        width: 90%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+      }
+
+      .npBtns{
+        width: 90%;
+        height: 10%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        font-family: 'MicrosoftYaHei', 'Microsoft YaHei', serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        color: #FAFAFA;
+        padding-top: 8px;
+        .npBtnsBtn{
+          background-color: #c91717;
+          height: 70%;
+          width: 12%;
+          margin-left: 5%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 2px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1390px) and (max-width: 1869px){
+  .notesListContent{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.298039);
+    z-index: 10000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    :global {
+      .ant-table table{
+        width: 100%;
+        table-layout: fixed;
+        font-size:16px;
+      }
+
+      .ant-table-fixed-header .ant-table-scroll .ant-table-header{
+        overflow-x: scroll;
+        overflow: auto;
+      }
+      .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th{
+        background-color: #F0F3F7
+      }
+      .ant-table-fixed-header > .ant-table-content > .ant-table-scroll > .ant-table-body{
+        margin-top: 17px;
+      }
+    }
+
+    .resultColumns{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-decoration: solid;
+      .resContent{
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+
+    .npContent{
+      width: 70%;
+      height: 65%;
+      background-color: #FAFAFA;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .npNotesTitle{
+        width: 90%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'MicrosoftYaHei', 'Microsoft YaHei', serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 24px;
+        color: #666;
+      }
+
+      .npNotesContent{
+        width: 90%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+      }
+
+      .npBtns{
+        width: 90%;
+        height: 10%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        font-family: 'MicrosoftYaHei', 'Microsoft YaHei', serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        color: #FAFAFA;
+        padding-top: 8px;
+        .npBtnsBtn{
+          background-color: #c91717;
+          height: 70%;
+          width: 12%;
+          margin-left: 5%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 2px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1870px){
+  .notesListContent{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.298039);
+    z-index: 10000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .npContent {
+      width: 70%;
+      height: 65%;
+      background-color: #FAFAFA;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .npNotesTitle {
+        width: 90%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'MicrosoftYaHei', 'Microsoft YaHei', serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+        color: #666;
+      }
+
+      .npNotesContent {
+        width: 90%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+      }
+
+      .npBtns {
+        width: 90%;
+        height: 10%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        font-family: 'MicrosoftYaHei', 'Microsoft YaHei', serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 21px;
+        color: #FAFAFA;
+
+        .npBtnsBtn {
+          background-color: #c91717;
+          height: 70%;
+          width: 12%;
+          margin-left: 5%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 2px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    :global {
+      .ant-table table{
+        width: 100%;
+        table-layout: fixed;
+        font-size:18px;
+
+      }
+      .ant-table-fixed-header .ant-table-scroll .ant-table-header{
+        overflow-x: scroll;
+        overflow: auto;
+      }
+      .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th{
+        background-color: #F0F3F7;
+
+      }
+      .ant-table-fixed-header > .ant-table-content > .ant-table-scroll > .ant-table-body{
+        margin-top: 17px;
+      }
+    }
+
+    .resultColumns{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-decoration: solid;
+
+      .resContent{
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+
+
+  }
+}

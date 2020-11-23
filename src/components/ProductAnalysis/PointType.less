@@ -1,0 +1,99 @@
+.indexScreen{
+  position: relative;
+  width: 100%;
+  height: 30px;
+  border: 1px dotted #a7a7a7;
+  //border: 1px solid #d9d9d9;
+  //border-radius: 4px;
+  padding: 0 10px;
+  background-color: #fff;
+}
+.productIconCon {
+  cursor: pointer;
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  .triangle {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #999;
+  }
+}
+.indexList{
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 150%;
+  border-radius: 5px;
+  background-color: #FAFAFA;
+  max-height: 240px;
+  overflow-y: auto;
+  z-index: 99;
+  box-shadow: 1px 1px 5px #e8dfdf;
+}
+.indexListNone{
+  display: none;
+}
+.indexListUl{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  li{
+    height: 30px;
+    width: 100%;
+    color: #797979;
+    padding-left: 20px;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 13px;
+    text-align: left;
+  }
+  li:hover{
+    color: #fff;
+    background-color:#C91717;
+  }
+}
+
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .indexScreen{
+    height: 40px;
+    font-size: 20px;
+  }
+  .productIconCon {
+    .triangle {
+      top: 15px;
+      right: 12px;
+    }
+  }
+  .indexList{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 150%;
+    border-radius: 5px;
+    background-color: #FAFAFA;
+    max-height: 240px;
+    overflow-y: auto;
+    z-index: 99;
+    box-shadow: 1px 1px 5px #e8dfdf;
+  }
+  .indexListNone{
+    display: none;
+  }
+  .indexListUl{
+    li{
+      font-size: 18px;
+      height: 45px;
+      line-height: 45px;
+    }
+  }
+}
+

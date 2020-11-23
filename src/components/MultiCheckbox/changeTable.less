@@ -1,0 +1,30 @@
+.changeTable{
+  .table {
+    :global{
+      .lightRow {
+        background-color: #F0F3F7;
+      }
+      .darkRow {
+        background-color: #F9F9F9;
+      }
+    }
+    tr{
+      height: 40px !important;
+    }
+    td{
+      height: 40px !important;
+      padding: 0 10px !important;
+    }
+    th{
+      height: 50px !important;
+      padding: 0 10px !important;
+    }
+    z-index: 1;
+  }
+  .tableTd{
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+  }
+}

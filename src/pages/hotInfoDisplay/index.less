@@ -1,0 +1,201 @@
+.page {
+  width: 100%;
+  height: 100%;
+  // border: 1px solid red;
+  .titleName{
+    width: 100%;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .content{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .table{
+      position: relative;
+      width: 100%;
+      border-bottom: 2px solid #c91717;
+      display: flex;
+      .tableItem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 130px;
+        margin-right: 10px;
+        flex: 1;
+        color:#c91717;
+        border-radius: 8px 8px 0 0;
+        background: #fff;
+        border: 1px solid #fff;
+        cursor: pointer;
+      }
+      .active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 150px;
+        margin-right: 10px;
+        flex: 1;
+        background-color: #c91717;
+        border-radius: 8px 8px 0 0;
+        color: #fff;
+        border: 1px solid #c91717;
+        cursor: pointer;
+      }
+    }
+  }
+  .main{
+    width: 100%;
+    .unicomTerminal,.volteTerminal{
+      padding-bottom: 20px;
+      .header{
+        position: relative;
+        padding: 0 10px;
+        margin-top:10px;
+        width: 100%;
+        height: 50px;
+        background: #F7F8FC;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .date{
+          :global{
+            //.ant-calendar-selected-date .ant-calendar-date:hover, .ant-calendar-selected-start-date .ant-calendar-date:hover, .ant-calendar-selected-end-date .ant-calendar-date:hover
+            .ant-calendar-selected-date .ant-calendar-date:hover{
+              background: #c91717;
+            }
+            .ant-calendar-input-wrap{
+              background-color: #c91717;
+            }
+            .ant-calendar-input{
+              color: #fff;
+              background-color: #c91717;
+            }
+          }
+          .dateTitle{
+            font-size: 14px;
+            color: #333;
+          }
+        }
+        .query{
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          transform: translateY(-50%);
+          border-radius: 4px;
+          border: 1px dotted #CCC;
+          padding: 5px 8px;
+          cursor: pointer;
+          background: #fff;
+        }
+      }
+      .mapLine{
+        margin-top:10px;
+        width: 100%;
+        height: 485px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .mapWrapper{
+          height: 100%;
+          flex: 0 0 66%;
+          background: #F7F8FC;
+        }
+        .pieWrapper{
+          flex: 0 0 33%;
+          height: 100%;
+          background: #F7F8FC;
+        }
+      }
+      .treeEchart{
+        margin-top:10px;
+        width: 100%;
+        height: 365px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .treeEchartItem{
+          flex: 0 0 49.5%;
+          height: 100%;
+          background: #F7F8FC;
+        }
+      }
+      .topEchart{
+        margin-top:10px;
+        width: 100%;
+        height: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .topEchartItem{
+          flex: 0 0 49.5%;
+          height: 100%;
+          background: #F7F8FC;
+        }
+      }
+      .topEchartThree{
+        margin-top:10px;
+        width: 100%;
+        height: 360px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .topEchartThreeItem{
+          flex: 0 0 33%;
+          height: 100%;
+          background: #F7F8FC;
+        }
+      }
+      .barEchart{
+        margin-top:10px;
+        width: 100%;
+        height: 350px;
+        background: #F7F8FC;
+      }
+    }
+  }
+}
+.dateTriangle{
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #999;
+  position: absolute;
+  top: 21px;
+}
+:global{
+  .ant-calendar-picker-container{
+    z-index: 98;
+  }
+}
+@media screen and(max-width: 960px){
+  .page{
+    .titleName{
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .content{
+      font-size: 16px;
+    }
+  }
+}
+@media screen and(min-width: 1870px){
+  .page{
+    .titleName{
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .content{
+      font-size: 20px;
+      .table{
+        .tableItem{
+          max-width: 150px;
+        }
+      }
+    }
+  }
+}
+

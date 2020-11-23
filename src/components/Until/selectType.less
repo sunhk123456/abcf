@@ -1,0 +1,158 @@
+.container{
+  padding: 10px 0;
+  .ListDiv{
+    margin-bottom: 10px;
+  }
+  .listName{
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .listItem{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    li{
+      display: inline-block;
+      text-align: center;
+      width: 92px;
+      height: 20px;
+      line-height: 20px;
+      color: #999;
+      cursor: pointer;
+      margin-right: 10px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    li:hover{
+      color: #cfcfcf;
+    }
+    .active{
+      border-radius: 8px;
+      background-color: #C91717;
+      color: #fff;
+    }
+    .active:hover{
+      color: #fff;
+    }
+  }
+}
+
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 960px){
+  .container{
+    .listName{
+      font-size: 12px;
+      position: relative;
+      top:-1px;
+    }
+    .listItem{
+      margin-left: 0;
+      li{
+        font-size: 12px;
+        width: 60px;
+        height: 15px;
+        line-height: 15px;
+        position: relative;
+        top:2px;
+      }
+
+    }
+  }
+}
+// 1024 分辨率
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+  .container{
+    .listName{
+      font-size: 12px;
+      position: relative;
+      top:-1px;
+    }
+    .listItem{
+      margin-left: 0;
+      li{
+        font-size: 12px;
+        width: 70px;
+        height: 15px;
+        line-height: 15px;
+        position: relative;
+        top:2px;
+      }
+
+    }
+  }
+}
+// 1280 分辨率
+@media only screen and (min-width: 1101px) and (max-width: 1315px){
+  .container{
+    .listName{
+      position: relative;
+      top:-2px;
+    }
+    .listItem{
+      li{
+        position: relative;
+        top:3px;
+      }
+
+    }
+  }
+}
+// 1366 分辨率
+@media only screen and (min-width: 1316px) and (max-width: 1389px){
+  .container{
+    .listName{
+      position: relative;
+      top:-2px;
+    }
+    .listItem{
+      li{
+        position: relative;
+        top:3px;
+      }
+
+    }
+  }
+}
+// 1440 分辨率
+@media only screen and (min-width: 1390px) and (max-width: 1869px){
+  .container{
+    .listName{
+      font-size: 16px;
+      position: relative;
+      top:-5px;
+    }
+    .listItem{
+      li{
+        font-size: 16px;
+        width: 110px;
+        height: 25px;
+        line-height: 25px;
+        position: relative;
+        top:3px;
+      }
+
+    }
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .container{
+    .listName{
+      font-size: 20px;
+    }
+    .listItem{
+      margin-left: 30px;
+      li{
+        font-size: 20px;
+        width: 130px;
+        height: 25px;
+        line-height: 25px;
+        position: relative;
+        top:5px;
+      }
+
+    }
+  }
+}
+

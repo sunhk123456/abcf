@@ -1,0 +1,274 @@
+{
+  "urls": [
+    {
+      "num":"0",
+      "url": "http://10.249.216.110:8001/v4/hbase",
+      "title": "首页"
+    },
+    {
+      "num":"1",
+      "url": "http://10.249.216.110:8001/v4/hbase",
+      "title": "专题日报页面"
+    },
+    {
+      "num":"2",
+      "url": "http://10.249.216.110:8001/v4/hbase",
+      "title": "指标页面"
+    },
+    {
+      "num":"3",
+      "url": "http://10.249.216.110:8001",
+      "title": "登录接口"
+    },
+    {
+      "num":"4",
+      "url": "http://10.249.216.110:8001/v4/hbase",
+      "title": "专题月报考核"
+    },
+    {
+      "num":"5",
+      "url":"http://10.249.216.110:8001/v4/hbase/dayOverview",
+      "title": "运营总览"
+    },
+    {
+      "num":"6",
+      "url":"http://10.249.216.110:8001/access/auth",
+      "title":"帮助文档下载接口"
+    }
+  ,{
+      "num":"7",
+      "url":"http://10.249.216.110:8001/v4/hbase",
+      "title":"下载当前请求"
+    },
+    {
+      "num":"8",
+      "url":"http://10.249.216.110:8001/v4/hbase",
+      "title": "账期发布接口"
+    },
+    {
+      "num":"9",
+      "url":"http://10.249.216.110:8001/v4/hbase/dataAudit",
+      "title": "数据稽核接口"
+    },
+    {
+      "num":"10",
+      "url":"http://10.249.216.110:8001/v4/hbase",
+      "title": "报告页面接口"
+    },
+    {
+      "num":"11",
+      "url":"http://10.249.216.110:8001/v4/hbase/notice",
+      "title": "公告管理接口"
+    },
+    {
+      "num":"12",
+      "url":"http://10.249.216.110:8001/v4/hbase/thematicAnalysis",
+      "title": "计费收入专题接口"
+    },
+    {
+      "num":"13",
+      "url":"http://10.249.216.110:8001/v4/hbase/download",
+      "title": "全量下载列表中下载按钮触发"
+    },
+    {
+      "num":"14",
+      "url":"http://10.249.216.110:8001/v4/hbase/allDataDownload",
+      "title": "全量下载弹出框确定按钮触发接口"
+    },
+    {
+      "num":"15",
+      "url":"http://10.249.216.110:8001/v4/hbase",
+      "title": "指标解釋接口"
+    },
+    {
+      "num":"16",
+      "url":"http://10.249.216.110:8001/v4",
+      "title": "晨报联调接口"
+    },
+    {
+      "num":"17",
+      "url":"http://10.249.216.110:8001/v4/hbase/mobileBusinessFound",
+      "title": "移动业务趋势专题接口"
+    },
+    {
+      "num":"18",
+      "url":"http://10.249.216.110:8001/v4/hbase",
+      "title": "报告预览"
+    },
+    {
+      "num":"19",
+      "url":"http://10.249.216.110:8001/v4/hbase/netThematicAnalysis",
+      "title": "净增计费收入专题接口"
+    },
+    {
+      "num":"20",
+      "url":"http://10.249.216.110:8001/v4/hbase/productSubject",
+      "title": "移动业务产品保有分析专题接口"
+    },
+    {
+      "num":"21",
+      "url":"http://10.249.216.110:8001/v4/hbase/realityPredict",
+      "title": "移动业务产品保有分析专题接口"
+    },
+    {
+      "num":"22",
+      "url":"http://10.249.216.110:8001/v4/hbase/prompt",
+      "title": "异常指标测试接口"
+    },
+    {
+      "num":"23",
+      "url":"http://10.249.216.110:8001/v4/hbase/indexSystem",
+      "title": "指标体系测试接口"
+    },
+    {
+      "num":"24",
+      "url":"http://10.244.4.186:8073/systemConfig",
+      "title": "账期发布接口文档"
+    },
+    {
+      "num":"25",
+      "url":"http://10.249.216.110:8001/v4/hbase/systemOperator",
+      "title": "问题反馈"
+    },
+    {
+      "num":"26",
+      "url":"http://10.249.216.110:8001/v4/hbase/ThemeMonthCheck",
+      "title": "月报考核"
+    },
+    {
+      "num":"27",
+      "url":"http://10.249.216.110:8001/v4/hbase/realityPredict",
+      "title": "冰激凌专题(不包括趋势图)"
+    },
+    {
+      "num":"28",
+      "url":"http://10.249.216.110:8001/v4/hbase/realityPredict",
+      "title": "冰激凌专题(趋势图)"
+    },
+    {
+      "num":"29",
+      "url":"http://10.249.216.110:8001/v4/hbase",
+      "title": "日志统计"
+    },
+    {
+      "num":"30",
+      "url":"http://10.249.216.110:8001/v4/hbase",
+      "title": "横向对标"
+    },
+    {
+      "num":"31",
+      "url":"http://10.249.216.110:8001/v4/hbase",
+      "title": "报告页面"
+    },
+    {
+      "num":"32",
+      "url":"http://10.249.216.110:8001/v4/hbase/ProductOverview",
+      "title": "产品总览"
+    },
+    {
+      "num":"33",
+      "url":"http://10.249.216.110:8001/v4/hbase/channelView",
+      "title": "渠道专题"
+    },
+    {
+      "num":"34",
+      "url":"http://10.249.216.110:8001/v4/hbase/analyseSpecial",
+      "title": "分析类专题"
+    },
+    {
+      "num":"35",
+      "url":"http://10.249.216.110:8001/v4/hbase/littleSmart",
+      "title": "小智"
+    },
+    {
+      "num":"36",
+      "url":"http://10.244.4.188:8789",
+      "title": "5G实时监控"
+    },
+    {
+      "num":"37",
+      "url":"http://10.244.4.188:8359/numberPorting",
+      "title": "携号转网实时监控"
+    },
+    {
+      "num":"38",
+      "url":"http://10.249.216.110:8001/v4/hbase/governmentDataview",
+      "title": "政企楼宇转交情况"
+    },
+    {
+      "num":"39",
+      "url":"http://10.249.216.110:8001/v4/hbase/goverView",
+      "title": "政企总览"
+    },
+    {
+      "num":"40",
+      "url":"http://10.249.216.110:8001/v4/hbase/terminalInfo",
+      "title": "终端信息查询"
+    },
+    {
+      "num":"41",
+      "url":"http://10.249.216.110:8001/v4/hbase/terminalInfoPresent",
+      "title": "热门信息呈现"
+    },
+    {
+      "num":"42",
+      "url":"http://10.249.216.110:8001/v4/hbase/building",
+      "title": "政企地图"
+    },
+    {
+      "num":"43",
+      "url":"http://10.249.216.110:8001/v4/hbase/homeview",
+      "title": "家庭视图"
+    },
+    {
+      "num":"44",
+      "url":"http://10.249.216.110:8001/v4/hbase/warning",
+      "title": "预警"
+    },
+    {
+      "num":"45",
+      "url":"http://10.249.216.110:8001/v4/hbase/homeQuery",
+      "title": "家庭信息查询"
+    },
+    {
+      "num":"46",
+      "url":"http://10.244.4.187:8010/collection",
+      "title": "搜索首页-收藏"
+    },
+    {
+      "num":"47",
+      "url":"http://10.249.216.110:8001/v4/hbase/menu",
+      "title": "新版菜单"
+    },
+    {
+      "num":"48",
+      "url":"http://10.244.4.187:8010/collection",
+      "title": "我的工作台收藏列表"
+    },
+    {
+      "num":"49",
+      "url":"http://10.244.4.186:8780/mySubject",
+      "title": "我的工作台我的专题"
+    },
+    {
+      "num":"50",
+      "url":"http://10.249.216.110:8001/v4/hbase/government",
+      "title": "日运营总览下的政企业务"
+    },
+    {
+      "num":"51",
+      "url":"http://10.249.216.110:8001/v4/hbase/analyseSpecial",
+      "title": "小智智能分析页面接口"
+    },
+    {
+      "num":"52",
+      "url":"http://10.249.216.110:8001/v4/hbase/equipmentInfo",
+      "title": "终端查询页面接口"
+    },
+    {
+      "num":"53",
+      "url":"http://10.249.216.110:8001/v4/hbase/dataManagement",
+      "title": "数据管理"
+    }
+  ]
+}

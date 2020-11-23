@@ -1,0 +1,235 @@
+@import '~@/utils/utils.less';
+@import '~@/components/DayOverView/earlyWarning.less';
+
+//指标异动样式引入
+.earlyTip();
+//指标预警样式引入
+.overViewEarlyWarning();
+
+.indexList{
+  width: 100%;
+  .titleContent{
+    width: 100%;
+  }
+  .Row{
+    height: 100%;
+  }
+  .leftContent{
+    height: 100%;
+    padding: 0 20px 0 0;
+  }
+  .echartPic{
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    border: 1px solid rgb(239, 239, 239);
+  }
+  .title{
+    font-size: 16px;
+    color: #4f4f4f;
+    border-bottom:1px solid #4f4f4f; // 4.29 xingxiaodong 更改下划线
+    // text-decoration: underline ;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  .date{
+    font-size: 12px;
+    color: #8f8f8f;
+    margin: 5px;
+  }
+  .colList{
+    text-align: center;
+    border-right: solid 1px #e4e4e4;
+  }
+  //.colList > span{
+  //  display: inline-block;
+  //  overflow: hidden;
+  //  text-overflow:ellipsis;
+  //  white-space: nowrap;
+  //}
+  .colList:nth-child(4){
+    border: none;
+  }
+  .name{
+    font-size: 12px;
+    margin: 5px 0;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    color: #8f8f8f;
+  }
+  .unit{
+    font-size: 8px;
+  }
+  .value{
+    font-weight: 700;
+    font-size: 18px;
+    color: #868686;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+  }
+  .moreBtn{
+    text-align: right;
+    cursor: pointer;
+    font-size: 12px;
+    color: #8f8f8f;
+  }
+  .starIcon{
+    color: #C91717;
+    position: relative;
+    top:-10px;
+    font-size: 12px;
+  }
+}
+
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 960px){
+  .indexList{
+    .title{
+      font-size: 15px;
+    }
+    :global(.ant-tag){
+      font-size: 12px;
+      line-height: inherit;
+    }
+    .date{
+      font-size: 12px;
+    }
+    .name {
+      font-size: 12px;
+    }
+    .value{
+      font-size: 15px;
+    }
+    .unit{
+      font-size: 12px;
+    }
+  }
+}
+// 1024 分辨率
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+  .indexList{
+    .title{
+      font-size: 16px;
+    }
+    :global(.ant-tag){
+      font-size: 12px;
+      line-height: inherit;
+    }
+    .date{
+      font-size: 12px;
+    }
+    .name {
+      font-size: 12px;
+    }
+    .value{
+      font-size: 18px;
+    }
+    .unit{
+      font-size: 12px;
+    }
+  }
+}
+// 1280 分辨率
+@media only screen and (min-width: 1101px) and (max-width: 1315px){
+  .indexList{
+    .title{
+      font-size: 16px;
+    }
+    :global(.ant-tag){
+      font-size: 12px;
+      line-height: inherit;
+    }
+    .date{
+      font-size: 12px;
+    }
+    .name {
+      font-size: 12px;
+    }
+    .value{
+      font-size: 18px;
+    }
+    .unit{
+      font-size: 12px;
+    }
+  }
+}
+// 1366 分辨率
+@media only screen and (min-width: 1316px) and (max-width: 1389px){
+  .indexList{
+    .title{
+      font-size: 16px;
+    }
+    :global(.ant-tag){
+      font-size: 12px;
+      line-height: inherit;
+    }
+    .date{
+      font-size: 12px;
+    }
+    .name {
+      font-size: 12px;
+    }
+    .value{
+      font-size: 18px;
+    }
+    .unit{
+      font-size: 12px;
+    }
+  }
+}
+// 1440 分辨率
+@media only screen and (min-width: 1390px) and (max-width: 1869px){
+  .indexList{
+    .title{
+      font-size: 16px;
+    }
+    :global(.ant-tag){
+      font-size: 12px;
+      line-height: inherit;
+    }
+    .date{
+      font-size: 14px;
+    }
+    .name {
+      font-size: 15px;
+    }
+    .value{
+      font-size: 20px;
+    }
+    .unit{
+      font-size: 14px;
+    }
+  }
+}
+
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .indexList{
+    .title{
+      font-size: 21px;
+    }
+    :global(.ant-tag){
+      font-size: 17px;
+      line-height: inherit;
+    }
+    .date{
+      font-size: 15px;
+    }
+    .name {
+      font-size: 21px;
+    }
+    .value{
+      font-size: 29px;
+    }
+    .moreBtn{
+      font-size: 18px;
+    }
+    .unit{
+      font-size: 15px;
+    }
+  }
+}

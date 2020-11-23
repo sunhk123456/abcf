@@ -1,0 +1,835 @@
+@back-color: #F7F7F7;
+@font-red: #C91717;
+@white-bac: #FFFFFF;
+:global{
+  .ant-select-dropdown-menu-item:hover{
+    background: @white-bac;
+    color: @font-red;
+  }
+  .ant-select-dropdown-menu-item-active{
+    background: @white-bac;
+    color: @font-red;
+  }
+  .ant-select-dropdown-menu-item-selected{
+    background: @white-bac;
+  }
+}
+.title{
+  font-size: 24px;
+}
+.indexSystem{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  .leftBox{
+    width: 16%;
+    height: 76vh;
+    background: @back-color;
+    border-radius: 2px;
+    overflow: auto;
+    .treeBox{
+      height: 90%;
+      padding: 10px;
+      .littleTitle{
+        margin-left: 4px;
+        vertical-align: middle;
+      }
+      :global{
+        .ant-tree li .ant-tree-node-content-wrapper{
+          color:  #999;
+        }
+        .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected{
+          background-color: @back-color;
+          color: @font-red;
+        }
+        .ant-tree li .ant-tree-node-content-wrapper:hover {
+          background-color: @back-color;
+        }
+      }
+    }
+  }
+  .centerBox{
+    width: 2%;
+    min-height: 80vh;
+    .direction{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: @back-color;
+      position: relative;
+      z-index: 99;
+      top: 30%;
+      height: 8%;
+      margin-right: 40%;
+      color: @font-red;
+      cursor: pointer;
+    }
+  }
+  .rightBox{
+    min-height: 80vh;
+    .direction{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 1%;
+      height: 8%;
+      background: @back-color;
+      position: absolute;
+      top: 42%;
+      z-index: 99;
+      color: @font-red;
+      cursor: pointer;
+    }
+    .searchCondition{
+      width: 98%;
+      background: @back-color;
+      border-radius: 2px;
+      padding: 2px 10px;
+      overflow: hidden;
+      :global{
+        .ant-form-item{
+          width: 22%;
+          margin-bottom: 0;
+          display: inline-block;
+        }
+        .ant-col-7{
+          width: auto;
+        }
+        .ant-select-open, .ant-select-selection{
+          border-color: #d9d9d9;
+          outline: 0;
+          box-shadow: 0 0 0 0 ;
+        }
+        .ant-select-selection:hover{
+          border-color: #d9d9d9;
+        }
+        .ant-select-focus, .ant-select-selection, .ant-select-selection:focus{
+          border-color: #d9d9d9;
+          outline: 0;
+          box-shadow: 0 0 0 0 ;
+        }
+      }
+    }
+    .thTitle{
+      width: 98%;
+      overflow: hidden;
+      padding: 10px 0;
+      .fontSize{
+        margin-left: 6px;
+        vertical-align: middle;
+      }
+    }
+    .pageBtn{
+      //width: 98%;
+      //overflow: hidden;
+      //.tablePageBtn{
+      //  float: right;
+      //  margin: 10px;
+      //}
+      .pageContent{
+        text-align: right;
+        margin: 5px 0;
+        span{
+          display: inline-block;
+          height: 21px;
+          line-height: 21px;
+          margin-left: 5px;
+          font-size: 14px;
+        }
+        .leftBtn,.rightBtn{
+          color: #CECECE;
+          cursor: pointer;
+          font-size: 20px;
+          border-radius: 3px;
+          position: relative;
+          top:2px;
+        }
+        .pageInput{
+          border: 1px solid #CECECE;
+          border-radius: 2px;
+          width: 35px;
+          height: 17px;
+        }
+        .btnJump{
+          color: #7894B1;
+          border: 1px solid #7894B1;
+          border-radius: 2px;
+          height: 18px;
+          line-height: 15px;
+          padding: 0 5px;
+          cursor: pointer;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+.redBac{
+  display: inline-block;
+  width: 6px;
+  height: 16px;
+  background-color: @font-red;
+  vertical-align: middle;
+}
+.manageSearchBtn, .versionSearchBtn, .diffSearchBtn{
+  position: relative;
+  top: 4px;
+}
+.formInput{
+  width: 90%;
+}
+.formManagementInput{
+  width: 100%;
+}
+.rowSingle{
+  background: #F0F3F7;
+}
+.rowDouble{
+  background: #FAFAFA;
+}
+// 服务于表格单元格内，处理文字过长进行“...”后缀的处理
+.colSql {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  width: 128px;
+}
+.indexTable{
+  width: 98%;
+  :global{
+    .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th{
+      background: #F7F7F7;
+      white-space: nowrap;
+    }
+    .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td{
+      padding: 5px 8px;
+      white-space: nowrap;
+    }
+    .ant-dropdown{
+      z-index: 98
+    }
+    .ant-table-filter-dropdown{
+      min-width: 83px;
+      margin-left: 16px;
+    }
+  }
+}
+.dropOption{
+  background: #FFF;
+  width: 100%;
+  position: relative;
+  top: -2px;
+  display: inline-block;
+}
+.tableUp, .tableDown{
+  display: block;
+  margin: 12px 0;
+  cursor: pointer;
+}
+.tableUp:hover, .tableDown:hover{
+  cursor: pointer;
+}
+.orderImg{
+  width: 16px;
+  margin: 0 10px;
+}
+.rightDirect{
+  margin-left: 2px;
+}
+.checkBoxGroup{
+  position: absolute;
+  right: 26px;
+  width: 130px;
+  max-height: 240px;
+  overflow: auto;
+  z-index: 99;
+  padding: 4px 2px;
+  cursor: auto;
+  background: #FCFCFC;
+  color: #666;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.checkBox:hover{
+  cursor: pointer;
+}
+.dropCheckBox{
+  margin: 2px 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.checkColumn{
+  display: inline-block;
+  float: right;
+  font-size: 14px;
+  margin-right: 4px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 0 6px;
+  cursor: pointer;
+}
+@media only screen and (min-width: 1870px){
+  .title{
+    font-size: 26px;
+  }
+  .indexSystem{
+    .leftBox{
+      height: 78vh;
+      .treeBox{
+        .littleTitle{
+          font-size: 18px;
+        }
+        :global{
+          .ant-tree{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .rightBox{
+      .searchCondition{
+        padding: 6px 10px;
+        :global{
+          .ant-form label{
+            font-size: 16px;
+          }
+          .ant-select-selection__rendered{
+            font-size: 16px;
+          }
+        }
+      }
+      .thTitle{
+        .fontSize{
+          font-size: 18px;
+          margin-left: 10px;
+        }
+      }
+      .pageBtn{
+        .pageContent{
+          margin: 8px 0;
+          span{
+            height: 25px;
+            line-height: 25px;
+            margin-left: 8px;
+            font-size: 15px;
+          }
+          .leftBtn,.rightBtn{
+            font-size: 26px;
+            top: 4px;
+          }
+          .pageInput{
+            width: 50px;
+            height: 25px;
+          }
+          .btnJump{
+            height: 25px;
+            line-height: 23px;
+            padding: 0 5px;
+          }
+        }
+      }
+    }
+  }
+  .manageSearchBtn, .versionSearchBtn, .diffSearchBtn{
+    top: 3px;
+    font-size: 16px;
+  }
+  .redBac{
+    width: 8px;
+    height: 20px;
+  }
+  .formManagementInput{
+    width: 110%;
+    font-size: 16px;
+  }
+  .formInput{
+    font-size: 16px;
+  }
+  .indexTable{
+    :global{
+      .ant-table{
+        font-size: 16px;
+      }
+      .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th{
+        padding: 10px;
+      }
+      .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td{
+        padding: 9px 8px;
+      }
+      .ant-table-filter-dropdown{
+        font-size: 16px;
+        min-width: 96px;
+        margin-left: -8px;
+      }
+    }
+  }
+  .checkColumn{
+    font-size: 16px;
+  }
+  .checkBoxGroup{
+    max-height: 280px;
+    right: 30px;
+  }
+  .tableUp, .tableDown{
+    margin: 15px 0;
+  }
+}
+//// 1440 分辨率
+//@media only screen and (min-width: 1390px) and (max-width: 1869px){
+//
+//}
+// 1366 分辨率
+@media only screen and (min-width: 1316px) and (max-width: 1389px){
+  .indexSystem{
+    .leftBox{
+      width: 20%;
+    }
+    .rightBox{
+      .thTitle{
+        padding: 4px 0;
+      }
+      .pageBtn{
+        //.tablePageBtn{
+        //  margin: 5px;
+        //}
+        //:global{
+        //  .ant-btn{
+        //    height: 26px;
+        //  }
+        //}
+      }
+    }
+  }
+  .indexTable{
+    :global{
+      .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th{
+        padding: 4px 8px;
+      }
+      .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td{
+        padding: 2px 8px;
+      }
+    }
+  }
+  .formManagementInput{
+    width: 130%;
+  }
+  .manageSearchBtn, .versionSearchBtn, .diffSearchBtn{
+    left: 40px;
+  }
+  .checkBoxGroup{
+    max-height: 200px;
+    right: 22px;
+  }
+}
+// 1280 分辨率
+@media only screen and (min-width: 1101px) and (max-width: 1315px){
+  .indexSystem{
+    .leftBox{
+      width: 20%;
+      height: 72vh;
+      .treeBox{
+        :global{
+          .ant-tree{
+            font-size: 12px;
+          }
+          .ant-tree-child-tree > li:first-child{
+            padding-top: 0;
+          }
+          .ant-tree li{
+            padding: 0;
+          }
+        }
+      }
+    }
+    .rightBox{
+      .searchCondition{
+        padding: 2px 10px;
+        :global{
+          .ant-form label{
+            font-size: 12px;
+          }
+          .ant-col-14{
+            width: 52%;
+          }
+          .ant-col-7{
+            height: 28px;
+            line-height: 28px;
+          }
+          .ant-col-9{
+            height: 28px;
+            line-height: 28px;
+          }
+          .ant-form-item-control{
+            line-height: 30px;
+          }
+          .ant-select-selection__rendered{
+            font-size: 12px;
+            line-height: 28px;
+          }
+          .ant-select-selection--single{
+            height: 28px;
+          }
+          form .ant-select{
+            width: 130%;
+          }
+          .ant-select{
+            font-size: 12px;
+          }
+        }
+      }
+      .thTitle{
+        padding: 4px 0;
+      }
+      .pageBtn{
+        //.tablePageBtn{
+        //  margin: 5px;
+        //}
+        //:global{
+        //  .ant-btn{
+        //    font-size: 12px;
+        //    height: 24px;
+        //    padding: 0 10px;
+        //  }
+        //}
+      }
+    }
+  }
+  .indexTable{
+    :global{
+      .ant-table{
+        font-size: 12px;
+      }
+      .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th{
+        padding: 6px 8px;
+      }
+      .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td{
+        padding: 4px 8px;
+      }
+      .ant-dropdown{
+        font-size: 12px;
+      }
+      .ant-table-filter-dropdown{
+        min-width: 78px;
+        margin-left: 22px;
+      }
+    }
+  }
+  .tableUp, .tableDown{
+    margin: 10px 0;
+  }
+  .formManagementInput{
+    width: 115%;
+    font-size: 12px;
+    height: 28px;
+  }
+  .formInput{
+    font-size: 12px;
+    height: 28px;
+  }
+  .manageSearchBtn, .versionSearchBtn, .diffSearchBtn{
+    font-size: 12px;
+    height: 28px;
+    padding: 0 10px;
+    top: 0;
+    left: 25px;
+  }
+  .checkBoxGroup{
+    max-height: 180px;
+    width: 120px;
+    right: 22px;
+  }
+  .checkColumn{
+    font-size: 12px;
+  }
+}
+//  1024分辨率
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+  .title{
+    font-size: 20px;
+  }
+  .indexSystem{
+    .leftBox{
+      width: 24%;
+      height: 74vh;
+      .treeBox{
+        .littleTitle{
+          font-size: 12px;
+        }
+        :global{
+          .ant-tree{
+            font-size: 12px;
+          }
+          .ant-tree-child-tree > li:first-child{
+            padding-top: 0;
+          }
+          .ant-tree li{
+            padding: 0;
+          }
+        }
+      }
+    }
+    .rightBox{
+      .searchCondition{
+        padding: 2px 10px;
+        :global{
+          .ant-form label{
+            font-size: 12px;
+          }
+          .ant-col-14{
+            width: 52%;
+          }
+          .ant-col-7{
+            height: 28px;
+            line-height: 28px;
+          }
+          .ant-col-9{
+            height: 28px;
+            line-height: 28px;
+          }
+          .ant-form-item-control{
+            line-height: 30px;
+          }
+          .ant-select-selection__rendered{
+            font-size: 12px;
+            line-height: 28px;
+          }
+          .ant-select-selection--single{
+            height: 28px;
+          }
+          form .ant-select{
+            width: 130%;
+          }
+          .ant-select{
+            font-size: 12px;
+          }
+        }
+      }
+      .thTitle{
+        padding: 4px 0;
+        .fontSize{
+          font-size: 12px;
+        }
+      }
+      .pageBtn{
+        //.tablePageBtn{
+        //  margin: 8px;
+        //}
+        //:global{
+        //  .ant-btn{
+        //    font-size: 12px;
+        //    height: 26px;
+        //    padding: 0 10px;
+        //  }
+        //}
+      }
+    }
+  }
+  .manageSearchBtn, .versionSearchBtn, .diffSearchBtn{
+    font-size: 12px;
+    height: 28px;
+    padding: 0 10px;
+    top: 0;
+    left: 25px;
+  }
+  .formManagementInput{
+    height: 28px;
+    width: 130%;
+    font-size: 12px;
+  }
+  .formInput{
+    font-size: 12px;
+    height: 28px;
+  }
+  .indexTable{
+    :global{
+      .ant-table{
+        font-size: 12px;
+      }
+      .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th{
+        padding: 8px 6px;
+      }
+      .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td{
+        padding: 4px 6px;
+      }
+      .ant-table-filter-dropdown{
+        font-size: 12px;
+        min-width: 71px;
+        margin-left: 29px;
+      }
+      .ant-dropdown{
+        font-size: 12px;
+      }
+    }
+  }
+  .tableUp, .tableDown{
+    margin: 8px 0;
+  }
+  .orderImg{
+    margin: 0 8px;
+  }
+  .checkBoxGroup{
+    max-height: 180px;
+    width: 110px;
+    right: 18px;
+  }
+  .checkColumn{
+    font-size: 12px;
+  }
+  .redBac{
+    height: 14px;
+  }
+}
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 960px){
+  :global{
+    .ant-select-dropdown-menu-item{
+      padding: 4px;
+    }
+  }
+  .title{
+    font-size: 20px;
+  }
+  .indexSystem{
+    .leftBox{
+      width: 24%;
+      .treeBox{
+        .littleTitle{
+          font-size: 12px;
+        }
+        :global{
+          .ant-tree{
+            font-size: 11px;
+          }
+          .ant-tree-child-tree > li:first-child{
+            padding-top: 0;
+          }
+          .ant-tree li{
+            padding: 0;
+          }
+        }
+      }
+    }
+    .rightBox{
+      .searchCondition{
+        padding: 2px 10px;
+        :global{
+          .ant-form label{
+            font-size: 11px;
+          }
+          .ant-col-14{
+            width: 38%;
+          }
+          .ant-col-7{
+            height: 26px;
+            line-height: 26px;
+          }
+          .ant-col-9{
+            width: 54%;
+            height: 26px;
+            line-height: 26px;
+          }
+          .ant-form-item-control{
+            line-height: 28px;
+          }
+          .ant-select-selection__rendered{
+            font-size: 11px;
+            line-height: 26px;
+            margin-right: 0;
+          }
+          .ant-select-selection--single{
+            height: 26px;
+          }
+          form .ant-select{
+            width: 150%;
+          }
+          .ant-select{
+            font-size: 11px;
+          }
+          .ant-input{
+            padding: 2px;
+          }
+        }
+      }
+      .thTitle{
+        padding: 2px 0;
+        .fontSize{
+          font-size: 12px;
+        }
+      }
+      .pageBtn{
+        //.tablePageBtn{
+        //  margin: 5px;
+        //}
+        //:global{
+        //  .ant-btn{
+        //    font-size: 11px;
+        //    height: 24px;
+        //    padding: 0 10px;
+        //  }
+        //}
+      }
+    }
+  }
+  .manageSearchBtn{
+    font-size: 11px;
+    height: 26px;
+    padding: 0 10px;
+    top: 0;
+    left: 40px;
+  }
+  .versionSearchBtn, .diffSearchBtn{
+    font-size: 11px;
+    height: 26px;
+    padding: 0 10px;
+    top: 0;
+    left: 15px;
+  }
+  .formManagementInput{
+    height: 26px;
+    width: 180%;
+    font-size: 11px;
+  }
+  .formInput{
+    font-size: 11px;
+    height: 26px;
+  }
+  .indexTable{
+    :global{
+      .ant-table{
+        font-size: 11px;
+      }
+      .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th{
+        padding: 3px 5px;
+      }
+      .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td{
+        padding: 0 5px;
+      }
+      .ant-table-filter-dropdown{
+        font-size: 11px;
+        min-width: 71px;
+        margin-left: 29px;
+      }
+      .ant-dropdown{
+        font-size: 11px;
+      }
+    }
+  }
+  .tableUp, .tableDown{
+    margin: 8px 0;
+  }
+  .orderImg{
+    margin: 0 8px;
+  }
+  .checkBoxGroup{
+    max-height: 150px;
+    width: 100px;
+    right: 13px;
+  }
+  .checkColumn{
+    font-size: 12px;
+  }
+  .redBac{
+    height: 14px;
+  }
+}

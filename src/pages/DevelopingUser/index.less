@@ -1,0 +1,694 @@
+@import '~@/utils/utils.less';
+:global{
+  //.antd-pro-components-until-pro-city-proContent{
+  //  margin-left: 15px ;
+  //} // xingxiaodong 4.29 修改
+  .ant-select-selection--single{
+    height: 28px;
+  }
+
+  .ant-select-dropdown-menu-item {
+    background-color: #FAFAFA ;
+  }
+  .ant-select-dropdown-menu-item:hover {
+    background-color: #D44545 ;
+    color: white ;
+  }
+  .ant-select-dropdown-menu-item-active:hover {
+    background-color: #D44545 ;
+    color: white ;
+  }
+  .ant-select-dropdown-menu-item-active {
+    background-color: #D44545 ;
+    color: white ;
+  }
+  .ant-table table {
+    table-layout: fixed;
+  }
+  .ant-select{
+    //.ant-select-arrow{
+    //  display: none;
+    //}
+    .ant-select-selection:hover{
+      border-color: #d9d9d9 ;
+      box-shadow: none ;
+    }
+    .ant-select-selection:focus{
+      border-color: #d9d9d9 ;
+      box-shadow: none ;
+    }
+  }
+
+  .ant-calendar-year-panel-year{
+    width: 70px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 8px;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+  .ant-calendar-year-panel-year:hover{
+    background: #c91717;
+    cursor: pointer;
+  }
+
+  .ant-calendar-month-panel-month {
+    width: 70px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 8px;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+  .ant-calendar-month-panel-month:hover {
+    background: #c91717;
+    cursor: pointer;
+  }
+  .ant-calendar-header a:hover {
+    color:#fff;
+  }
+  //.ant-calendar-month-panel-header a.ant-calendar-month-panel-prev-year-btn:hover{
+  //  color:#c91717;
+  //}
+  //.ant-calendar-month-panel-header a.ant-calendar-month-panel-year-select:hover{
+  //  color:#c91717;
+  //}
+  //.ant-calendar-month-panel-header a.ant-calendar-month-panel-next-year-btn:hover{
+  //  color:#c91717;
+  //}
+  //.ant-calendar-month-panel-cell.ant-calendar-month-panel-selected-cell .ant-calendar-month-panel-month {
+  //  background: #c91717;
+  //  color: #fff;
+  //}
+  .ant-calendar-month-panel-cell.ant-calendar-month-panel-selected-cell .ant-calendar-month-panel-month:hover {
+    background: #c91717;
+    color: #fff;
+  }
+  td.ant-calendar-month-panel-cell.ant-calendar-month-panel-cell-disabled.ant-calendar-month-panel-selected-cell{
+    a.ant-calendar-month-panel-month{
+      cursor: not-allowed;
+      color: #bcbcbc;
+      background: #f5f5f5;
+    }
+  }
+
+  .ant-calendar-cell{
+    .ant-calendar-date{
+      border-radius: 5px ;
+    }
+  }
+  .ant-calendar-selected-day{
+    .ant-calendar-date{
+      background: #fff ;
+      color: #000 ;
+    }
+  }
+  .ant-calendar-selected-day:hover{
+    .ant-calendar-date{
+      background: #c91717 ;
+      color: #fff ;
+    }
+  }
+  .ant-calendar-selected-date{
+    .ant-calendar-date{
+      background: #c91717 ;
+      color: #fff ;
+    }
+  }
+  .ant-calendar-disabled-cell{
+    .ant-calendar-date{
+      width: auto;
+      border-radius: 0 ;
+      background: #f5f5f5 ;
+      color: rgba(0,0,0,0.25) ;
+    }
+    .ant-calendar-date:hover{
+      width: auto;
+      border-radius: 0 ;
+      background: #f5f5f5 ;
+      color: rgba(0,0,0,0.25) ;
+    }
+  }
+
+
+}
+.mainTitle{
+  font-size: 20px;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin: 10px 0 0 0;
+  align-items: center;
+  .icon{
+    vertical-align: top;
+    width: 20px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    .iconContent{
+      z-index: 10;
+      position: absolute;
+      top: 40px;
+      left: 20px;
+      font-size: 13px;
+      padding: 5px;
+      background-color: #fbf8e7;
+      border: 1px solid #e1d8ca;
+      width: 172px;
+    }
+    .tipsIcon{
+      position: absolute;
+      top: 7px;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      margin-left: 2px;
+      cursor: pointer;
+    }
+  }
+
+}
+.menu{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  background-color: #F7F7F7;
+  :global{
+    .ant-select{
+      .ant-select-arrow{
+        display: none;
+      }
+      .ant-select-selection:hover{
+        border-color: #d9d9d9 ;
+        box-shadow: none ;
+      }
+      .ant-select-selection:focus{
+        border-color: #d9d9d9 ;
+        box-shadow: none ;
+      }
+    }
+    .ant-btn.antd-pro-pages-developing-user-index-button{
+      color: rgba(0,0,0,0.65);
+      border-color: #d9d9d9;;
+    }
+    .ant-btn:focus.antd-pro-pages-developing-user-index-button:focus{
+      color: rgba(0,0,0,0.65);
+      border-color: #d9d9d9;;
+    }
+  }
+  .citySelect{
+    position: relative;
+    float: left;
+    top: 10px;
+    width:32%;
+      .proContent {
+        display: flex;
+        float: left;
+        width: 45%;
+      }
+  }
+  .dateSelector{
+    position: relative;
+    float: left;
+    top: 8px;
+    margin-right:15px;
+    margin-left: 15px;
+    line-height: 35px;
+  }
+  .analysisKindSelector{
+    position: relative;
+    float: left;
+    top: 8px;
+    text-align: center;
+    margin-right:15px;
+    line-height: 30px;
+    .triangle{
+      position: absolute;
+      top: 12px;
+      right: 14px;
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 5px solid #999;
+    }
+  }
+  .button{
+    float: right;
+    position: relative;
+    top: 10px;
+    margin-right: 20px;
+  }
+}
+.mainContent{
+  position: relative;
+  width: 100%;
+  .clickSpan{
+    cursor: pointer;
+  }
+  //:global{
+  //  .ant-table-fixed-left{
+  //    z-index: 1 ;
+  //  }
+  //  .ant-table-row-level-1{
+  //    background-color: #f0f3f7;
+  //  }
+  //}
+  .table {
+    background-color: rgb(247, 247, 247);
+    .column0 {
+      text-align: left;
+      border-right: solid 1px #e9eaee;
+      background-color: #fdfffd;
+    }
+    .column1 {
+      text-align: center;
+    }
+    tr{
+      height: 30px;
+      font-size: 14px ;
+    }
+    td{
+      height: 45px ;
+      padding: 0 10px;
+      font-size: 14px ;
+    }
+    th{
+      height: 30px ;
+      padding: 0 10px;
+      font-size: 16px ;
+    }
+  }
+  .mainTop{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 15px 0 10px 0;
+    .tableTitle{
+      float: left;
+    }
+    .tableTitle:before{
+      display: block;
+      content: " ";
+      width: 10px;
+      height: 22px;
+      background-color: #c91717;
+      margin:0 10px 0 0;
+      float: left;
+    }
+    .allOpen{
+      margin-top: 5px;
+      float: right;
+      margin-right: 20px;
+    }
+  }
+  :global{
+    .ant-table-fixed-left{
+      z-index: 1 ;
+    }
+    .ant-table-row-level-1{
+      background-color: #f0f3f7;
+    }
+    .ant-checkbox-checked .ant-checkbox-inner {
+      background-color: #fff;
+      border: 1px solid #d9d9d9;
+    }
+    .ant-checkbox-input{
+      opacity: 1;
+    }
+  }
+}
+
+@media only screen and (max-width: 849px){
+  .mainTitle{
+    font-size: 16px;
+    height: 30px;
+    .icon{
+      width: 20px;
+      height: 20px;
+      position: relative;
+      .iconContent{
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 13px;
+        padding: 5px;
+      }
+      .tipsIcon{
+        position: absolute;
+        top: 7.5px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        margin-left:5px;
+        cursor: pointer;
+      }
+    }
+  }
+  .menu{
+    height: 50px;
+    font-size: 12px;
+    .citySelect{
+      width:40%;
+    }
+    .button{
+      margin-right: 5px;
+    }
+    :global{
+      .ant-calendar-picker{
+        width: 110px;
+      }
+      .ant-input{
+        font-size: 12px;
+      }
+      .ant-btn{
+        font-size: 12px;
+        padding: 0 8px;
+      }
+      .ant-select-selection{
+        border: 1px dotted #a7a7a7;
+        border-radius: 0;
+      }
+    }
+  }
+
+  .mainContent {
+    .mainTop{
+      .tableTitle{
+        font-size: 14px;
+        float: left;
+      }
+      .tableTitle:before{
+        position: relative;
+        top: 0;
+        width: 10px;
+        height: 22px;
+      }
+    }
+    .table {
+      th {
+        font-size: 14px ;
+      }
+      td {
+        font-size: 12px ;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 850px) and (max-width: 1100px){
+  .mainTitle{
+    font-size: 16px;
+    height: 30px;
+    .icon{
+      width: 20px;
+      height: 20px;
+      position: relative;
+      .iconContent{
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 13px;
+        padding: 5px;
+      }
+      .tipsIcon{
+        position: absolute;
+        top: 7.5px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        margin-left:5px;
+        cursor: pointer;
+      }
+    }
+  }
+  .menu{
+    height: 50px;
+    font-size: 12px;
+    .citySelect{
+      width:40%;
+    }
+    .button{
+      margin-right: 5px;
+    }
+    .analysisKindSelector{
+     font-size: 12px;
+    }
+    :global{
+      .ant-calendar-picker{
+        width: 110px;
+      }
+      .ant-input{
+        font-size: 12px;
+      }
+      .ant-btn{
+        font-size: 12px;
+        padding: 0 8px;
+      }
+      .ant-select-selection{
+        border: 1px dotted #a7a7a7;
+        border-radius: 0;
+      }
+      .ant-select-selection--single{
+        width: 120px;
+      }
+    }
+  }
+
+  .mainContent {
+    .mainTop{
+      .tableTitle{
+        font-size: 14px;
+        float: left;
+      }
+      .tableTitle:before{
+        position: relative;
+        top: 0;
+        width: 10px;
+        height: 22px;
+      }
+    }
+    .table {
+      th {
+        font-size: 14px ;
+      }
+      td {
+        font-size: 12px ;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1101px)  and (max-width: 1300px){
+  .menu{
+    .citySelect{
+      width:40%;
+    }
+    :global{
+      .ant-calendar-picker{
+        width: 120px;
+      }
+      .ant-select-selection{
+        border: 1px dotted #a7a7a7;
+        border-radius: 0;
+      }
+      .ant-select-selection--single{
+        width: 120px;
+        height: 30px;
+      }
+    }
+  }
+  .mainContent {
+    .mainTop{
+      .tableTitle{
+        font-size: 14px;
+        float: left;
+      }
+      .tableTitle:before{
+        position: relative;
+        top: 0;
+        width: 10px;
+        height: 22px;
+      }
+    }
+    .table {
+      th {
+        font-size: 14px ;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1301px)  and (max-width: 1400px){
+  .menu{
+    .citySelect{
+      width:40%;
+    }
+    :global{
+      .ant-calendar-picker{
+        width: 130px;
+      }
+      .ant-select-selection{
+        border: 1px dotted #a7a7a7;
+        border-radius: 0;
+      }
+      .ant-select-selection--single{
+        width: 120px;
+        height: 32px;
+      }
+    }
+  }
+  .mainContent {
+    .mainTop{
+      .tableTitle{
+        font-size: 16px;
+        float: left;
+      }
+      .tableTitle:before{
+        position: relative;
+        top: 3px;
+        width: 10px;
+        height: 22px;
+      }
+    }
+    .table {
+      th {
+        font-size: 16px ;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1401px)  and (max-width: 1869px){
+  .menu{
+    .citySelect{
+      width:40%;
+    }
+    :global{
+      .ant-calendar-picker{
+        width: 150px;
+      }
+      // 当日值组件样式修改
+      .ant-select-selection{
+        border: 1px dotted #a7a7a7;
+        border-radius: 0;
+      }
+      .ant-select-selection--single{
+        width: 120px;
+        height: 32px;
+      }
+      .ant-select-selection__rendered{
+        padding-left: 15px;
+      }
+    }
+  }
+  .mainContent {
+    .mainTop{
+      .tableTitle{
+        font-size: 18px;
+        float: left;
+      }
+      .tableTitle:before{
+        position: relative;
+        top: 3px;
+        width: 10px;
+        height: 22px;
+      }
+    }
+    .table {
+      th {
+        font-size: 16px ;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1870px){
+  .mainTitle{
+    font-size: 26px;
+    height: 40px;
+    .icon{
+      width: 30px;
+      height: 30px;
+      position: relative;
+      top: 5px;
+      .iconContent{
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 13px;
+        padding: 5px;
+      }
+      .tipsIcon{
+        position: absolute;
+        top: 7.5px;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        margin-left:5px;
+        cursor: pointer;
+      }
+    }
+  }
+  .menu{
+    .citySelect{
+      width:40%;
+    }
+    .menuTitle{
+      font-size: 20px;
+    }
+    :global{
+      .ant-select{
+        font-size: 20px;
+      }
+      .ant-btn{
+        font-size: 18px;
+        height: 40px;
+        padding: 0 8px;
+      }
+
+      .ant-select-selection{
+        border: 1px dotted #a7a7a7;
+        border-radius: 0;
+      }
+      .ant-select-selection--single{
+        width: 180px;
+        height: 40px;
+      }
+      .ant-select-selection__rendered{
+        padding-left: 30px;
+        line-height: 40px;
+      }
+    }
+  }
+  .mainContent {
+    :global{
+      .ant-checkbox-wrapper{
+        font-size: 18px ; //展开全部样式
+      }
+    }
+    .mainTop{
+      .tableTitle{
+        font-size: 22px;
+        float: left;
+      }
+      .tableTitle:before{
+        position: relative;
+        top: 3px;
+        width: 10px;
+        height: 26px;
+      }
+    }
+    .table {
+      th {
+        font-size: 20px ;
+      }
+      td {
+        font-size: 18px ;
+      }
+    }
+  }
+}
+

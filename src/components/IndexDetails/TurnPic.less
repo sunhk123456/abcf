@@ -1,0 +1,169 @@
+.overviewIndex{
+  //height: 600px;
+  height: 530px;
+  padding-bottom: 160px;
+  margin: 15px 20px;
+  box-sizing: border-box;
+  position: relative;
+  .bigContainer{
+    width: 100%;
+    height: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
+    position: relative;
+    :global{
+      .ant-carousel, .slick-list, .slick-track{
+        height: 100%;
+      }
+      .ant-carousel .slick-slide > div{
+        height: 100%;
+      }
+    }
+
+  }
+  .smallContainer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 150px;
+  }
+  .carousel{
+    height: 100%;
+    width: 100%;
+  }
+  .bannerList{
+    height: 100%;
+    width: 100%;
+  }
+  .upcircle, .downcircle{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top:50%;
+    margin-top: -35px;
+    color: #DBDBDB;
+    font-size: 60px;
+    cursor: pointer;
+    line-height: 0;
+    z-index:10;
+    :global{
+      .anticon{
+        vertical-align: 0;
+      }
+    }
+  }
+  .upcircle{
+    left: 10px;
+  }
+  .downcircle{
+    right: 10px;
+  }
+  .smallUl{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    li{
+      height: 100%;
+      width: 145px;
+      display: inline-block;
+      margin-right: 5px;
+      border: 1px solid rgb(239, 239, 239);
+      overflow: hidden;
+    }
+  }
+}
+
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 960px){
+  .overviewIndex{
+    .smallContainer{
+      height: 85px;
+    }
+    .smallUl{
+      li{
+        width: 85px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+// 1024分辨率
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+  .overviewIndex{
+    .smallContainer{
+      height: 100px;
+    }
+    .smallUl{
+      li{
+        width: 100px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+// 1366分辨率
+@media only screen and (min-width: 1101px) and (max-width: 1315px){
+  .overviewIndex{
+    .smallContainer{
+      height: 110px;
+    }
+    .smallUl{
+      li{
+        width: 110px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+// 1366 分辨率
+//@media only screen and (min-width: 1316px) and (max-width: 1389px){
+//
+//}
+// 1440 分辨率
+@media only screen and (min-width: 1390px) and (max-width: 1869px){
+  .overviewIndex{
+    height: 600px;
+    padding-bottom: 160px;
+    .smallContainer{
+      height: 150px;
+    }
+    .smallUl{
+      li{
+        width: 145px;
+        margin-right: 15px;
+      }
+    }
+    .upcircle, .downcircle{
+      margin-top: -45px;
+      font-size: 50px;
+    }
+  }
+}
+
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .overviewIndex{
+    height: 900px;
+    padding-bottom: 240px;
+    .smallContainer{
+      height: 220px;
+    }
+    .smallUl{
+      li{
+        width: 200px;
+        margin-right: 20px;
+      }
+    }
+    .upcircle, .downcircle{
+      margin-top: -65px;
+      font-size: 70px;
+    }
+  }
+}

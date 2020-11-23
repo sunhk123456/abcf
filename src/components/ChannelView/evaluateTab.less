@@ -1,0 +1,354 @@
+.evaluateTab{
+  margin-top: 1%;
+  margin-bottom: 2%;
+  .condition{
+    padding: 10px 12% 10px 15px;
+    background-color: #F7F7F7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .condition:after{
+    content:"";
+    height:0;
+    line-height:0;
+    display:block;
+    visibility:hidden;
+    clear:both;
+  }
+  .inputStyle{
+    font-size: 14px;
+    margin-bottom: 1%;
+    position: relative;
+    input{
+      cursor:pointer;
+      width: 158px;
+      height: 31px;
+      font-size: 14px;
+    }
+  }
+  .inputChannelName{
+    input{
+      width: 60%;
+    }
+  }
+  .liList{
+    position: absolute;
+    left: 70px;
+    //width: 158px;
+    width: 60%;
+    background-color: #fff;
+    font-size: 14px;
+    color:#999;
+    border-radius: 2%;
+    z-index: 1;
+    div{
+      padding: 2% 0 2% 5%;
+      cursor: pointer;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+    }
+    div:hover{
+      background-color:#FAE8E8;
+    }
+  }
+  :global{
+    .antd-pro-components-until-pro-city-name{
+      width: 70px;
+    }
+  }
+  .ProCityDiv{
+    width: 60%;
+  }
+  .conditionName{
+    display: inline-block;
+    width: 70px;
+  }
+  .queryDownload{
+    width: 10%; // 原30%
+  }
+  .query{
+    float: right;
+    display: inline-block;
+    background-color: #fff;
+    border: 1px dotted #E1E1E1;
+    border-radius: 3px;
+    padding: 4px 10px;
+    cursor:pointer;
+    margin-left: 5px;
+    font-size: 14px;
+  }
+  .tableTop{
+    position: relative;
+    margin: 1% 0;
+  }
+  .iconRed{
+    position: absolute;
+    width: 5px;
+    height: 14px;
+    top:4px;
+    background-color: #C91717;
+  }
+  .tableName{
+    margin-left: 11px;
+    font-size: 14px;
+  }
+  .channelInfo{
+    margin-bottom: 1%;
+  }
+  .circleRed{
+    margin-right: 8px;
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    background-color: #C91717;
+    border-radius: 25px;
+    margin-bottom: 2px;
+  }
+  .infoTitle{
+    //width: 50%;
+    margin-bottom: 1%;
+  }
+  .infoItemName{
+    color: #999;
+  }
+  .baseInfo{
+    background-color: rgba(249, 249, 249, 1);
+    margin-bottom: 1%;
+    padding: 20px 15px;
+    font-size: 12px;
+  }
+  .selectedIndex{
+    margin-bottom: 1%;
+    font-size: 14px;
+  }
+  .baseInfoItem{
+    //width: 45%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-left: 1%;
+    tr{
+      height: 35px;
+    }
+    td{
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  .otherInfo{
+    position: relative;
+    background-color: rgba(249, 249, 249, 1);
+    padding: 20px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    margin-bottom: 30px;
+    >div{
+      flex: 0 1 50%;
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: calc((50%) - (20px));
+      padding-right: 20px;
+      padding-bottom:20px;
+      //box-sizing: border-box;
+    }
+    .otherInfoItem{
+      display: flex;
+      flex-direction: column;
+      margin-left: 3%;
+      tr{
+        height: 35px;
+      }
+      td{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+  .otherInfo::after{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 80%;
+    background-color: rgb(228,228,228);
+    top: 10%;
+    left: 48%;
+  }
+  .progress{
+    background: inherit;
+    background-color: rgb(255, 120, 163);
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 111, 143);
+    height: 10px;
+  }
+  .progressContent{
+    background-color:rgb(255, 162, 127);
+    height:8px;
+  }
+  .echartsList{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    >div{
+      background-color: #f9f9f9;
+      width:29.5%;
+      height: 320px;
+    }
+    >div:nth-child(1){
+      width: 40%;
+    }
+  }
+  .infoItemValue{
+    width: 180px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .underline{
+    text-decoration: underline;
+  }
+}
+.dateDropdown{
+  z-index: 1;
+}
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 960px){
+  .evaluateTab {
+    .condition{
+      padding: 10px 0 10px 0;
+    }
+    .inputStyle{
+      font-size: 12px;
+      input{
+        width: 100px;
+        font-size: 12px;
+      }
+    }
+    .selectedIndex{
+      font-size: 12px;
+    }
+    .liList{
+      //width: 100px;
+      width: 60%;
+      font-size: 12px;
+    }
+    .inputChannelName{
+      input{
+        width: 60%;
+      }
+    }
+    .query{
+      font-size: 12px;
+    }
+    .tableName{
+      font-size: 12px;
+    }
+    .baseInfo{
+      font-size: 12px;
+    }
+    .baseInfoItem{
+      tr{
+        height: 25px;
+      }
+    }
+    .otherInfo{
+      font-size: 12px;
+    }
+    .otherInfoItem{
+      tr{
+        height: 25px;
+      }
+    }
+  }
+}
+// 1024 分辨率
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+  .evaluateTab {
+    .condition{
+      padding: 10px 10% 10px 15px;
+    }
+    .selectedIndex{
+      font-size: 12px;
+    }
+    .liList{
+      //width: 120px;
+      width: 60%;
+    }
+    .inputStyle{
+      input{
+        width: 120px;
+      }
+    }
+    .inputChannelName{
+      input{
+        width: 60%;
+      }
+    }
+
+    .tableName{
+      font-size: 12px;
+    }
+    .baseInfo{
+      font-size: 12px;
+    }
+    .otherInfo{
+      font-size: 12px;
+    }
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .evaluateTab{
+    .infoItemValue{
+      width: 250px;
+    }
+    :global{
+      .antd-pro-components-until-pro-city-name{
+        width: 100px;
+      }
+    }
+    .selectedIndex{
+      font-size: 16px;
+    }
+    .liList{
+      left: 100px;
+      //width: 240px;
+      font-size: 16px;
+      width: 60%;
+    }
+    .conditionName{
+      width: 100px;
+    }
+    .inputStyle{
+      font-size: 20px;
+      input{
+        width: 240px;
+        height: 40px;
+        font-size: 20px;
+      }
+    }
+    .inputChannelName{
+      input{
+        width: 60%;
+      }
+    }
+    .query{
+      font-size: 20px;
+    }
+    .tableName{
+      font-size: 16px;
+    }
+    .baseInfo{
+      font-size: 16px;
+    }
+    .otherInfo{
+      font-size: 16px;
+    }
+  }
+}

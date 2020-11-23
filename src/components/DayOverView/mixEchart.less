@@ -1,0 +1,253 @@
+@import '~@/utils/utils.less';
+@import '~@/components/DayOverView/earlyWarning.less';
+
+//指标异动样式引入
+.earlyTip();
+// 智能预警样式
+.overViewEarlyWarning();
+
+
+// 默认时1366、1440分辨率
+.lineAndBarEchart {
+  width: 100%;
+  height:58%;
+}
+.mixEchart {
+  width: 100%;
+  height: 100%;
+  padding: 0 25px;
+  float: left;
+  font-family: 'Microsoft YaHei', serif;
+  font-weight: 400;
+  font-style: normal;
+  background: #f7f8fc;
+  font-size: 14px;
+  color: #666;
+}
+.kpiName{
+  position: relative;
+  height: 10%;
+  font-size: 16px;
+  color: #66696E;
+  margin-top: 1%;
+}
+.titleSpan{
+  cursor: pointer;
+  border-bottom: solid 1px #999;
+  padding-bottom: 4px;
+}
+
+.mixChartTop{
+  width: 100%;
+  height: 27%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 1%;
+  position: relative;
+  left: 2%;
+}
+// 日运营总览的样式
+.monthSum{
+  width: 30%;
+  height: 100%;
+}
+.monthSumText{
+  text-align: left;
+  height: 30%;
+}
+.middleText{
+  text-align: center;
+  height: 30%;
+}
+.monthSumData{
+  color: #666;
+  text-align: left;
+}
+.monthSumNum{
+  font-size: 22px;
+  display: inline-block;
+  font-family: ArialMT,Arial;
+}
+.monthSumNumRight{
+  margin-right: 4%;
+}
+.monthSumUnit{
+  display: inline-block;
+  font-size: 16px;
+}
+.ringRating{
+  position: relative;
+  width: 22%;
+  height: 100%;
+  text-align: center;
+}
+.ringRating::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  display: block;
+  width: 2px;
+  height: 32px;
+  background-color: rgb(236,236,236);
+}
+.ringRatingData{
+  color: #666;
+  font-size: 22px;
+  text-align: center;
+  font-family: ArialMT,Arial;
+}
+.samerating{
+  position: relative;
+  width: 22%;
+  height: 100%;
+  text-align: center;
+}
+.samerating::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  display: block;
+  width: 2px;
+  height: 32px;
+  background-color: rgb(236,236,236);
+}
+.net{
+  width: 22%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+.net::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  display: block;
+  width: 2px;
+  height: 32px;
+  background-color: rgb(236,236,236);
+}
+.mixEchartsGauge{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -28%;
+}
+
+// 月运营总览的样式
+.monthData{
+  width: 30%;
+}
+.monthDataFirst{
+  width: 40%;
+}
+.monthName{
+  margin-right: 6%;
+}
+.monthValue{
+  font-size: 22px;
+}
+.monthUnit{
+  font-size: 16px;
+}
+
+.dataBlank{
+  color: #666;
+}
+.dataRed{
+  color: red;
+}
+.dateGreen{
+  color: #390;
+}
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 900px){
+  .mixEchart{
+    font-size: 12px;
+    padding: 0 10px;
+  }
+  .net{
+    width: 26%;
+  }
+  .kpiName{
+    font-size: 14px;
+  }
+  .monthSumUnit{
+    font-size: 12px;
+  }
+  .monthSumNum{
+    font-size: 12px;
+  }
+  .monthValue{
+    font-size: 12px;
+  }
+  .ringRatingData{
+    font-size: 12px;
+  }
+  .mixEchartsGauge{
+    top: -39%;
+  }
+  .monthUnit{
+    font-size: 12px;
+  }
+}
+// 1024 分辨率
+@media only screen and (min-width: 1000px) and (max-width: 1200px){
+  .mixEchart{
+    font-size: 12px;
+  }
+  .net{
+    width: 26%;
+  }
+  .kpiName{
+    font-size: 14px;
+  }
+  .monthSumUnit{
+    font-size: 14px;
+  }
+  .monthSumNum{
+    font-size: 14px;
+  }
+  .monthValue{
+    font-size: 14px;
+  }
+  .ringRatingData{
+    font-size: 14px;
+  }
+  .mixEchartsGauge{
+    top: -39%;
+  }
+}
+// 1280 分辨率
+@media only screen and (min-width: 1279px) and (max-width: 1300px){
+  .mixEchart{
+    font-size: 12px;
+  }
+  .monthSumUnit{
+    font-size: 16px;
+  }
+  .monthSumNum{
+    font-size: 20px;
+  }
+  .ringRatingData{
+    font-size: 18px;
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1871px) and (max-width: 2160px){
+  .mixEchart{
+    font-size: 18px;
+  }
+  .kpiName{
+    font-size: 20px;
+  }
+  .monthSumUnit{
+    font-size: 18px;
+  }
+}
+
+
+

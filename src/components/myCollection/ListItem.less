@@ -1,0 +1,148 @@
+.listItemUl{
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  li{
+    height: 38px;
+    line-height: 38px;
+    position: relative;
+    padding-left: 35px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    .listTitleName{
+      text-align: center;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 40px;
+      height: 100%;
+    }
+    .listRight{
+      position: relative;
+      width: 85%;
+      display: inline-block;
+      height: 100%;
+    }
+    .listCollect{
+      position: relative;
+      display: inline-block;
+      width:30px;
+      height: 30px;
+    }
+    .listCollect:hover{
+      cursor:pointer;
+    }
+    .listImg{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .listText{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+      cursor: pointer;
+      font-size: 12px;
+      padding-left: 28px;
+      margin: 0;
+      color: rgba(0,0,0,.65);
+    }
+  }
+  .zhuanti{
+    color: rgb(151, 191, 156);
+  }
+  .zhibiao{
+    color: rgb(113, 132, 168);
+  }
+  .baogao{
+    color: rgb(192, 153, 169);
+  }
+  .baobiao{
+    color: rgb(138, 120, 86);
+  }
+}
+
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 960px){
+  .listItemUl{
+    li{
+      .listText{
+        padding-left: 13px;
+      }
+      .listCollect{
+        width: 13%;
+        height: 60%;
+      }
+    }
+  }
+}
+// 1024 分辨率
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+  .listItemUl li{
+    .listText{
+      padding-left: 20px;
+    }
+    .listCollect{
+      width: 10%;
+      height: 65%;
+    }
+  }
+}
+// 1280 分辨率
+@media only screen and (min-width: 1101px) and (max-width: 1315px){
+  .listItemUl li{
+    .listText{
+      padding-left: 24px;
+    }
+    .listCollect{
+      width: 9%;
+    height: 77%;
+    }
+  }
+}
+// 1366 分辨率
+@media only screen and (min-width: 1316px) and (max-width: 1389px){
+  .listItemUl li{
+    .listText{
+      padding-left: 28px;
+    }
+    .listCollect{
+      width: 8%;
+      height: 77%;
+    }
+  }
+}
+// 1440 分辨率
+@media only screen and (min-width: 1390px) and (max-width: 1869px){
+  .listItemUl li{
+    .listText{
+      padding-left: 28px;
+    }
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .listItemUl{
+    font-size: 17px;
+    li{
+      height: 52px;
+      line-height: 50px;
+      .listText{
+        padding-left: 40px;
+        font-size: 17px;
+      }
+    }
+  }
+}
+

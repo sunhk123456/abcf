@@ -1,0 +1,92 @@
+/**
+ * title: myReport
+ * description:
+ * @author: zhaidengke
+ * @date 2019/1/17 0017
+ */
+
+.myReportContent {
+  width: 100%;
+
+  .wholeTip{
+    text-align: center;
+    margin-top: 10px;
+  }
+  .addBtn{
+    padding: 10px 0;
+    text-align: right;
+  }
+  .inputContent{
+    padding: 0 30px;
+  }
+  .selectSt{
+    width: 170px;
+  }
+  .btnCon{
+    margin: 10px;
+    text-align: center;
+  }
+  .buttonColorDust {
+    border: 1px solid #999;
+    background: rgb(255, 255, 255);
+    color: rgb(153, 153, 153);
+    margin-right: 30px;
+
+    &:hover, &:focus {
+      color: rgb(255, 255, 255);
+      background: rgb(153, 153, 153);
+    }
+
+  }
+  .mustText{
+    color: #999;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  :global{
+    .ant-form-inline .ant-form-item-with-help{
+      margin-bottom: 0;
+    }
+    .ant-form-item-label > label::after{
+      margin: 0 20px 0 2px;
+    }
+    .ant-form-explain{
+      display: none;
+    }
+  }
+  .itemContent{
+    justify-content: flex-start;
+    display: flex;
+    flex: 1 1;
+  }
+}
+
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .myReportContent{
+    font-size: 19px;
+    .leftContent{
+      max-width: 240px;
+    }
+    :global{
+      .ant-form-item-label > label::after{
+        margin: 0 45px 0 2px;
+      }
+      .ant-form label{
+        font-size: 19px;
+      }
+      .ant-form {
+        font-size: 19px;
+      }
+      .ant-input, .ant-form label > span, .ant-select{
+        font-size: 17px;
+      }
+    }
+    .mustText{
+      font-size: 16px;
+    }
+  }
+  :global(.ant-select-dropdown){
+    font-size: 17px;
+  }
+}

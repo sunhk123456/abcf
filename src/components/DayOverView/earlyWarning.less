@@ -1,0 +1,44 @@
+.warningBody{
+  font-size: 12px;
+}
+.warnIcon{
+  color: #C91717;
+  font-size: 14px;
+}
+.warningLevel{
+  color: #C91717;
+}
+.warningDesc{
+  color: #333;
+}
+// 提示框
+.warningTip{
+  :global{
+    .ant-tooltip-arrow{
+      border-color: #C91717;
+    }
+    .ant-tooltip-inner{
+      background-color: #FBEFA1;
+      color: #333;
+      border-color: #c91717;
+    }
+  }
+}
+// 运营总览智能预警
+.overViewEarlyWarning(){
+  .starIcon{
+    color: #C91717;
+    position: relative;
+    top:-10px;
+    font-size: 8px;
+    margin-right: 5%;
+    -webkit-transform: scale(0.7);
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .warningBody{
+    font-size: 14px;
+  }
+}
+

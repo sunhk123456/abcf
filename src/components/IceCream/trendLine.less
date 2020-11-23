@@ -1,0 +1,109 @@
+.lineOuter{
+  position: relative;
+  width: 96%;
+  left: 2%;
+  background-color: white;
+  .chartTitle{
+    position: absolute;
+    font-size: 20px;
+    line-height: 40px;
+    margin-left: 20px;
+  }
+  .changeButton{
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    float: right;
+    z-index: 99999;
+    .downBtn{
+      position: relative;
+      left: 20px;
+    }
+    :global{
+      .ant-btn-primary{
+        background-color: #6A6A6A;
+        color: #EFEFEF;
+        border: #6A6A6A solid 1px;
+        font-size: 15px;
+      }
+      .ant-btn-normal{
+        margin-left: 0.1px;
+        background-color: #FAFAFA;
+        color: #6A6A6A;
+        border: #6A6A6A solid 1px;
+        font-size: 15px;
+      }
+      .ant-btn:hover{
+        border: #6A6A6A solid 1px;
+        font-size: 15px;
+      }
+      .ant-btn:focus{
+        border: #6A6A6A solid 1px;
+        font-size: 15px;
+      }
+    }
+  }
+  .echart{
+    width: 100%;
+    text-align: left;
+    z-index: 9999;
+  }
+}
+
+//调分辨路
+// 800
+@media only screen and(min-width: 700px) and(max-width: 960px){
+  .lineOuter{
+    .echart{
+      width: 100%;
+    }
+  }
+}
+
+//1024
+@media only screen and(min-width: 961px)  and (max-width: 1100px){
+  .lineOuter{
+    .echart{
+      width: 100%;
+    }
+  }
+}
+
+//1240
+@media only screen and(min-width: 1101px)  and (max-width: 1315px){
+  .lineOuter{
+    .echart{
+      width: 100%;
+    }
+  }
+}
+
+//1366
+@media only screen and(min-width: 1316px)  and (max-width: 1389px){
+  .lineOuter{
+    .echart{
+      width: 100%;
+    }
+  }
+}
+
+//1440
+@media only screen and(min-width: 1390px) and (max-width: 1869px){
+  .lineOuter{
+    .echart{
+      width: 100%;
+    }
+  }
+}
+
+//1920
+@media only screen and(min-width: 1870px) {
+  .lineOuter{
+    .echart{
+      width: 100%;
+    }
+  }
+}
+
+
+

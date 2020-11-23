@@ -1,0 +1,201 @@
+.addWarningInput{
+  width: 158px;
+  min-width: 158px;
+  max-width: 158px;
+}
+.addWarningSelect{
+  z-index: 10001;
+  :global{
+    .ant-select-dropdown-menu-item:hover{
+      background-color: #C91717;
+      color: #fff;
+    }
+    .ant-select-dropdown-menu-item-active{
+      background-color: #C91717;
+      color: #fff;
+    }
+  }
+}
+.antdForm{
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.addWarning{
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  .popWrapper{
+    position: relative;
+    width: 100%;
+    height: 60%;
+    max-width: 950px;
+    max-height: 600px;
+    min-height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: white;
+    .title{
+      position: relative;
+      height: 40px;
+      padding-bottom: 10px;
+      width: 100%;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      .text{
+        margin-right: 50px;
+      }
+      .indexList{
+        height: 30px;
+      }
+      .icon{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+    .contentTop{
+      width: 100%;
+      height: 18%;
+      padding: 10px;
+      margin-bottom: 8px;
+      border: 1px solid rgba(242, 242, 242, 1);
+      box-shadow: 0 2px 3px rgba(188, 188, 188, 0.25);
+      display: flex;
+      flex-direction: column;
+      .contentTopTitle{
+        flex: 0 0 20px;
+        width: 100%;
+        line-height: 20px;
+        padding-left: 8px;
+        font-size: 14px;
+      }
+      .contentTopContent{
+        flex: 1;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .indexItem{
+          flex: 1;
+          text-align: center;
+          font-size: 12px;
+          .default{
+            color: #000;
+          }
+          .green{
+            color: #063;
+          }
+          .red{
+            color: #C91717;
+          }
+        }
+      }
+    }
+    .contentBottom{
+      width: 100%;
+      height: 58%;
+      padding: 10px;
+      border: 1px solid rgba(242, 242, 242, 1);
+      box-shadow: 0 2px 3px rgba(188, 188, 188, 0.25);
+      display: flex;
+      flex-direction: column;
+      .contentBottomTitle{
+        flex: 0 0 20px;
+        width: 100%;
+        line-height: 20px;
+        border-left: 2px solid #C91717;
+        padding-left: 8px;
+        font-size: 14px;
+      }
+      .contentBottomContent{
+        flex: 1;
+        overflow: auto;
+        .formInputItem{
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          justify-content: flex-start;
+          height: 40px;
+          margin: 5px 0;
+        }
+        .formAreaItem{
+          margin: 5px 0;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          height: 40px;
+        }
+        :global{
+          .ant-form-item-label{
+            width: 200px;
+          }
+        }
+      }
+    }
+    .footer{
+      width: 100%;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .button{
+        padding: 5px 40px;
+        font-size: 20px;
+        border-radius: 5px;
+        border: 1px solid #C91717;
+        background: #C91717;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+  :global{
+    .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-name {
+      float: left;
+      padding: 5px 0;
+      width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-cityList{
+      width: 188px;
+      height: 200px;
+      top:33px;
+    }
+    .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-cityFrame, .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-cityFrame{
+      width: 158px;
+      min-width: 158px;
+      max-width: 158px;
+    }
+    .antd-pro-components-until-pro-city-indexContainer{
+      font-size: 14px;
+    }
+    .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-cityUl li{
+      font-size: 14px;
+      height: 33px;
+      width: 70px;
+      line-height: 33px;
+    }
+    .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-triangle {
+      top: 12px;
+      right: 10px;
+    }
+  }
+}

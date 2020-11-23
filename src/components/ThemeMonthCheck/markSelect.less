@@ -1,0 +1,99 @@
+.indexScreen{
+  position: relative;
+  width: 300px;
+  height: 100%;
+  padding: 0 25px 0 10px;
+  background-color: #fff;
+  border: 1px dotted #a7a7a7;
+  text-align: center;
+  color:#666
+}
+.click{
+  position: relative;
+  width: 300px;
+  height: 100%;
+  padding: 0 10px 0 10px;
+  border: 1px dotted #a7a7a7;
+  text-align: center;
+  color: #fff;
+  background-color:#C91717;
+
+}
+.selected{
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.productIconCon {
+  cursor: pointer;
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  .triangle {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 7px solid #999;
+  }
+}
+.indexList{
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #FAFAFA;
+  overflow-y: auto;
+  z-index: 99;
+  box-shadow: 1px 1px 5px #e8dfdf;
+}
+.indexListNone{
+  display: none;
+}
+.indexListUl{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  li{
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    color: rgb(102,102,102);
+    padding-left: 20px;
+    line-height: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+  }
+  li:hover{
+    color: #fff;
+    background-color:#C91717;
+  }
+}
+
+@media only screen and (min-width: 1870px){
+  .indexList{
+    top:40px;
+  }
+  .indexListUl{
+    li{
+      height: 40px;
+    }
+  }
+  .productIconCon {
+    .triangle {
+      position: absolute;
+      top: 18px;
+      right: 10px;
+    }
+  }
+}

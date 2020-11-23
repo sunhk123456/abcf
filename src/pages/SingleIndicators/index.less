@@ -1,0 +1,227 @@
+.page {
+  background-color: white;
+  box-sizing: border-box;
+  border: 1px solid red;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  .title {
+    display: flex;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: #444;
+    margin-bottom: 10px;
+    div {
+      width: 30px;
+      height: 30px;
+      .icon {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+  header {
+    background-color: rgb(247, 247, 247);
+    height: 85px;
+    padding: 10px 80px 10px 12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .row1 {
+      width: 100%;
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      .item {
+        width: 300px;
+        display: flex;
+        font-weight: 400;
+        font-style: normal;
+        color: #666;
+
+        .option {
+          width: 70px;
+          height: 30px;
+          line-height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 10px;
+        }
+        .selected {
+          background-color: #FFF;
+          cursor: pointer;
+          flex: 1;
+          max-width: 270px;
+          height: 30px;
+          text-align: center;
+          line-height: 30px;
+          border: 1px dotted #C0C0C0;
+          border-radius: 3px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    .row2 {
+      width: 100%;
+      display: flex;
+      position: relative;
+      justify-content: flex-start;
+      align-items: center;
+      .rowTitle{
+        flex-basis: 70px;
+        min-width: 70px;
+        padding: 0 ;
+        margin: 0;
+      }
+      .rowContent{
+        flex: 1;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        li{
+          padding: 0;
+          margin: 0;
+          border-radius: 8px;
+          cursor: pointer;
+          min-width: 57px;
+          position: relative;
+          div.liText{
+            text-align: center;
+            position: relative;
+          }
+          div.liLine{
+            display: none;
+          }
+        }
+        li.active{
+          padding: 0 ;
+          margin: 0;
+          color: white;
+          //background:#C91717;
+          border-radius: 8px;
+          position: relative;
+          div.liLine{
+            display: block;
+            position: absolute;
+            top:0;
+            left: -3px;
+            width: 63px;
+            height: 100%;
+            background: #C91717;
+            color: #FFF;
+            border-radius: 8px;
+          }
+        }
+        li:hover{
+          padding: 0 ;
+          margin: 0;
+          color: #ccc;
+          border-radius: 8px;
+        }
+        li.active:hover{
+          padding: 0 ;
+          margin: 0;
+          color: white;
+          border-radius: 8px;
+        }
+      }
+    }
+    .button {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: 20px;
+      bottom: 8px;
+      div {
+        border: 1px solid #ccc;
+        text-align: center;
+        padding: 3px 5px;
+        font-size: 12px;
+        background: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+  .echartsTitle{
+    margin: 15px 0;
+    width: 100%;
+    position: relative;
+    .line{
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 10px;
+      height: 20px;
+      background: #C91717;
+    }
+    .name{
+      position: relative;
+      margin-left: 20px;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 18px;
+      color: #495667;
+    }
+    .singleEchartsSelect{
+      position: absolute;
+      height: 100%;
+      top: 0;
+      right: 20px;
+      span{
+        padding: 0 5px;
+        margin: 0 5px;
+        cursor: pointer;
+        border: 1px solid transparent;
+      }
+      .selectedType{
+        border: 1px solid #C91717;
+        color: #C91717;
+        border-radius: 3px;
+      }
+    }
+  }
+  .echarts{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(247, 247, 247);
+  }
+  .tableTitle{
+    margin: 15px 0;
+    width: 100%;
+    position: relative;
+    .line{
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 10px;
+      height: 20px;
+      background: #C91717;
+    }
+    .name{
+      position: relative;
+      margin-left: 20px;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 18px;
+      color: #495667;
+    }
+  }
+  .table{
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+  }
+}

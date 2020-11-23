@@ -1,0 +1,108 @@
+.indexContainer {
+  height: 32px;
+  display: inline-block;
+  line-height: 1.5;
+  box-sizing: border-box;
+  .proContent {
+    display: inline-block;
+    height: 100%;
+    margin-left: 10px;
+  }
+  .cityFrame {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 100%;
+    padding: 4px 11px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.65);
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  .FrameName {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .name {
+    float: left;
+    height: 32px;
+    line-height: 32px;
+  }
+  .triangle {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 7px solid #999;
+  }
+  .cityList {
+    width: 320px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    background-color: #fafafa;
+    color: #333;
+    height: 200px;
+    position: absolute;
+    //left: 42.4%;
+    //top: 34%;
+    border: 1px solid #d9d9d9;
+    z-index: 999;
+    border-radius: 5px;
+    white-space: normal;
+    float: left;
+  }
+  .cityUl {
+    padding: 0 10px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    font-size: 0;
+    text-align: left;
+    overflow-x: hidden;
+    overflow-y: auto;
+    li {
+      display: inline-block;
+      font-size: 13px;
+      height: 33px;
+      width: 70px;
+      border-radius: 10px;
+      text-align: center;
+      line-height: 33px;
+      cursor: pointer;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    li:hover {
+      color: #fff;
+      background-color: #c91717;
+    }
+  }
+}
+@media only screen and (min-width: 961px) and (max-width: 1100px) {
+  .indexContainer {
+  .cityFrame {
+    width: 200px;
+  }
+  }
+
+}
+@media only screen and (min-width: 700px) and (max-width: 960px) {
+  .indexContainer {
+    .cityFrame {
+      width: 150px;
+    }
+  }
+}

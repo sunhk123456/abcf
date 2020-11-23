@@ -1,0 +1,50 @@
+.main{
+  position: relative;
+  //width: 55%;
+  width: 65%;
+}
+.out{
+  font-size: 16px;
+  border: 1px solid #d9d9d9;
+  padding: 1%;
+  color: #999;
+  text-align: center;
+  cursor: pointer;
+  background: white;
+}
+.show{
+  //visibility: hidden;
+  display: none;
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #FAFAFA;
+  .ant-checkbox-wrapper{
+    font-weight:400;
+    margin-left: 3px;
+    .ant-checkbox-input{
+      margin: 4px;
+    }
+  }
+  .button{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    button{
+      margin-left: 10px;
+      background-color: #C91717;
+      color:#fff;
+      span{
+        margin: 0;
+      }
+    }
+  }
+
+}
+@media only screen and (min-width: 1316px) and (max-width: 1389px) {
+  .out {
+    font-size: 14px;
+  }
+
+}

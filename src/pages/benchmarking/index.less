@@ -1,0 +1,263 @@
+@font-family: "Microsoft YaHei";
+
+.benchMarking{
+  font-family: @font-family;
+  font-weight: 400;
+  font-size: 14px;
+}
+.markTitle{
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  .dayAndMonth{
+    margin-left: 10px;
+    font-size: 12px;
+    height: 15px;
+  }
+}
+.screen{
+  position: relative;
+  padding: 10px;
+  width: 98.5%;
+  background-color: #fafafa;
+  display:flex;
+  align-items: center;
+  flex-direction:row;
+  justify-content:space-between;
+  :global{
+    .antd-pro-components-benchmarking-composite-index-list-bmIndexList,.antd-pro-components-benchmarking-benchmark-area-bmArea,.antd-pro-components-benchmarking-regional-area-outerArea{
+      width: 20%;
+      height: 30px;
+    }
+  }
+}
+.monthDate{
+  width: 22%;
+  height: 30px;
+  :global{
+    .ant-input{
+      cursor: pointer;
+      height: 28px;
+    }
+  }
+}
+.btn{
+  display: flex;
+  align-items: center;
+  .search{
+    cursor: pointer;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .downLoad{
+    cursor: pointer;
+    margin-left: 8px;
+    padding: 0 10px;
+    .downloadImg{
+      width: 15px;
+      height: 15px;
+      position: relative;
+      top: -2px;
+      left: -2px;
+    }
+    .downloadWord{
+      position: relative;
+    }
+  }
+}
+
+.template{
+  width: 92%;
+  .templateTitle{
+    margin: 20px 0;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+:global{
+  .ant-btn-primary, .ant-btn-primary:hover{
+    background-color: #c91717;
+    border-color: #c91717;
+    color: #fff;
+  }
+}
+.tableAction{
+  cursor: pointer;
+  padding: 0 5px;
+  color: #c91717;
+}
+.tableAction:hover{
+  color: #c91717;
+}
+.tableName{
+  cursor: pointer;
+  border-bottom: 1px solid #333;
+}
+.rowDouble{
+  background: #F0F3F7;
+}
+.rowSingle{
+  background: #fff;
+}
+//  1024分辨率
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+  .benchMarking{
+    :global{
+      .ant-calendar-picker{
+        width: 60%;
+      }
+      .ant-calendar-picker-input{
+        font-size: 13px;
+        height:28px;
+      }
+    }
+    .markTitle {
+      font-size: 20px;
+    }
+  }
+  .btn{
+    .search{
+      font-size: 12px;
+    }
+    .downLoad{
+      font-size: 12px;
+      .downloadImg{
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+  :global{
+    .ant-calendar-month-calendar-content{
+      font-size: 11px;
+    }
+    .ant-calendar-month-panel-month{
+      width: 50px;
+      height: 28px;
+      line-height: 30px;
+    }
+    .ant-calendar{
+      width:210px;
+    }
+    .ant-calendar-month .ant-calendar-month-header-wrap{
+      height: 235px;
+    }
+  }
+  .template{
+    .templateTitle{
+      font-size: 18px;
+    }
+    :global{
+      .ant-table{
+        font-size: 12px;
+      }
+    }
+  }
+}
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 960px) {
+  .benchMarking {
+    font-size: 10px;
+
+    :global {
+      .ant-calendar-picker {
+        width: 65%;
+        font-size: 10px;
+      }
+
+      .ant-calendar-picker-input {
+        font-size: 12px;
+        height: 28px;
+      }
+    }
+
+    .markTitle {
+      font-size: 16px;
+    }
+
+    .btn {
+      .search {
+        font-size: 10px;
+        height: 26px;
+      }
+      .downLoad {
+        font-size: 10px;
+        height: 26px;
+        .downloadImg{
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+
+  }
+  :global{
+    .ant-calendar-month-calendar-content{
+      font-size: 11px;
+    }
+    .ant-calendar-month-panel-month{
+      width: 50px;
+      height: 28px;
+      line-height: 30px;
+    }
+    .ant-calendar{
+      width:210px;
+    }
+    .ant-calendar-month .ant-calendar-month-header-wrap{
+      height: 235px;
+    }
+  }
+  .template{
+    .templateTitle{
+      font-size: 16px;
+    }
+    :global{
+      .ant-table{
+        font-size: 12px;
+      }
+    }
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .screen{
+    :global{
+      .antd-pro-components-benchmarking-composite-index-list-bmIndexList,.antd-pro-components-benchmarking-benchmark-area-bmArea,.antd-pro-components-benchmarking-regional-area-outerArea{
+        height: 40px;
+      }
+    }
+  }
+  .markTitle{
+    font-size: 25px;
+  }
+ //.tableData{
+   :global{
+     .ant-table-content{
+       font-size: 16px;
+     }
+   }
+//}
+  .monthDate{
+    height: 40px;
+    font-size: 20px;
+    :global{
+      .ant-input{
+        height: 40px;
+      }
+    }
+  }
+  .btn{
+    .search{
+      font-size: 18px;
+    }
+    .downLoad{
+      font-size: 18px;
+      .downloadImg{
+        width: 17px;
+        height: 17px;
+      }
+    }
+  }
+}

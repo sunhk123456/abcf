@@ -1,0 +1,98 @@
+@color-e6e7ea: #e6e7ea;
+@color-red: #C91717;
+.layoutModel{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1002;
+  .popSelectType{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 60%;
+    max-width: 700px;
+    max-height: 400px;
+    min-height: 355px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+  }
+  .title{
+    width: 100%;
+    flex-basis: 30px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+  .content{
+    width: 100%;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  .row{
+    height: 50px;
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    //justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px white solid;
+  }
+
+  //.row:hover{
+  //  border-color: @color-red;
+  //}
+
+  .column{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 33.3%;
+    padding: 5px;
+    background-color: @color-e6e7ea;
+    border-right: 5px white solid;
+  }
+  .column:last-child{
+    //padding-right: 0;
+    border-right: 0;
+  }
+  .redIcon{
+    width: 7px;
+    height: 14px;
+    margin: 0 8px;
+    display: inline-block;
+    background-color: @color-red;
+  }
+
+  .btnContent{
+    width: 100%;
+    flex-basis: 50px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  .btnStyle{
+    margin-left: 30px;
+  }
+}

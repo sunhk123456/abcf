@@ -1,0 +1,9 @@
+/functions/mock/**
+/scripts
+/config
+/src/icon/Icons/**
+/src/layouts/BasicLayout.js
+/src/utils/cookie.js
+/pdfServer/**
+/pdfServer.js
+/src/resource/**

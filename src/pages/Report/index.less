@@ -1,0 +1,70 @@
+/**
+ * title: index
+ * description:
+ * @author: zhaidengke
+ * @date 2019/1/17 0017
+ */
+@import '~antd/lib/style/themes/default.less';
+
+.reportTabs {
+  :global {
+    .ant-tabs-nav .ant-tabs-tab-active {
+      color: #C91717;
+      font-weight: 500;
+    }
+    .ant-tabs-nav-container {
+      font-size: 16px;
+    }
+    .ant-tabs-ink-bar {
+      background-color: #C91717;
+    }
+    .ant-tabs-nav .ant-tabs-tab:hover {
+      color: rgba(0,0,0,.65);
+    }
+    .ant-tabs-bar {
+      border-bottom: 1px solid #cfcfcf;
+      margin: 0 0 0 0
+    }
+  }
+
+  .emptyDiv{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img{
+      margin-bottom: 10px;
+    }
+  }
+  .list {
+    :global {
+      .ant-spin-container {
+        border-top: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
+      }
+
+    }
+
+  }
+  .rightContent{
+    padding-left: 50px;
+    box-sizing: border-box;
+  }
+
+}
+
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .reportTabs {
+    :global{
+      .ant-tabs-tab{
+        font-size: 22px;
+      }
+      .ant-btn{
+        font-size: 20px;
+      }
+    }
+  }
+}

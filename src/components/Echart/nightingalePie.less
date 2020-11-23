@@ -1,0 +1,34 @@
+.nightingalePieCss {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .echart {
+    width: 100%;
+    height: 100%;
+  }
+  .downloadName{
+    position: absolute;
+    top:5px;
+    right: 5px;
+    z-index: 10;
+    :global{
+      .ant-btn > .anticon + span, .ant-btn > span + .anticon{
+        margin: 0;
+      }
+      .ant-btn-sm {
+        padding: 0 4px;
+        font-size: 12px;
+        height: 20px;
+      }
+      .ant-btn{
+        height: 25px;
+        padding: 0 7px;
+      }
+      .ant-btn-lg {
+        font-size: 18px;
+        height: 35px;
+        padding: 0 10px;
+      }
+    }
+  }
+}

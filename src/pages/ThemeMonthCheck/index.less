@@ -1,0 +1,409 @@
+.page{
+  //border:1px solid red;
+  width: 100%;
+  height: 100%;
+  .header {
+    font-size: 20px;
+    padding: 10px 0;
+    .title {
+      font-weight: 400;
+    }
+  }
+  .analysisImgs{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+  .CityCompRanking{
+    width: 100%;
+  }
+}
+.tabBody{
+  width: 100%;
+}
+.tabClassName{
+  width: 100%;
+  font-size: 17px;
+  border-bottom: 1px solid #cfcfcf;
+  .tableClassName{
+    td{
+      padding: 0 10px;
+      div{
+        height: 40px;
+        cursor:pointer;
+        text-align: center;
+        line-height: 40px;
+      };
+    }
+  }
+  .bottomLine{
+    color: #c91717;
+    border-bottom:3px solid #c91717;
+  }
+}
+.clear{
+  clear: both;
+}
+.item {
+  width:400px;
+  float: left;
+  // overflow: hidden;
+  display: flex;
+  font-weight: 400;
+  font-style: normal;
+  color: #666;
+  margin-bottom: 20px;
+  position: relative;
+  left:145px;
+  font-size: 16px;
+  .option {
+    width: 30%;
+    height: 100%;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+
+  }
+}
+.item1 {
+  width:400px;
+  // overflow: hidden;
+  display: flex;
+  font-weight: 400;
+  font-style: normal;
+  color: #666;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  left:60px;
+  font-size: 16px;
+  .option {
+    width: 30%;
+    min-width: 50px;
+    height: 100%;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+
+  }
+}
+.item0{
+  width:300px;
+  float: left;
+  // overflow: hidden;
+  display: flex;
+  font-weight: 400;
+  font-style: normal;
+  color: #666;
+  //margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  left:60px;
+  .option {
+    width: 30%;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+}
+:global {
+  .ant-input{
+    border: 1px dotted #ccc;
+    border-radius: 0;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .ant-calendar-month-panel-year-select{
+    color: #fff;
+  }
+  .ant-calendar-month-panel-header,.ant-calendar-year-panel-header{
+    background: #c91717;
+    color: #fff;
+  }
+  .ant-calendar-year-panel-header .ant-calendar-year-panel-century-select, .ant-calendar-year-panel-header .ant-calendar-year-panel-decade-select, .ant-calendar-year-panel-header .ant-calendar-year-panel-year-select, .ant-calendar-year-panel-header .ant-calendar-year-panel-month-select{
+    color: #fff;
+  }
+  .ant-calendar-month-panel-header .ant-calendar-month-panel-century-select, .ant-calendar-month-panel-header .ant-calendar-month-panel-decade-select, .ant-calendar-month-panel-header .ant-calendar-month-panel-year-select, .ant-calendar-month-panel-header .ant-calendar-month-panel-month-select{
+    color: #fff;
+  }
+  .ant-calendar-header a:hover{
+    background: #c91717;
+    color: #fff;
+  }
+}
+.titleDetail{
+  z-index: 1001;
+  font-size: 13px;
+  padding: 5px;
+  background-color: #FBF8E7;
+  border: 1px solid #E1D8CA ;
+  position: relative;
+  top: 25px;
+  width: auto;
+  height:auto;
+}
+
+//xingxiaodong 2019.5.16 添加不同分辨率样式
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 960px){
+  .page{
+    :global{
+      .ant-input{
+        font-size: 12px;
+      }
+    }
+    //大标题样式
+    .header{
+      font-size: 16px;
+    }
+    // tab标题样式
+    .tabClassName{
+      font-size: 12px;
+    }
+    .tabBody{
+      .item{
+        width: 200px;
+        position: relative;
+        left:100px;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+      }
+      .item1{
+        width: 200px;
+        position: relative;
+        left:100px;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+      }
+      .item0{
+        width: 200px;
+        position: relative;
+        left:100px;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+// 1024 分辨率
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+  .page{
+    :global{
+      .ant-input{
+        font-size: 12px;
+      }
+    }
+    //大标题样式
+    .header{
+      font-size: 16px;
+    }
+    // tab标题样式
+    .tabClassName{
+      font-size: 12px;
+    }
+    .tabBody{
+      .item{
+        width: 200px;
+        position: relative;
+        left:100px;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+      }
+      .item1{
+        width: 200px;
+        position: relative;
+        left:100px;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+      }
+      .item0{
+        width: 200px;
+        position: relative;
+        left:100px;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+// 1280 分辨率
+@media only screen and (min-width: 1101px) and (max-width: 1315px){
+  .page{
+    :global{
+      .ant-input{
+        font-size: 14px;
+      }
+    }
+    //大标题样式
+    .header{
+      font-size: 16px;
+    }
+    // tab标题样式
+    .tabClassName{
+      font-size: 14px;
+    }
+    .tabBody{
+      .item{
+
+        position: relative;
+        left:100px;
+        font-size: 14px;
+        height: 30px;
+        line-height: 30px;
+      }
+      .item1{
+
+        position: relative;
+        left:100px;
+        font-size: 14px;
+        height: 30px;
+        line-height: 30px;
+      }
+      .item0{
+
+        position: relative;
+        left:100px;
+        font-size: 14px;
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+// 1366 分辨率
+@media only screen and (min-width: 1316px) and (max-width: 1389px){
+  .page{
+    :global{
+      .ant-input{
+        font-size: 14px;
+      }
+    }
+    //大标题样式
+    .header{
+      font-size: 18px;
+    }
+    // tab标题样式
+    .tabClassName{
+      font-size: 16px;
+    }
+    .tabBody{
+      .item{
+        position: relative;
+        left:100px;
+        font-size: 16px;
+        height: 30px;
+        line-height: 30px;
+      }
+      .item1{
+        position: relative;
+        left:100px;
+        font-size: 16px;
+        height: 30px;
+        line-height: 30px;
+      }
+      .item0{
+        position: relative;
+        left:100px;
+        font-size: 16px;
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+// 1440 分辨率
+@media only screen and (min-width: 1390px) and (max-width: 1869px){
+  .page{
+    :global{
+      .ant-input{
+        font-size: 16px;
+      }
+    }
+    //大标题样式
+    .header{
+      font-size: 18px;
+    }
+    // tab标题样式
+    .tabClassName{
+      font-size: 16px;
+    }
+    .tabBody{
+      .item{
+        position: relative;
+        left:100px;
+        font-size: 16px;
+        height: 30px;
+        line-height: 30px;
+      }
+      .item1{
+        position: relative;
+        left:100px;
+        font-size: 16px;
+        height: 30px;
+        line-height: 30px;
+      }
+      .item0{
+        position: relative;
+        left:100px;
+        font-size: 16px;
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .page{
+    :global{
+      .ant-input{
+        font-size: 20px;
+      }
+    }
+    //大标题样式
+    .header{
+      font-size: 22px;
+    }
+    // tab标题样式
+    .tabClassName{
+      font-size: 20px;
+    }
+    .tabBody{
+      .item{
+        position: relative;
+        left:100px;
+        font-size: 20px;
+        height: 40px;
+        line-height: 40px;
+      }
+      .item1{
+        position: relative;
+        left:100px;
+        font-size: 20px;
+        height: 40px;
+        line-height: 40px;
+      }
+      .item0{
+        position: relative;
+        left:100px;
+        font-size: 20px;
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+  }
+}

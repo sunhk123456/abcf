@@ -1,0 +1,74 @@
+.reportForms{
+  width: 100%;
+  .titleContent{
+    width: 100%;
+  }
+  .Row{
+    height: 100%;
+  }
+  .leftContent{
+    height: 100%;
+    //padding: 0 20px 0 0;
+  }
+  .echartPic{
+    height: 100%;
+    position: relative;
+    text-align: center;
+  }
+  .iconFont{
+    font-size: 70px;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    top: 50%;
+    margin-top: -35px;
+  }
+  .title{
+    font-size: 16px;
+    color: #4f4f4f;
+    border-bottom: 1px solid #4f4f4f; // 4.29 xingxiaodong 更改下划线
+    // text-decoration: underline ;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  .rowList{
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #8f8f8f;
+    font-size: 12px;
+    .colText{
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+  .moreBtn{
+    text-align: right;
+    cursor: pointer;
+    font-size: 12px;
+    color: #8f8f8f;
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .reportForms{
+    .title{
+      font-size: 21px;
+    }
+    :global(.ant-tag){
+      line-height: inherit;
+      font-size: 17px;
+    }
+    .rowList{
+      font-size: 18px;
+    }
+    .moreBtn{
+      font-size: 18px;
+    }
+    .iconFont {
+      font-size: 100px;
+      margin-left: -50px;
+      margin-top: -50px;
+    }
+  }
+}

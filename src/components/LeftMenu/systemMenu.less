@@ -1,0 +1,137 @@
+.systemMenu {
+  height: 100%;
+  .fold {
+    width: 44px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c91717;
+    .foldBtn {
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+      margin: 20px 0 10px 0;
+    }
+    .selectFoldItem {
+      background-color: #fff;
+    }
+    .foldMenuItem {
+      position: relative;
+      width: 44px;
+      height: 44px;
+      cursor: pointer;
+      padding: 10px;
+
+      .secondMenu {
+        width: 154px;
+        color: #fff;
+        position: absolute;
+        left: 45px;
+        top: 0;
+        padding: 5px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #c91717;
+        .secondMenuItem {
+          width: 100%;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .selSecondMenuItem {
+          background-color: #fff;
+          color: #c91717;
+        }
+      }
+    }
+  }
+  .firstMenuItem {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .submenuItemText {
+      margin-left: 10px;
+    }
+  }
+  .foldImg {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  .open {
+    width: 10vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c91717;
+    .closeBtn {
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+      margin-right: 10px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      align-self: flex-end;
+      transform: rotate(180deg);
+    }
+  }
+  :global {
+    .ant-menu-inline .ant-menu-item,
+    .ant-menu-inline .ant-menu-submenu-title {
+      width: 100%;
+      margin: 0 !important;
+      //padding-left: 10px !important;
+      //padding-right: 0 !important;
+      height: 44px !important;
+    }
+    .ant-menu-item {
+      background-color: #c91717;
+      color: #fff;
+    }
+    .ant-menu-vertical .ant-menu-submenu,
+    .ant-menu-vertical-left .ant-menu-submenu,
+    .ant-menu-vertical-right .ant-menu-submenu,
+    .ant-menu-inline .ant-menu-submenu {
+      padding: 0;
+    }
+    .ant-menu-submenu-arrow {
+      display: none;
+    }
+    .ant-menu-inline {
+      background-color: #c91717;
+    }
+    .ant-menu-submenu {
+      background-color: #c91717;
+      color: #fff;
+    }
+    .ant-menu-item:hover,
+    .ant-menu-submenu-title:hover {
+      background-color: #c91717;
+      color: #fff;
+    }
+    .ant-menu-sub.ant-menu-inline {
+      background-color: #c91717;
+      color: #fff;
+    }
+    .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+      background-color: #fff;
+      color: #c91717;
+    }
+    .ant-menu-item-selected:hover {
+      color: #c91717;
+    }
+    .ant-menu-item-selected::after {
+      display: none;
+    }
+    .ant-menu-inline,
+    .ant-menu-vertical,
+    .ant-menu-vertical-left {
+      border: none;
+    }
+  }
+}

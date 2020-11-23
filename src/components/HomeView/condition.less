@@ -1,0 +1,123 @@
+.condition{
+  padding: 10px 15px;
+  background-color: #f7f8fc;
+  display: flex;
+  flex-wrap: wrap;
+}
+.channelType{
+  //float: left;
+  height: 32px;
+  width: 25%;
+  margin:5px 0;
+  :global{
+    .ant-select{
+      width: 158px;
+      //border: 1px dotted #a7a7a7;
+    }
+    .ant-select-selection{
+      border: 1px dotted #a7a7a7;
+      border-radius:0;
+    }
+  }
+}
+.channelTypeSelectItme{
+  z-index: 10;
+  :global{
+    .ant-select-dropdown-menu-item:hover{
+      background-color: #C91717;
+      color: #fff;
+    }
+    .ant-select-dropdown-menu-item-active{
+      background-color: #C91717;
+      color: #fff;
+    }
+  }
+}
+.ProCityDiv{
+  //float: left;
+  height: 32px;
+  width: 50%;
+  margin:5px 0;
+}
+.dateDom{
+  //float: left;
+  margin:5px 0;
+ width: 25%;
+}
+.dateDropdown{
+  z-index: 10;
+}
+.queryDownload{
+  //float: right;
+  margin: 5px 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 20%;
+}
+
+.query,.download{
+  display: inline-block;
+  background-color: #fff;
+  border: 1px dotted #E1E1E1;
+  border-radius: 3px;
+  padding: 4px 10px;
+  cursor:pointer;
+  margin-left: 5px;
+}
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .channelType{
+    height: 40px;
+    font-size: 20px;
+    margin:5px 0;
+    :global{
+      .ant-select{
+        width: 240px;
+      }
+      .ant-input-number{
+        width: 240px;
+        font-size: 20px;
+      }
+      .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-name{
+        width: 95px;
+      }
+      .ant-form-item-label{
+        width: 95px;
+        >label{
+          font-size: 20px;
+        }
+      }
+      .ant-select-selection--single{
+        width: 240px;
+        height: 40px;
+        font-size: 20px;
+      }
+      .antd-pro-components-product-view-product-condition-productList{
+        .ant-select-selection--single{
+          width: 92%;
+        }
+      }
+      .ant-form-item-children{
+        >input{
+          width: 240px;
+          height: 40px;
+          font-size: 20px;
+        }
+      }
+      .ant-select-selection__placeholder{
+        line-height: 40px;
+        height: 40px;
+        top: 0;
+        margin-top: 0;
+      }
+    }
+  }
+  .dateDom{
+    width: 25%;
+    font-size: 20px;
+  }
+  .queryDownload{
+    font-size: 16px;
+    //width: 46.4%;
+  }
+}

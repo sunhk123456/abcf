@@ -1,0 +1,94 @@
+@color-F7F7F7: #F7F8Fc;
+@color-C91717: #C91717;
+.homeView{
+  .title{
+    font-size: 26px;
+    color: #444;
+  }
+  margin-bottom: 20px;
+  // 筛选条件部分div
+  .conditions{
+    width: 100%;
+    //height: 59px;
+    background-color: @color-F7F7F7;
+    margin-bottom: 10px;
+  }
+  //分地域家庭数量分布 家庭成员本/异网数量构成图 div
+  .chinaMapAndHomeMemberDiv{
+    width: 100%;
+    height: 481px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    //分地域家庭数量分布
+    .chinaMap{
+      width: 62%;
+      background-color: @color-F7F7F7;
+    }
+    // 家庭成员本/异网数量构成图 div
+    .homeMember{
+      width: 37%;
+      background-color: @color-F7F7F7;
+    }
+  }
+  // 家庭数量分布时间趋势图  分速率家庭数量
+  .timeLineAndRectDiv{
+    width: 100%;
+    height: 362px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    // 家庭数量分布时间趋势图
+    .timeLine{
+      width: 49.5%;
+      background-color: @color-F7F7F7;
+    }
+    // 分速率家庭数量
+    .rectDiv{
+      width: 49.5%;
+      background-color: @color-F7F7F7;
+    }
+  }
+  // 两个饼图 智能设备数量家庭分布+智能设备类型分布
+  .twoPiesDiv{
+    width: 100%;
+    height: 362px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    // 智能设备数量家庭分布
+    .smartHome{
+      width: 49.5%;
+      background-color: @color-F7F7F7;
+    }
+    // 智能设备类型分布
+    .smartType{
+      width: 49.5%;
+      background-color: @color-F7F7F7;
+    }
+  }
+  // 对比折线图+App偏好top10
+  .compareAndTop10Div{
+    width: 100%;
+    height: 362px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    // 对比折线图
+    .compare{
+      width: 49.5%;
+      background-color: @color-F7F7F7;
+    }
+    // App偏好top10
+    .top10{
+      width: 49.5%;
+      background-color: @color-F7F7F7;
+    }
+  }
+  .areaBarEchart{
+    width: 100%;
+    height: 362px;
+    background-color: @color-F7F7F7;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,367 @@
+.pageSelector{
+  :global{
+    .ant-select-tree li{
+      background-color: #FAFAFA;
+    }
+    .ant-select-tree-treenode-switcher-close{
+      margin: 1px 0;
+      .ant-select-tree-node-content-wrapper{
+        background-color: #FAFAFA;
+      }
+      .ant-select-tree-node-content-wrapper:hover{
+        background-color: #FAFAFA;
+      }
+      .ant-select-tree-node-content-wrapper-normal{
+        background-color: #FAFAFA;
+      }
+      .ant-select-tree-node-content-wrapper-normal:hover{
+        background-color: #FAFAFA;
+      }
+      .ant-select-tree-node-selected{
+        background-color: #FAFAFA !important;
+      }
+    }
+    .ant-select-tree-treenode-switcher-open{
+      margin: 1px 0;
+      .ant-select-tree-node-content-wrapper{
+        background-color: #FAFAFA;
+      }
+      .ant-select-tree-node-content-wrapper:hover{
+        background-color: #FAFAFA;
+      }
+      .ant-select-tree-node-content-wrapper-normal{
+        background-color: #FAFAFA;
+      }
+      .ant-select-tree-node-content-wrapper-normal:hover{
+        background-color: #FAFAFA;
+      }
+      .ant-select-tree-node-selected{
+        background-color: #FAFAFA !important;
+      }
+    }
+  }
+}
+.clickButton{
+  position: fixed;
+  right: 0;
+  bottom: 270px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: rgba(201,23,23,0.6);
+  z-index: 1001;
+  img{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 6.5px;
+  }
+}
+.problemFeedback_layout{
+    width: 600px;
+    height: 550px;
+    z-index: 110;
+    left: 100%;
+    overflow-y: hidden;
+    .problemFeedback_nav{
+      width: 100%;
+      height: 100%;
+      background-color: #FAFAFA;
+      border: 1px solid #E4E4E4;
+      .problemFeedback_title{
+        height: 7.5%;
+        padding: 1% 0 2% 4%;
+        border:1px solid #E4E4E4;
+        font-weight: 700;
+      }
+      .problemFeedback_warning{
+        height: 10%;
+        font-size: 12px;
+        margin: 2% 2% 4% 2%;
+        padding: 2%;
+        background-color: #FDE1DC;
+        span{
+          display: inline-block;
+          width: 80%;
+          height: 80%;
+        }
+        img{
+          width: 3%;
+          height: 66%;
+          float: right;
+          cursor: pointer;
+        }
+      }
+      .problemFeedback_pageChoose{
+        font-size: 12px;
+        height: 10%;
+        margin: 2%;
+        padding: 2%;
+        line-height: 30px;
+        border: 1px solid #E4E4E4;
+        cursor: pointer;
+        background-color: #fff;
+        .problemFeedback_pageChoose_one{
+          color: #C91717;
+          width: 85%;
+          display: inline-block;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow-x: hidden;
+        }
+        .problemFeedback_pageChoose_two{
+          float: right;
+          color: #CCC;
+        }
+      }
+      .problemFeedback_problemType{
+        height: 12.5%;
+        margin: -2% 0 2% 2%;
+        padding: 2%;
+        line-height: 30px;
+        .problemFeedback_problemType_table{
+          width: 100%;
+          margin-top: 7px;
+        }
+      }
+      .problemFeedback_problemContent{
+        height: 20%;
+        margin: 2% 2% 2% 2%;
+        width: 96%;
+        border: 1px solid #E4E4E4;
+        background-color: #FFF;
+      }
+      .problemFeedback_mesg{
+        padding: 0 2% 0 4%;
+        span{
+          color: #C91717;
+          font-weight: 700;
+        }
+        .problemFeedback_submit{
+          height: 6%;
+          width: 16%;
+          position: relative;
+          float: right;
+          border-radius: 9px;
+          background-color: #C91717;
+          color: #FAFAFA;
+          border: none;
+          outline: none;
+          cursor: pointer;
+        }
+      }
+      .problemFeedback_authInfo{
+        font-size: 12px;
+        height: 10%;
+        margin: 2% 2% 0 6%;
+        width: 92%;
+        .problemFeedback_authInfo_title{
+          display: block;
+          border-bottom: 1px solid #E4E4E4;
+          padding-bottom: 2%;
+        }
+        .problemFeedback_authInfo_name{
+          color: #C3C3C3;
+          padding-top: 2%;
+          display: inline-block;
+          margin-right: 12%;
+        }
+      }
+    }
+  }
+.problemFeedback_pages{
+  display: block;
+  position: fixed;
+  //bottom:100px;
+  right: 51px;
+  z-index: 100000;
+  width: 598px;
+  height: 450px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  box-shadow: #c0c0c0 1px 1px 1px 1px;
+  background-color: #FAFAFA;
+  :global{
+    .ant-select{
+      border: 0.5px solid #d9d9d9;
+      .ant-select-selection{
+        border-radius: 1.5px;
+      }
+    }
+    .ant-select-dropdown{
+      .ant-select-tree{
+        margin-top: 20px;
+      }
+    }
+    .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected{
+      background:none;
+    }
+  }
+  .problemFeedbackPagesTitle{
+    width: 100%;
+    height: 15%;
+    padding: 1% 2% 2% 2%;
+    .menuTitle{
+      margin-bottom: 1%;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .problemFeedbackSearch{
+      width: 20px;
+      height: 20px;
+      position: relative;
+      left: -16%;
+      cursor: pointer;
+    }
+    .problemFeedbackPageInput{
+      width: 45%;
+      height: 55%;
+      margin-right: 11%;
+      color: #ccc;
+      font-size: 12px;
+    }
+    .problemFeedbackPagesButton{
+      width: 10%;
+      height: 30px;
+      border-radius: 4px;
+      margin-left: 20px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+    .searchContent{
+      position: absolute;
+      z-index: 1002;
+      width: 63%;
+      height: 51%;
+      overflow: scroll;
+      background-color: #FFF;
+      top: 14%;
+      padding: 2% 0 0 0;
+      left: 2%;
+      p{
+        width: 500px;
+        cursor: pointer;
+        color: #666;
+        padding-left: 2%;
+      }
+      p:hover{
+        background-color: #C91717;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+  .menuList{
+    width: 100%;
+    height: 85%;
+    overflow-y: auto;
+    border: 1px solid #E7E7E7;
+  }
+}
+
+
+
+
+
+@media only screen and(min-width: 1399px)  and (max-width: 1869px){
+
+
+    .problemFeedback_layout{
+      .problemFeedback_nav{
+        font-size: 16px;
+        .problemFeedback_warning{
+          font-size: 14px;
+        }
+        .problemFeedback_pageChoose{
+          font-size: 14px;
+        }
+        .problemFeedback_authInfo{
+          font-size: 14px;
+        }
+      }
+    }
+  .problemFeedback_pages{
+    .problemFeedback_pages_title{
+      padding: 1% 2% 2% 3%;
+      .menu{
+        margin-bottom: 10px;
+      }
+    }
+    .problemFeedback_pages_content{
+      .contentNav{
+        .contentNavBg{
+          .nav_name{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+}
+@media only screen and(min-width: 1870px)  and (max-width: 2160px){
+
+    .problemFeedback_layout{
+      .problemFeedback_nav{
+        font-size: 18px;
+        .problemFeedback_warning{
+          padding: 1%;
+          font-size: 16px;
+          img{
+            height: 64%;
+            top: 20%;
+            position: relative;
+          }
+        }
+        .problemFeedback_pageChoose{
+          font-size: 16px;
+        }
+        .problemFeedback_authInfo{
+          font-size: 16px;
+        }
+      }
+    }
+  .problemFeedback_pages{
+    .problemFeedback_pages_title{
+      padding: 1% 2% 2% 5%;
+      .menu{
+        font-size: 16px;
+      }
+      .problemFeedback_pages_input{
+        font-size: 16px;
+      }
+      .problemFeedback_close{
+        top:8%;
+      }
+    }
+    .problemFeedback_pages_content{
+      .contentNav{
+        .contentNavBg{
+          .nav_name{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+.modelWarpper{
+  display: block;
+  position: fixed;
+  padding: 0;
+  right: 51px;
+  bottom:100px;
+
+  //width: 600px,
+  //padding:0px,
+  //display:block,
+  //position:'fixed',
+  //right:'51px',
+  //top:mainTop,
+  //overflow:"auto",
+}
+.none{
+  display: none;
+}

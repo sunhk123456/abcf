@@ -1,0 +1,132 @@
+@import '~@/utils/utils.less';
+@import '~@/components/DayOverView/earlyWarning.less';
+
+// 本月值智能预警样式
+.earlyTip();
+.overViewEarlyWarning();
+
+@color-red: #C91717;
+@color-666: #666;
+@color-green:rgb(51, 153, 0);
+
+.pointer{
+  cursor:pointer;
+}
+// 指标名称提示框
+.titleKpiDetail{
+  :global{
+    .ant-tooltip-arrow{
+      background-color: #fbefa1;
+      border-bottom-color: #f1bd5a;
+    }
+    .ant-tooltip-inner{
+      background-color: #fbefa1;
+      border: 1px solid #f1bd5a;
+      color: #000;
+    }
+  }
+}
+.drillDownTable{
+  width: 100%;
+
+  :global{
+    .ant-table-fixed-header .ant-table-scroll .ant-table-header{
+      overflow: hidden;
+      padding-right: 17px;
+    }
+    .ant-table-fixed-header > .ant-table-content > .ant-table-scroll > .ant-table-body{
+      margin-top: 14px;
+    }
+    .ant-table-thead > tr > th{
+      background-color: #fff;
+    }
+    .ant-table-thead > tr > th, .ant-table-tbody > tr > td{
+      padding: 5px;
+    }
+  }
+  thead{
+    tr th{
+      text-align: center;
+    }
+  }
+  tbody {
+    .trStyle {
+      background-color: #fafafa;
+      td {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 5px solid #fff;
+      }
+      td:first-child{
+        text-align: left;
+      }
+    }
+    .trStyle:hover td{
+      background-color: #f0f0f0;
+      //font-weight: 600;
+    }
+  }
+  .expandIcon{
+    :global{
+      .ant-table-row-expand-icon:after{
+        content: "";
+      }
+      .ant-table-row-expand-icon{
+        border: none;
+        background: none;
+      }
+    }
+  }
+  .titleContent{
+    position: relative;
+    display: inline-block;
+    .nameStyle{
+      cursor:pointer;
+      text-align: left;
+      color: #333;
+    }
+  }
+  .drillDown{
+    position: absolute;
+    height: 100%;
+    font-size: 15px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  .downArrowNoneStyle{
+    display: none;
+  }
+  .IconColor{
+    cursor: pointer;
+  }
+  .iconImg{
+    width: 15px;
+    height: 15px;
+  }
+  // 不变色
+  .classColordefault{
+    color:@color-666;
+    cursor: pointer;
+  }
+  // 红色-负值
+  .classColorred{
+    color: @color-red;
+    cursor: pointer;
+  }
+  // 绿色-正值
+  .classColorgreen{
+    color: @color-green;
+    cursor: pointer;
+  }
+
+  // 1920 分辨率
+  @media only screen and (min-width: 1870px){
+    :global {
+      .ant-table {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+

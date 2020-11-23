@@ -1,0 +1,177 @@
+@import '~@/utils/utils.less';
+.indexDetailBody{
+  .indexDetailName{
+    font-size: 28px;
+    display: inline-block;
+  }
+  .indexDetailAddWarning{
+    display: inline-block;
+    margin-left: 20px;
+    height: 25px;
+    width: 25px;
+  }
+  .indexDetailDesc{
+    font-size: 16px;
+    text-indent: 2em;
+    line-height: 30px;
+  }
+  .indexDetailUnit{
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .unitUl{
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #d8d7d8;
+    border-radius: 4px;
+    li{
+      display: inline-block;
+      padding: 0 7px;
+      font-weight: 400;
+      font-size: 13px;
+      height: 22px;
+      line-height: 20px;
+      background: #f8f7f8;
+      cursor: pointer;
+      color: #C91717;
+      border-right: 1px solid #d8d7d8;
+    }
+    .active{
+      background: #C91717;
+      color: #fff;
+    }
+  }
+  .indexDetailCondition{
+    background-color: #FAFAFA;
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  .topContent{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .areaSelector{
+    display: inline-block;
+    width: 50%;
+    float: left;
+    zoom: 1;
+  }
+  .areaSelector:after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0
+  }
+
+  .dateSelector{
+    display: inline-block;
+    width: 50%;
+  }
+  .screenConditionContet{
+    position: relative;
+  }
+  .showScreenCondition{
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+  }
+  .showText{
+    color: #999;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .showTextIcon{
+    margin-left: 5px;
+  }
+  .screenConditionButton{
+    border: 1px solid #cfcfcf;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 3px 10px;
+    background-color: #fff;
+    font-size: 14px;
+    margin: 0 12px;
+  }
+  .screenConditionHide{
+    cursor: pointer;
+    width: 61px;
+    height: 27px;
+  }
+  .screenConditionNone{
+    display: none;
+  }
+  .indexDetailLayOut{
+    .chartDiv{
+      height:350px; // 邢晓栋 2019.5.21修改echart图高度
+      background:#fafafa;
+      margin-top: 15px;
+      margin-bottom: -10px;
+    }
+  }
+  .indexDetailTable{
+    color: rgba(0,0,0,.65);
+    h2{
+      font-size: 20px;
+    }
+  }
+}
+
+//// 800 分辨率
+//@media only screen and (min-width: 700px) and (max-width: 960px){
+//
+//}
+//// 1024 分辨率
+//@media only screen and (min-width: 961px) and (max-width: 1100px){
+//
+//}
+//// 1280 分辨率
+//@media only screen and (min-width: 1101px) and (max-width: 1315px){
+//
+//}
+//// 1366 分辨率
+//@media only screen and (min-width: 1316px) and (max-width: 1389px){
+//
+//}
+//// 1440 分辨率
+//@media only screen and (min-width: 1390px) and (max-width: 1869px){
+//
+//}
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .indexDetailBody{
+    .showText{
+      font-size: 20px;
+    }
+    .screenConditionButton{
+      font-size: 20px;
+    }
+    .screenConditionHide{
+      width: 80px;
+      height: 35px;
+    }
+    .dateSelector{
+      font-size: 20px;
+    }
+    .indexDetailDesc{
+      font-size: 20px;
+    }
+    .unitUl{
+      li{
+        font-size: 20px;
+      }
+    }
+    .indexDetailLayOut{
+      .chartDiv{
+        height:400px;
+      }
+    }
+    .indexDetailTable{
+      h2{
+        font-size: 25px;
+      }
+    }
+  }
+}

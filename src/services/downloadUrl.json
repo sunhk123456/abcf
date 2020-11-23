@@ -1,0 +1,30 @@
+{
+  "urls": [
+    {
+      "num":"0",
+      "url": "/home/lf_dw3_web/frontend_6068/newSpark/pdfServer/download/",
+      "title": "报告存放地址路径"
+    },
+    {
+      "num":"1",
+      "url": "http://10.244.4.185:6069",
+      "title": "报告预览地址"
+    },
+    {
+      "num":"2",
+      "url": "/home/lf_dw3_web/frontend_6068/newSpark/download/",
+      "title": "当前下载存放地址"
+    },
+    {
+      "num":"3",
+      "url": "http://10.244.4.185:6068/download/",
+      "title": "当前前端服务器地址"
+    },
+    {
+      "num":"4",
+      "url": "http://10.249.216.50:9094",
+      "title": "websoket连接"
+    }
+
+  ]
+}

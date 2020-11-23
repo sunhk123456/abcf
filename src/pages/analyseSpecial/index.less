@@ -1,0 +1,261 @@
+.analyseSpecial{
+  .titleDiv{
+    font-size:16px;
+    padding:10px 10px 10px 0;
+    display:inline-block;
+  }
+  .title {
+    font-size: 17px;
+    padding: 10px 10px 10px 0;
+    display: inline-block;
+  }
+  .indexConfig{
+    position: relative;
+  }
+  .tableName{
+    float: left;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .indexConfigCom{
+    float: right;
+  }
+  .indexConfig:after{
+    content: "";
+    display: block;
+    height: 0;
+    clear:both;
+    visibility: hidden;
+  }
+  .table{
+    margin-top: 5px;
+  }
+  .iconRed{
+    position: absolute;
+    width: 5px;
+    height: 16px;
+    top:5px;
+    background-color: #C91717;
+  }
+  .titleIcon{
+    font-size:21px;
+    cursor:pointer;
+  }
+  .iconContent{
+    z-index: 100;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 25px;
+    left: 100%;
+    font-size: 13px;
+    padding: 5px;
+    background-color: #fbf8e7;
+    border: 1px solid #e1d8ca;
+    width: 172px;
+  }
+  .disable {
+    position: fixed;
+    display: none;
+    height: 85%;
+    width: 85%;
+  }
+  .closePop {
+    position: fixed;
+    top: 15%;
+    height: 85%;
+    width: 85%;
+    right: -90%;
+    z-index: 10;
+    background-color: #fff;
+    -webkit-box-shadow: -7px -6px 6px -7px rgba(0,0,0,0.29);
+    -moz-box-shadow: -7px -6px 6px -7px rgba(0,0,0,0.29);
+    box-shadow: -7px -6px 6px -7px rgba(0,0,0,0.29);
+    .chartPop {
+      position: absolute;
+      right: -1%;
+      top: 15%;
+      width: 64px;
+      height: 64px;
+      z-index: 10;
+      background-color: rgb(223, 116, 116);
+      cursor: pointer;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .popPageWrapper{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 70px 20px 20px 10px;
+      background: #F6F6F6;
+      .popTitle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        color: #999;
+        padding: 5px 10px;
+        background: #f6f6f6;
+        z-index: 2;
+        .popTitleContent{
+          width: 100%;
+          padding: 0 0 0 20px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          background: #fff;
+        }
+      }
+      .popPage{
+        width: 100%;
+        height: 100%;
+        padding: 60px 10px 10px 10px;
+        overflow: auto;
+      }
+    }
+  }
+  .openPop {
+    position: fixed;
+    right: 1%;
+    top: 15%;
+    z-index: 10; // 原值100 风信子修改为10 处理菜单层级问题
+    width: 85%;
+    height: 85%;
+    background-color: #fff;
+    -webkit-box-shadow: -7px -6px 6px -7px rgba(0,0,0,0.29);
+    -moz-box-shadow: -7px -6px 6px -7px rgba(0,0,0,0.29);
+    box-shadow: -7px -6px 6px -7px rgba(0,0,0,0.29);
+    .chartPop {
+      position: absolute;
+      right: -1.5%;
+      top: 15%;
+      width: 50px;
+      height: 50px;
+      border-radius: 2px;
+      z-index: 10;
+      padding: 5px;
+      background-color: rgb(223, 116, 116);
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .popPageWrapper{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: #F6F6F6;
+      .popTitle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        color: #999;
+        padding: 5px 10px;
+        background: #F6F6F6;
+        z-index: 2;
+        .popTitleContent{
+          width: 100%;
+          padding: 0 0 0 20px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+         //  background: #fff;
+        }
+      }
+
+      .popPage{
+        width: 100%;
+        height: 100%;
+        padding: 60px 10px 10px 10px;
+        overflow: auto;
+      }
+    }
+  }
+  .conditions{
+    margin: 10px 0;
+    position: relative;
+    z-index: 1;
+  }
+}
+:global{
+  .ant-calendar-picker-container{
+    z-index: 98;
+  }
+  .ant-select-dropdown{
+    z-index: 98;
+  }
+}
+
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 960px){
+
+}
+// 1024 分辨率
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+
+}
+// 1280 分辨率
+@media only screen and (min-width: 1101px) and (max-width: 1315px){
+
+}
+// 1366 分辨率
+@media only screen and (min-width: 1316px) and (max-width: 1389px){
+  .analyseSpecial{
+    .titleDiv{
+      font-size:20px;
+    }
+    .tableName{
+      font-size: 18px;
+    }
+    .iconRed{
+      height: 18px;
+    }
+  }
+
+}
+// 1440 分辨率
+@media only screen and (min-width: 1390px) and (max-width: 1869px){
+  .analyseSpecial{
+    .titleDiv{
+      font-size:20px;
+    }
+    .tableName{
+      font-size: 18px;
+    }
+    .iconRed{
+      height: 18px;
+    }
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .analyseSpecial{
+    .titleDiv{
+      font-size:26px;
+    }
+    .tableName{
+      font-size: 22px;
+      margin-left: 10px;
+    }
+    .iconRed{
+      width: 5px;
+      height: 20px;
+      top:5px;
+    }
+    .popTitleContent{
+      font-size: 20px;
+    }
+  }
+}
+

@@ -1,0 +1,197 @@
+@import '~@/utils/utils.less';
+@import '~@/components/DayOverView/earlyWarning.less';
+
+//指标异动样式引入
+.earlyTip();
+// 智能预警样式
+.overViewEarlyWarning();
+
+
+// 默认时1366、1440分辨率
+.outerbox{
+  font-family: 'Microsoft YaHei', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #f7f8fc;
+}
+.singleKpi{
+  position: relative;
+  height: 33%;
+  padding: 5px 10px;
+ // border-bottom: 1px solid red;
+}
+.singleKpi::after{
+  content: "";
+ position: absolute;
+  bottom: 0;
+  left: 10px;
+  display: block;
+  width: 85%;
+  height: 2px;
+  background-color: rgb(236,236,236);
+}
+.kpiName{
+   position: relative;
+   height: 37%;
+   font-size: 16px;
+   color: #66696E;
+ }
+.titleSpan{
+  cursor: pointer;
+  border-bottom: solid 1px #999;
+  padding-bottom: 4px;
+}
+.indexTable{
+  width: 100%;
+  height: 63%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #939393;
+}
+.monthSum{
+  width: 40%;
+  height: 100%;
+}
+.monthSumText{
+  text-align: left;
+  height: 30%;
+  margin-bottom: 5%;
+}
+.middleText{
+  text-align: center;
+  height: 30%;
+  margin-bottom: 5%;
+}
+.monthSumData{
+  color: #666;
+  text-align: left;
+}
+.monthSumNum{
+  font-size: 22px;
+  display: inline-block;
+  font-family: ArialMT,Arial;
+
+}
+.monthSumNumRight{
+  margin-right: 4%;
+}
+.monthSumUnit{
+  display: inline-block;
+  font-size: 17px;
+}
+.ringRating{
+  position: relative;
+  width: 30%;
+  height: 100%;
+  text-align: center;
+}
+.ringRating::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  display: block;
+  width: 2px;
+  height: 32px;
+  background-color: rgb(236,236,236);
+}
+.ringRatingData{
+  color: #666;
+  font-size: 22px;
+  text-align: center;
+  font-family: ArialMT,Arial;
+}
+.samerating{
+  position: relative;
+  width: 30%;
+  height: 100%;
+  text-align: center;
+}
+.samerating::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  display: block;
+  width: 2px;
+  height: 32px;
+  background-color: rgb(236,236,236);
+}
+.dataBlank{
+  color: #666;
+}
+.dataRed{
+  color: red;
+}
+.dateGreen{
+  color: #390;
+}
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 900px){
+  .outerbox{
+    font-size: 12px;
+  }
+  .kpiName{
+    font-size: 14px;
+  }
+  .monthSumUnit{
+    font-size: 14px;
+  }
+  .monthSumNum{
+    font-size: 14px;
+  }
+  .ringRatingData{
+    font-size: 14px;
+  }
+}
+// 1024 分辨率
+@media only screen and (min-width: 1000px) and (max-width: 1200px){
+  .outerbox{
+    font-size: 12px;
+  }
+  .kpiName{
+    font-size: 14px;
+  }
+  .monthSumUnit{
+    font-size: 14px;
+  }
+  .monthSumNum{
+    font-size: 14px;
+  }
+  .ringRatingData{
+    font-size: 14px;
+  }
+}
+
+// 1280 分辨率
+@media only screen and (min-width: 1025px) and (max-width: 1280px){
+  .outerbox{
+    font-size: 12px;
+  }
+  .monthSumUnit{
+    font-size: 16px;
+  }
+  .monthSumNum{
+    font-size: 20px;
+  }
+  .ringRatingData{
+    font-size: 18px;
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1871px) and (max-width: 2160px){
+  .outerbox{
+    font-size: 18px;
+  }
+  .kpiName{
+    font-size: 20px;
+  }
+  .monthSumUnit{
+    font-size: 18px;
+  }
+}

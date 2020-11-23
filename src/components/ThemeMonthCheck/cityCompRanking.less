@@ -1,0 +1,455 @@
+.proTable{
+  width: 100%;
+}
+.CityCompRanking{
+  width: 100%;
+  position: relative;
+  left: 30px;
+}
+.themeTitle {
+  font-weight: 400;
+  font-size: 20px;
+  width: 85%;
+  height: 40px;
+  color: #1e1e1e;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #c91717;
+}
+.item {
+  width: 33%;
+  // overflow: hidden;
+  display: flex;
+  font-weight: 400;
+  font-style: normal;
+  color: #666;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .option {
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+
+  .selected {
+    background-color: #FFF;
+    cursor: pointer;
+    flex: 1;
+    max-width: 158px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+:global {
+  .ant-input{
+    border: 1px dotted #ccc;
+    border-radius: 0;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .ant-calendar-month-panel-year-select{
+    color: #fff;
+  }
+  .ant-calendar-month-panel-header,.ant-calendar-year-panel-header{
+    background: #c91717;
+    color: #fff;
+  }
+  .ant-calendar-year-panel-header .ant-calendar-year-panel-century-select, .ant-calendar-year-panel-header .ant-calendar-year-panel-decade-select, .ant-calendar-year-panel-header .ant-calendar-year-panel-year-select, .ant-calendar-year-panel-header .ant-calendar-year-panel-month-select{
+    color: #fff;
+  }
+  .ant-calendar-month-panel-header .ant-calendar-month-panel-century-select, .ant-calendar-month-panel-header .ant-calendar-month-panel-decade-select, .ant-calendar-month-panel-header .ant-calendar-month-panel-year-select, .ant-calendar-month-panel-header .ant-calendar-month-panel-month-select{
+    color: #fff;
+  }
+  .ant-calendar-header a:hover{
+    background: #c91717;
+    color: #fff;
+  }
+}
+.cityCompRankDiv{
+  height: 590px;
+  border-right: solid 1px #cfcfcf;
+  float: left;
+  padding: 0 15px;
+}
+.colMd6{
+  float: left;
+  //width:50%;
+  padding: 0 15px;
+}
+.wsCityCompRanking {
+  float: left;
+}
+.wsCityCompRankingTableTd3Grade{
+  float: right;
+}
+.wsCityCompRankingTableTh{
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  color: #999;
+}
+.wsCityCompRankingTableImg1{
+  margin-left: 3px;
+  height: 15px;
+  width: 15px;
+}
+.wsCityCompRankingTableImg2{
+  height: 15px;
+  width: 15px;
+  padding: 2px;
+  margin-left: 3px;
+}
+.wsCityCompRankingTableImg3{
+  height: 15px;
+  width: 15px;
+  padding: 2px;
+  margin-left: 72px;
+}
+.wsCityCompRankingTableThText3{
+  margin-left: 55px;
+}
+.wsCityCompRankingTableTd3Rectangular{
+  height: 18px;
+  background-color: #BBE4F3;
+  float: left;
+  margin-top: 2px;
+}
+.wsCityCompRankingTableTd3RectangularChange{
+  height: 18px;
+  background-color: #b2bacb;
+  float: left;
+  margin-top: 2px;
+  border: solid 2px #cfd3df;
+}
+.wsCityCompRankingTableTr{
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  color: #666;
+  height: 34px;
+}
+@media only screen and (min-width: 750px) and (max-width: 960px){
+  .themeTitle{
+    font-size: 16px;
+  }
+  .wsCityCompRankingTableTh1{
+    width: 35px;
+  }
+
+  .wsCityCompRankingTableTh2{
+    width: 45px;
+  }
+
+  .wsCityCompRankingTableTh3{
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+  .themeTitle{
+    font-size: 16px;
+  }
+  .wsCityCompRankingTableTh1{
+    width: 40px;
+  }
+
+  .wsCityCompRankingTableTh2{
+    width: 50px;
+  }
+
+  .wsCityCompRankingTableTh3{
+    width: 260px;
+  }
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1315px){
+  .themeTitle{
+    font-size: 18px;
+  }
+  .wsCityCompRankingTableTh{
+    font-size: 14px;
+  }
+
+  .wsCityCompRankingTableTh1{
+    width: 50px;
+  }
+
+  .wsCityCompRankingTableTh2{
+    width: 100px;
+  }
+
+  .wsCityCompRankingTableTh3{
+    width: 260px;
+  }
+
+  .wsCityCompRankingTableImg1{
+    margin-left: 3px;
+    height: 23px;
+    width: 23px;
+  }
+  .wsCityCompRankingTableImg2{
+    height: 23px;
+    width: 23px;
+    padding: 2px;
+    margin-left: 3px;
+
+  }
+  .wsCityCompRankingTableImg3{
+    height: 23px;
+    width: 23px;
+    padding: 2px;
+    margin-left: 72px;
+  }
+
+  .wsCityCompRankingTableTr{
+    font-size: 14px;
+  }
+
+  .ws-cityCompRanking-tableTr-city{
+    font-size: 14px;
+  }
+
+}
+
+@media only screen and (min-width: 1316px) and (max-width: 1389px){
+  .themeTitle{
+    font-size: 18px;
+  }
+  .wsCityCompRankingTableTh{
+    font-size: 14px;
+  }
+
+  .wsCityCompRankingTableTh1{
+    width: 90px;
+  }
+
+  .wsCityCompRankingTableTh2{
+    width: 130px;
+  }
+
+  .wsCityCompRankingTableTh3{
+    width: 296px;
+  }
+
+  .wsCityCompRankingTableImg1{
+    margin-left: 3px;
+    height: 23px;
+    width: 23px;
+  }
+  .wsCityCompRankingTableImg2{
+    height: 23px;
+    width: 23px;
+    padding: 2px;
+    margin-left: 3px;
+
+  }
+  .wsCityCompRankingTableImg3{
+    height: 23px;
+    width: 23px;
+    padding: 2px;
+    margin-left: 72px;
+  }
+
+  .wsCityCompRankingTableTr{
+    font-size: 16px;
+
+  }
+
+  .ws-cityCompRanking-tableTr-city{
+    font-size: 16px;
+  }
+
+}
+
+@media only screen and (min-width: 1390px) and (max-width: 1869px){
+  .themeTitle{
+    font-size: 20px;
+  }
+  .wsCityCompRankingTableTh{
+    font-size: 14px;
+  }
+
+  .wsCityCompRankingTableTh1{
+    width: 90px;
+  }
+
+  .wsCityCompRankingTableTh2{
+    width: 130px;
+  }
+
+  .wsCityCompRankingTableTh3{
+    width: 296px;
+  }
+
+  .wsCityCompRankingTableImg1{
+    margin-left: 3px;
+    height: 23px;
+    width: 23px;
+  }
+  .wsCityCompRankingTableImg2{
+    height: 23px;
+    width: 23px;
+    padding: 2px;
+    margin-left: 3px;
+
+  }
+  .wsCityCompRankingTableImg3{
+    height: 23px;
+    width: 23px;
+    padding: 2px;
+    margin-left: 72px;
+  }
+
+  .wsCityCompRankingTableTr{
+    font-size: 16px;
+
+  }
+
+  .ws-cityCompRanking-tableTr-city{
+    font-size: 16px;
+  }
+
+}
+
+@media only screen and (min-width: 1870px) {
+
+  .themeTitle{
+    font-size: 22px;
+  }
+  .wsCityCompRankingTable{
+    margin-left: 85px;
+  }
+
+  .wsCityCompRankingTableTh{
+    font-size: 18px;
+  }
+
+  .wsCityCompRankingTableTd3RectangularChange{
+    height: 18px;
+  }
+
+  .wsCityCompRankingTableTh1{
+    width: 100px;
+  }
+
+  .wsCityCompRankingTableTh2{
+    width: 120px;
+  }
+
+  .wsCityCompRankingTableTh3{
+    width: 300px;
+  }
+
+  .wsCityCompRankingTableImg1{
+    margin-left: 3px;
+    height: 30px;
+    width: 30px;
+  }
+  .wsCityCompRankingTableImg2{
+    height: 30px;
+    width: 30px;
+    padding: 2px;
+    margin-left: 3px;
+
+  }
+  .wsCityCompRankingTableImg3{
+    height: 30px;
+    width: 30px;
+    padding: 2px;
+    margin-left: 72px;
+  }
+
+  .wsCityCompRankingTableTr{
+    font-size: 19px;
+    height: 40px;
+  }
+
+  .ws-cityCompRanking-tableTr-city{
+    font-size: 16px;
+  }
+
+  .ws-cityCompRanking-nextPage{
+    color: #666;
+    width: 200px;
+    text-align: right;
+    position: relative;
+    left: 85%;
+    top: 0;
+    font-size: 18px;
+  }
+  .city-comp-rank-div{
+    height: 690px;
+    border-right: solid 1px #cfcfcf;
+  }
+  .cityCompRankDiv{
+    height: 690px;
+    border-right: solid 1px #cfcfcf;
+  }
+  .wsCityCompRankingContent{
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+}
+
+
+
+//@media only screen and (min-width: 1101px) and (max-width: 1315px){
+//.themeTitle{
+//  font-size: 18px;
+//}
+//.wsCityCompRankingTableTh{
+//  font-size: 14px;
+//}
+//.wsCityCompRankingTableTh1{
+//  width: 80px;
+//}
+//
+//.wsCityCompRankingTableTh2{
+//  width: 125px;
+//}
+//
+//.wsCityCompRankingTableTh3{
+//  width: 290px;
+//}
+//
+//.wsCityCompRankingTableImg1{
+//  margin-left: 3px;
+//  height: 23px;
+//  width: 23px;
+//}
+//.wsCityCompRankingTableImg2{
+//  height: 23px;
+//  width: 23px;
+//  padding: 2px;
+//  margin-left: 3px;
+//
+//}
+//.wsCityCompRankingTableImg3{
+//  height: 23px;
+//  width: 23px;
+//  padding: 2px;
+//  margin-left: 72px;
+//}
+//
+//.wsCityCompRankingTableTr{
+//  font-size: 16px;
+//}
+//
+//.ws-cityCompRanking-tableTr-city{
+//  font-size: 16px;
+//}
+//
+//}

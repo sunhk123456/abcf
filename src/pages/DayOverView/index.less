@@ -1,0 +1,95 @@
+.dayOverViewHeader{
+  width: 98%;
+  //margin-top: 2%;
+}
+.contentTop{
+  width: 98%;
+  height: 320px;
+  //height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1%;
+}
+.mapAndBar{
+  width: 59.2%;
+  height: 100%;
+  background-color: #f7f8fc;
+  border-top: 4px solid #EBEBEB;
+  padding-left: 25px;
+}
+.indexTable{
+  width: 40%;
+  height: 100%;
+  background-color: #f7f8fc;
+  border-top: 4px solid #EBEBEB;
+}
+.contentBottom,.bottom{
+  width: 98%;
+  height:270px;
+  //height: 40%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.mixEchartLeft{
+  width: 49.6%;
+  height: 100%;
+  background-color: #f7f8fc;
+  border-top: 4px solid #EBEBEB;
+}
+.mixEchartRight{
+  width: 49.6%;
+  height: 100%;
+  background-color: #f7f8fc;
+  border-top: 4px solid #EBEBEB;
+}
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 900px){
+  .contentTop{
+    height: 324px;
+  }
+
+  .mapAndBar{
+    padding: 0 10px;
+  }
+}
+
+// 1024 分辨率
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+  .contentTop{
+    height: 324px;
+  }
+}
+// 1280 分辨率
+@media only screen and (min-width: 1101px) and (max-width: 1315px){
+  .contentTop{
+    height: 324px;
+  }
+}
+// 1366 分辨率
+@media only screen and (min-width: 1316px) and (max-width: 1389px){
+  .contentTop{
+    height: 324px;
+  }
+}
+// 1440 分辨率
+@media only screen and (min-width: 1390px) and (max-width: 1869px){
+  .contentTop{
+    height: 344px;
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1871px) and (max-width: 2160px){
+  .dayOverViewHeader{
+    margin-bottom: 10px;
+  }
+  .contentTop{
+    height: 420px;
+  }
+  .contentBottom,.bottom{
+    height:340px;
+  }
+}

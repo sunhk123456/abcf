@@ -1,0 +1,67 @@
+.nameList {
+  width: 100%;
+  .specialName {
+    font-size: 26px;
+    color: #000;
+  }
+  .header {
+    width: 100%;
+    height: 150px;
+    padding-top: 25px;
+  }
+  .condition {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .firstRow{
+    margin-top: 20px;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .mapWrapper{
+      position: relative;
+      height: 100%;
+      width: 59%;
+      background: #f7f8fc;
+      .buttonWrapper{
+        z-index: 1;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    }
+    .incomePie{
+      height: 100%;
+      width: 39%;
+      background: #f7f8fc;
+    }
+  }
+  .secondRow{
+    margin: 20px 0;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .lineChart{
+      position: relative;
+      width: 45%;
+      height:100%;
+      background: #f7f8fc;
+      .lineChartButtonWrapper{
+        z-index: 10;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    }
+    .pieChart{
+      width: 53%;
+      height:100%;
+      background: #f7f8fc;
+    }
+  }
+
+}

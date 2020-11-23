@@ -1,0 +1,65 @@
+
+
+
+  // 指标详细解释弹窗“取消”按钮的样式
+  .modalCancelDiv{
+    :global{
+      .ant-btn {
+        color: #fff;
+        background-color: #C91717;
+        border-color: #C91717;
+      }
+    }
+  }
+  // 隔行变色
+  .lightRow {
+    background-color: #F0F3F7;
+  }
+  .darkRow {
+    background-color: #F9F9F9;
+  }
+
+  .tableDiv{
+    max-height: 360px;
+    overflow-y:auto;
+  }
+
+
+@media only screen and(max-width: 1869px){
+  .wrapModal{
+    :global{
+        .ant-modal-title{
+          text-align: left;
+        }
+    }
+  }
+}
+
+@media only screen and(min-width: 1370px){
+    .tableDiv{
+      max-height: 460px;
+      overflow-y:auto;
+    }
+  }
+@media only screen and(min-width: 1870px){
+  .wrapModal {
+    :global {
+        .ant-modal-title {
+          font-size: 21px;
+          color: #666;
+          text-align: left;
+        }
+    }
+    th{
+      font-size: 18px;
+    }
+    td{
+      font-size: 18px;
+    }
+  }
+  .tableDiv{
+    max-height: 560px;
+    overflow-y:auto;
+  }
+}
+

@@ -1,0 +1,556 @@
+@import '~antd/lib/style/themes/default.less';
+
+@nav-header-height: @layout-header-height;
+
+.logo {
+  height: @nav-header-height;
+  position: relative;
+  line-height: @nav-header-height;
+  padding-left: (@menu-collapsed-width - 32px) / 2;
+  transition: all 0.3s;
+  //background: #002140;
+  overflow: hidden;
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 32px;
+  }
+  h1 {
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    margin: 0 0 0 12px;
+    font-family: Avenir, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+}
+
+.sider {
+  height: auto;
+  position: relative;
+  //z-index: 100; // 修改 分辨率1366*768，小智与菜单互相遮挡
+  z-index: 1000;
+  &.fixSiderbar {
+    position: fixed;
+    top: 10vh;
+    left: 2.5vh;
+    :global(.ant-menu-root) {
+      overflow-y: auto;
+      //height: ~'calc(100vh - @{nav-header-height})';
+    }
+  }
+  &.light {
+    //box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05);
+    border: 1px solid #E7E7E7;
+    background-color: white;
+    .logo {
+      background: white;
+      box-shadow: 1px 1px 0 0 @border-color-split;
+      h1 {
+        color: @primary-color;
+      }
+    }
+    :global(.ant-menu-light) {
+      border-right-color: transparent;
+    }
+  }
+}
+
+.icon {
+  width: 14px;
+  margin-right: 10px;
+}
+
+:global {
+  .top-nav-menu li.ant-menu-item {
+    height: @nav-header-height;
+    line-height: @nav-header-height;
+  }
+  .drawer .drawer-content {
+    //background: #001529;
+  }
+  .ant-menu-inline-collapsed {
+    & > .ant-menu-item .sider-menu-item-img + span,
+
+      > .ant-menu-item-group
+      > .ant-menu-item-group-list
+      > .ant-menu-item
+      .sider-menu-item-img
+      + span,
+    & > .ant-menu-submenu > .ant-menu-submenu-title .sider-menu-item-img + span {
+      max-width: 0;
+      display: inline-block;
+      opacity: 0;
+    }
+  }
+  .ant-menu-item .sider-menu-item-img + span,
+  .ant-menu-submenu-title .sider-menu-item-img + span {
+    transition: opacity 0.3s @ease-in-out, width 0.3s @ease-in-out;
+    opacity: 1;
+  }
+  .ant-drawer-left {
+    .ant-drawer-body {
+      padding: 0;
+    }
+  }
+}
+
+.menuStyle{
+  background-color: #F7F8FC;
+}
+
+.MenuItem{
+  border: 1px solid #E7E7E7;
+  //line-height: 5.5vh;
+  //text-align: center;
+}
+.MenuItemImg{
+  width: 27px;
+  margin-right: 10%;
+  //margin: 8px
+}
+.OneTitle{
+  border-bottom: 1px solid #ededed;
+  padding: 1.5vh 0;
+  display: flex;
+  height: 10%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.hotTitle{
+  margin-left: 2%;
+  //padding: 8px 10px 8px 15px;
+  color: #C91717;
+}
+.twoTitle{
+  color: #999;
+  text-align:center;
+  line-height: 5vh;
+  cursor: pointer;
+  :hover{
+    color: #C91717;
+    text-align:center;
+  }
+}
+.hotitemTitle{
+  text-align: center;
+  margin-left: 2%;
+  cursor: pointer;
+  span{
+    padding: 5px;
+    background-color:#C91717;
+    color:#fff;
+  }
+}
+.MenuItemText{
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.menuTwo{
+  position: fixed;
+  left:11%;
+  top: 10vh;
+  display: none;
+}
+.menuNohot{
+  display: flex;
+  height: 100%;
+  width: 100%;
+ //  min-height: 400px;
+  overflow-y: hidden;
+  //position: absolute;
+  .itemThree{
+    width:15%;
+    overflow-y: auto;
+  }
+  :hover{
+    color: #C91717;
+  }
+  .otherThree{
+    width:85%;
+    overflow-y: auto;
+    position: relative;
+    border-left: 2px solid #e5e5e5;
+  }
+}
+.menuNoLineThree{
+  width:85%;
+  overflow-y: auto;
+  position: relative;
+  //border-left: 2px solid #e5e5e5;
+}
+.menuThree{
+  display: flex;
+  height: 90%;
+  width: 100%;
+  top: 10%;
+  background-color:#fafafa ;
+  overflow: auto;
+  //position: absolute;
+  :hover{
+    color: #C91717;
+  }
+  .itemThree{
+    width:20%; // 原先是15%
+    padding-bottom: 4px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .otherThree{
+    width:85%;
+    overflow-y: auto;
+    position: relative;
+    border-left: 2px solid #e5e5e5;
+  }
+}
+.threeIdoTitle{
+  color: #999;
+  border-bottom: 1px solid #ededed;
+  line-height: 5vh;
+  :hover{
+    color: #C91717;
+  }
+}
+.threeMore{
+  color: #C91717;
+  float: right;
+  cursor: pointer;
+  font-size: 15px;
+}
+.threeTitle{
+  padding: 0 1%;
+  color: #999;
+  border-bottom: 1px solid #ededed;
+}
+
+.hidethreeTitle{
+  display: none;
+}
+.showthreeTitle{
+  padding: 0 1%;
+  color: #999;
+  height: 100%;
+  .threeItems{
+    width: 25%;
+    height: 100%;
+    text-align: center;
+  }
+  .threeItemsNoleaf{
+    height: 100%;
+    text-align: center;
+  }
+  .threeItemtitle{
+    width: 80%;
+    height: 100%;
+    border-left: 2px solid #e5e5e5;
+  }
+}
+.threeOuter{
+  width:100%;
+}
+.threeDivider{
+  height:1.9em;
+  margin: 0 10px;
+}
+.fourDivider{
+  height: 100%;
+}
+.threetitleDivider{
+  height: 1.5em;
+  width: 1vh;
+  background-color: #C91717;
+}
+.threeColSpan{
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 5.5vh;
+
+}
+.threeColSpan2{
+  overflow-y: hidden;
+  max-height: 22vh;
+}
+.colSpan{
+  max-height: 100%;
+  //overflow-y: visible;
+  display: flex;
+  flex-wrap: wrap;
+  line-height:5.5vh;
+}
+.mouseHover{
+  display: flex;
+}
+.titleSpan{
+  font-size: 18px;
+  color: #495667;
+}
+.threeSpan{
+  color: #999;
+  cursor: pointer;
+  :hover{
+    color: #C91717;
+  }
+}
+.menuTwoshow{
+  overflow: auto;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 12%;
+  top: 10vh;
+  border: 1px solid #E7E7E7;
+  background-color: #fafafa;
+  font-size: 16px;
+  width: 57%;
+}
+.fourTypeTwo{
+  text-align: left;
+  line-height: 5vh;
+}
+.fourTitle{
+  display: flex;
+  text-align: center;
+  //justify-content: center;
+  justify-content: left;
+  line-height: 5vh;
+  cursor: pointer;
+  .threepaperSpan{
+    color:#999;
+    text-align: center;
+    :hover{
+      color: #C91717;
+    }
+  }
+  .hidefourMenu{
+    display: none;
+  }
+  .fiveMenu{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .fourMenu{
+    top: 0;
+    position: absolute;
+    width: 73%;
+    height: 100%;
+    left: 22%;
+    padding-left: 4%;
+  }
+}
+.MenuOver{
+  cursor:pointer;
+  text-align: center;
+  line-height: 5.7vh;
+  color:#333;
+  :hover{
+    color: #fff;
+    background-color: #C91717;
+  }
+}
+
+ // 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 960px){
+  .MenuItemText{
+   font-size: 12px;
+  }
+  .MenuItemImg{
+    width: 17px;
+    margin-bottom: 2px;
+  }
+  .MenuOver{
+    cursor:pointer;
+    line-height: 5vh;
+  }
+  :global(aside.ant-layout-sider-collapsed .ant-layout-sider-below){
+    min-width: 85px;
+    width: 85px;
+  }
+
+  //二级菜单样式
+  .menuTwoshow{
+    font-size: 12px;
+  }
+  .hotitemTitle{
+    text-align: center;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    cursor: pointer;
+    span{
+      padding: 2px;
+      background-color:#C91717;
+      color:#fff;
+    }
+  }
+  //三级菜单样式
+  .menuNohot{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    //position: absolute;
+    .itemThree{
+      width:20%; //原先15%
+    }
+    :hover{
+      color: #C91717;
+    }
+    .otherThree{
+      width:85%;
+      overflow-y: auto;
+      position: relative;
+      border-left: 2px solid #e5e5e5;
+    }
+  }
+  .titleSpan{
+    font-size: 15px;
+  }
+}
+ //1024 分辨率
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+  .MenuItemText{
+    font-size: 14px;
+  }
+  .MenuItemImg{
+    width: 17px;
+    margin-bottom: 2px;
+  }
+  .MenuOver{
+    cursor:pointer;
+    line-height: 5vh;
+  }
+  :global(aside.ant-layout-sider-collapsed .ant-layout-sider-below){
+    min-width: 85px;
+    width: 85px;
+  }
+
+  //二级菜单样式
+  .menuTwoshow{
+    font-size: 14px;
+  }
+  .hotitemTitle{
+    text-align: center;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    cursor: pointer;
+    span{
+      padding: 2px;
+      background-color:#C91717;
+      color:#fff;
+    }
+  }
+  //三级菜单样式
+  .menuNohot{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    //position: absolute;
+    .itemThree{
+      width:20%; //原先15%
+    }
+    :hover{
+      color: #C91717;
+    }
+    .otherThree{
+      width:85%;
+      overflow-y: auto;
+      position: relative;
+      border-left: 2px solid #e5e5e5;
+    }
+  }
+  .titleSpan{
+    font-size: 15px;
+  }
+}
+// 1280 分辨率
+@media only screen and (min-width: 1101px) and (max-width: 1315px){
+  .MenuItemText{
+    font-size: 16px;
+  }
+  .MenuItemImg{
+    width: 19px;
+    margin-bottom: 2px;
+  }
+  .MenuOver{
+    cursor:pointer;
+    line-height: 5vh;
+  }
+  :global(aside.ant-layout-sider-collapsed .ant-layout-sider-below){
+    min-width: 85px;
+    width: 85px;
+  }
+
+  //二级菜单样式
+  .menuTwoshow{
+    font-size: 15px;
+  }
+  .hotitemTitle{
+    text-align: center;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    cursor: pointer;
+    span{
+      padding: 2px;
+      background-color:#C91717;
+      color:#fff;
+    }
+  }
+  //三级菜单样式
+  .menuNohot{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    //position: absolute;
+    .itemThree{
+      width:20%; //原先15%
+    }
+    :hover{
+      color: #C91717;
+    }
+    .otherThree{
+      width:85%;
+      overflow-y: auto;
+      position: relative;
+      border-left: 2px solid #e5e5e5;
+    }
+  }
+  .titleSpan{
+    font-size: 16px;
+  }
+}
+//// 1366 分辨率
+//@media only screen and (min-width: 1316px) and (max-width: 1389px){
+//
+//}
+//// 1440 分辨率
+//@media only screen and (min-width: 1390px) and (max-width: 1869px){
+//}
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+
+  .MenuItemText{
+    font-size: 21px;
+  }
+  .menuTwoshow{
+    font-size: 20px;
+  }
+  .titleSpan{
+    font-size: 22px;
+  }
+  .MenuItemImg{
+    width: 40px;
+    margin-bottom: 4%;
+  }
+  .threeDivider{
+   margin: 0 15px;
+  }
+  .twoTitle{
+    line-height: 5.5vh;
+  }
+  .hotTitle{
+    margin-left: 3%;
+  }
+}

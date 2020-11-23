@@ -1,0 +1,265 @@
+@back-color: #FFFFFF;
+@red-bac: #C91717;
+@font-family: "Microsoft YaHei";
+@font-last-level: #999999;
+@menu-bac: #F2F2F2;
+
+.bmIndexList {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+  color: #333;
+  :global{
+    .ant-btn{
+      border:1px dotted ;
+      height: 28px;
+      border-radius: 0;
+      background-color: @back-color;
+      color: #666;
+      font-weight: 400;
+      font-family: @font-family;
+      width: 80%;
+      border-color: #d9d9d9 !important;
+    }
+  }
+}
+.iconCaretDown{
+  float: right;
+  margin-top: 3px;
+}
+
+.bmIndexListTitle {
+  width: 20%;
+}
+
+.modalBody{
+  width: 500px;
+  height: 500px;
+}
+.content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contentLeft{
+  width: 44%;
+  height: 100%;
+}
+.indexSearch{
+  width: 100%;
+  height: 10%;
+  :global{
+    .ant-input{
+      border: 1px dotted #a7a7a7;
+      border-radius: 6px;
+    }
+    .ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled){
+      border: 1px dotted #a7a7a7;
+      border-radius: 6px;
+    }
+  }
+}
+
+.indexMenu{
+  width: 100%;
+  height: 90%;
+  overflow: scroll;
+  background-color: @menu-bac;
+  .lastLevel{
+    color: @font-last-level;
+  }
+  :global{
+    .ant-tree li .ant-tree-node-content-wrapper:hover{
+      background-color: transparent;
+    }
+    .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected {
+      background-color: transparent;
+    }
+  }
+}
+
+.contentCenter{
+  position: relative;
+  width: 10%;
+  height: 100%;
+  .centerTitle{
+    text-align: center;
+  }
+  .rightIcon{
+    font-size: 34px;
+    color: @font-last-level;
+    margin: 100px 20px;
+  }
+}
+.arrowIcon{
+  position: relative;
+  top:50%;
+
+}
+.contentRight{
+  width: 44%;
+  height: 100%;
+}
+.rightList{
+  position: relative;
+  top:10%;
+  width: 100%;
+  height: 90%;
+  background-color: @menu-bac;
+  padding: 5px 5px 0 5px;
+  .menuBtn{
+    height: 24px;
+    margin-left: 15%;
+    background-color: @back-color;
+    color: @font-last-level;
+    cursor: pointer;
+    font-family: @font-family;
+    font-size: 14px;
+    font-weight: 400;
+    border-color: #d9d9d9 !important;
+  }
+  .menuBtn:hover{
+    color: #fff;
+    background:  @red-bac;
+  }
+}
+.divList{
+  height: 85%;
+  color: @font-last-level;
+  overflow-y: auto;
+}
+.selectedItem{
+  width: 100%;
+  //height: 5%;
+  padding-left: 3%;
+  clear: right;
+}
+.bottom{
+  height: 8%;
+}
+@media only screen and (min-width: 1870px){
+  .bmIndexList{
+    font-size: 20px;
+    :global{
+       .ant-btn{
+        height: 40px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+//// 1440 分辨率
+//@media only screen and (min-width: 1390px) and (max-width: 1869px){
+//
+//}
+//// 1366 分辨率
+//@media only screen and (min-width: 1316px) and (max-width: 1389px){
+//}
+// 1280 分辨率
+@media only screen and (min-width: 1101px) and (max-width: 1315px){
+  .bmIndexList {
+    :global{
+      .ant-btn{
+        width: 74%;
+      }
+    }
+  }
+}
+//  1024分辨率
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+  .bmIndexList{
+    :global{
+      .ant-btn{
+        width: 60%;
+        font-size: 12px;
+      }
+    }
+  }
+  :global{
+    .ant-modal-body{
+      font-size: 13px;
+    }
+    .ant-tree{
+      font-size: 12px;
+    }
+    .ant-input{
+      font-size: 12px;
+      height: 28px;
+    }
+  }
+  .indexSearch{
+    width:70%;
+  }
+  .rightList{
+    .menuBtn{
+      font-size: 12px;
+    }
+  }
+  .divList{
+    margin-top:5px;
+  }
+  .selectedItem{
+    height: 8%;
+  }
+  .iconCaretDown{
+    float: none;
+  }
+}
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 960px){
+  .bmIndexList{
+    font-size:10px;
+    :global{
+      .ant-btn{
+        width: 70%;
+        font-size: 10px;
+      }
+    }
+  }
+    :global{
+      .ant-modal-body{
+        font-size: 11px;
+      }
+      .ant-input{
+        font-size: 10px;
+        height: 26px;
+      }
+      .ant-tree{
+        font-size: 11px;
+      }
+    }
+  .indexSearch{
+    width:70%;
+  }
+  .contentCenter{
+    .rightIcon{
+      margin:100px 10px;
+    }
+  }
+  //.indexMenu{
+  //  height: 90%;
+  //}
+  .contentRight{
+    height: 98%;
+  }
+  .rightList{
+    top:12%;
+    .menuBtn{
+      font-size: 10px;
+    }
+  }
+  .divList{
+    margin-top:5px;
+  }
+  .selectedItem{
+    height: 8%;
+  }
+  .iconCaretDown{
+    float: none;
+  }
+}
+
+

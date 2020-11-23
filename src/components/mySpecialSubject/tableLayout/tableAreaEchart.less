@@ -1,0 +1,145 @@
+.page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .regionSituationCss {
+    position: absolute;
+    right: 60px;
+    z-index: 10;
+    top: 45px;
+    .echart {
+      width: 100%;
+      height: 100%;
+      text-align: left;
+    }
+
+    .selectContent {
+      text-align: left;
+      width: 105px;
+      height: 23px;
+    }
+    .selectContent2 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      border: solid 1px #dcdbdc;
+      cursor: pointer;
+      background-color: #f7f6f7;
+    }
+
+    .selectTitle {
+      padding-left: 10px;
+    }
+    .triangle {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 7px solid #999;
+    }
+    .selectContentUl {
+      width: 100%;
+      position: absolute;
+      top: 23px;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      border: 1px solid #e4e4e4;
+      li {
+        width: 100%;
+        font-size: 12px;
+        border-bottom: 1px solid #e4e4e4;
+        background-color: #fafafa;
+        color: #a8a8a8;
+        padding: 2px 5px;
+      }
+
+      li:hover {
+        color: rgb(255, 255, 255);
+        background-color: rgb(201, 23, 23);
+      }
+      .sortIcon {
+        margin-right: 5px;
+      }
+
+      li:hover > span.sortIcon {
+        background-position-x: -20px;
+      }
+    }
+
+    .downloadName{
+      position: absolute;
+      top:5px;
+      right: 5px;
+      z-index: 10;
+      :global{
+        .ant-btn > .anticon + span, .ant-btn > span + .anticon{
+          margin: 0;
+        }
+        .ant-btn-sm {
+          padding: 0 4px;
+          font-size: 12px;
+          height: 20px;
+        }
+      }
+    }
+
+    .btnUl{
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      z-index: 10;
+      font-size: 0;
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        font-size: 13px;
+        background: #f8f7f8;
+        cursor: pointer;
+        padding: 2px 8px;
+        border-color: #e0dfe0;
+        border-style: solid;
+      }
+      li:nth-child(1) {
+        border-width: 1px 0 1px 1px;
+        border-radius: 5px 0 0 5px;
+      }
+      li:nth-child(2) {
+        border-width: 1px;
+        border-radius: 0 5px 5px 0;
+      }
+      .select {
+        background: #6f6e6f;
+        color: #fff;
+      }
+
+    }
+  }
+  .chart {
+    width: 100%;
+    height: 100%;
+  }
+  .downLoad {
+    z-index: 1;
+    position: absolute;
+    top: 45px;
+    right: 5px;
+    width: 50px;
+    height: 22px;
+    border: 0.5px solid #eaeaea;
+    border-radius: 5px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+  }
+}
+

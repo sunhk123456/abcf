@@ -1,0 +1,485 @@
+@import '~antd/lib/style/themes/default.less';
+
+@pro-header-hover-bg: rgba(0, 0, 0, 0.025);
+@layout-header-height:8vh;
+
+.header {
+  height: @layout-header-height;
+  padding: 0;
+  background: #C91717;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+  position: relative;
+  display: flex;
+  .logos{
+    width: 19%;
+    display: flex;
+  }
+  .searchs{
+    width: 35%;
+    position: relative;
+  }
+  .infos{
+    width: 45%;
+  }
+}
+
+.logo {
+  height: @layout-header-height;
+  line-height: @layout-header-height;
+  vertical-align: top;
+  display: inline-block;
+  padding: 0 0 0 24px;
+  cursor: pointer;
+  font-size: 20px;
+  img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.menu {
+  .myInfo{
+    color:#C91717;
+    font-size: 18px;
+  }
+  :global(.anticon) {
+    margin-right: 8px;
+  }
+  :global(.ant-dropdown-menu-item) {
+    min-width: 16vh;
+    color:#C91717;
+  }
+  :global(.ant-dropdown-menu-item:hover) {
+    background-color: #C91717;
+    color:#fff;
+    .myInfo, span{
+      color:#fff;
+    }
+    .ant-badge{
+      color:#fff;
+    }
+  }
+  .downloadList{
+    //color:#fff;
+  }
+  :global(.ant-badge){
+    color:#C91717;
+  }
+  :global(.ant-badge:hover){
+    color:#fff;
+  }
+}
+
+.trigger {
+  font-size: 20px;
+  height: @layout-header-height;
+  cursor: pointer;
+  transition: all 0.3s, padding 0s;
+  width: 5vw;
+  padding: 8px 8px 8px 12px;
+  //padding: ~'calc((@{layout-header-height} - 20px) / 2)' 24px;
+  .logofont{
+    color: #fff;
+    font-size:6vh;
+  }
+  &:hover {
+    background: @pro-header-hover-bg;
+  }
+}
+
+.logoTitle{
+  color: #fff;
+  font-size:20px;
+}
+
+.right {
+  //float: right;
+  color: #fff;
+  height: 100%;
+  padding: 0 10px;
+  text-align: center;
+  //overflow: hidden;
+  //display: flex;
+  .action {
+    cursor: pointer;
+    padding: 0 12px;
+    display: inline-block;
+    transition: all 0.3s;
+    height: 100%;
+    > i {
+      vertical-align: middle;
+      color: @text-color;
+    }
+    &:hover {
+      background: @pro-header-hover-bg;
+    }
+    &:global(.opened) {
+      background: @pro-header-hover-bg;
+    }
+  }
+  .search {
+    padding: 0 12px;
+    &:hover {
+      background: transparent;
+    }
+  }
+  .account {
+    .avatar {
+      margin: ~'calc((@{layout-header-height} - 24px) / 2)' 0;
+      margin-right: 8px;
+      color: @primary-color;
+      background: white;
+      vertical-align: top;
+    }
+  }
+  .touxiang{
+    margin: 0 1.5vh;
+    display: inline-block;
+  }
+  .UserNameCon{
+    display: inline-block;
+  }
+  .exit{
+    cursor: pointer;
+    display: inline-block;
+  }
+  .name{
+    color:#fff !important;
+  }
+}
+
+// 帮助文档弹出层
+.tableHelpWrapper{
+  height: 430px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.tableHelp {
+  width:100%;
+  margin:3% 0;
+  font-family: 'MicrosoftYaHei', 'Microsoft YaHei', serif;
+  .tableColor{
+    background-color:#EBF0F4
+  }
+  .downPdfs{
+    cursor: pointer;
+  }
+  thead{
+    color: #6d6d6d;
+    font-weight: 600;
+    padding: 5px;
+  }
+  td{
+    height:4vh;
+    padding: 5px;
+    border-bottom: 1px solid #E1E1E1;
+    border-right: 1px solid #E1E1E1;
+    text-align: center;
+  }
+  tr{
+    border-top: 1px solid #E1E1E1;
+    border-left: 1px solid #E1E1E1;
+  }
+}
+
+.dark {
+  height: @layout-header-height;
+  .action {
+    color: rgba(255, 255, 255, 0.85);
+    > i {
+      color: white;
+    }
+    &:hover,
+    &:global(.opened) {
+      background: @primary-color;
+    }
+    :global(.ant-badge) {
+      color:white;
+    }
+  }
+}
+
+.wrapHelp{
+  :global{
+    .ant-modal-title {
+      margin: 0;
+      color: rgba(0, 0, 0, 0.55);
+      font-size: 21px;
+      text-align: center;
+      line-height: 22px;
+      font-weight: 600;
+    }
+  }
+}
+
+:global{
+
+  .ant-modal-mask {
+    background-color: rgba(0, 0, 0, 0.30); //遮罩层透明度
+  }
+  .ant-modal-header {
+    border-radius: 10px 10px 0 0;
+  }
+  .ant-modal-content {
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: @screen-md) {
+  .header {
+    :global(.ant-divider-vertical) {
+      vertical-align: unset;
+    }
+    .name {
+      display: none;
+    }
+    i.trigger {
+      padding: 22px 12px;
+    }
+    .logo {
+      padding-left: 12px;
+      padding-right: 12px;
+      position: relative;
+    }
+    .right {
+      position: absolute;
+      right: 12px;
+      top: 0;
+      background: #fff;
+      .account {
+        .avatar {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 960px){
+    .header {
+    height: @layout-header-height;
+    padding: 0;
+    background: #C91717;
+    box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+    position: relative;
+    display: flex;
+    .logos{
+      width: 20%;
+      display: flex;
+    }
+    .searchs{
+      width: 25%;
+      position: relative;
+    }
+    .infos{
+      width: 55%;
+    }
+  }
+    .trigger {
+      width: 25px;
+      height: 25px;
+      position: relative;
+      top: -5px;
+      left: 0;
+      svg{
+        width: 25px;
+        height: 25px;
+      }
+    }
+    .logoTitle{
+      font-size:12px;
+      padding-left: 12px;
+    }
+    .right{
+      font-size: 12px;
+      padding:0;
+      :global(.ant-badge){
+        font-size: 12px;
+      }
+    }
+    // 帮助文档弹出层
+    .tableHelpWrapper{
+      height: 330px;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+}
+// 1024 分辨率
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+  .header {
+    height: @layout-header-height;
+    padding: 0;
+    background: #C91717;
+    box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+    position: relative;
+    display: flex;
+    .logos{
+      width: 20%;
+      display: flex;
+    }
+    .searchs{
+      width: 25%;
+      position: relative;
+    }
+    .infos{
+      width: 55%;
+    }
+  }
+  .trigger {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: -1px;
+    left: 0;
+    svg{
+      width: 35px;
+      height: 35px;
+    }
+  }
+  .logoTitle{
+    font-size:16px;
+    padding-left: 12px;
+  }
+  .right{
+    font-size: 13px;
+    :global(.ant-badge){
+      font-size: 13px;
+    }
+  }
+  // 帮助文档弹出层
+  .tableHelpWrapper{
+    height: 430px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+// 1280 分辨率
+@media only screen and (min-width: 1101px) and (max-width: 1315px){
+  .header {
+    height: @layout-header-height;
+    padding: 0;
+    background: #C91717;
+    box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+    position: relative;
+    display: flex;
+    .logos{
+      width: 20%;
+      display: flex;
+    }
+    .searchs{
+      width: 30%;
+      position: relative;
+    }
+    .infos{
+      width: 50%;
+    }
+  }
+  .trigger {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    top: 2px;
+    left: 0;
+    svg{
+      width: 45px;
+      height: 45px;
+    }
+  }
+  .logoTitle{
+    font-size:18px;
+    padding-left: 12px;
+  }
+  .right{
+    font-size: 15px;
+    :global(.ant-badge){
+      font-size: 15px;
+    }
+  }
+  // 帮助文档弹出层
+  .tableHelpWrapper{
+    height: 430px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+// 1366 分辨率
+@media only screen and (min-width: 1316px) and (max-width: 1389px){
+  .logoTitle{
+    font-size:18px;
+  }
+  .touxiangIcon{
+    font-size: 12px;
+  }
+  // 帮助文档弹出层
+  .tableHelpWrapper{
+    height: 430px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+// 1440 分辨率
+@media only screen and (min-width: 1390px) and (max-width: 1869px){
+  .logoTitle{
+    font-size:20px;
+  }
+  .touxiangIcon{
+    font-size:14px;
+  }
+  // 帮助文档弹出层
+  .tableHelpWrapper{
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .touxiang, .exit, .UserNameCon{
+    font-size: 18px;
+  }
+  .logoTitle{
+    font-size:25px;
+  }
+  .touxiangIcon{
+    font-size: 20px;
+  }
+  .action {
+    :global(.ant-badge) {
+      font-size: 18px;
+    }
+    .menu {
+      :global(.ant-dropdown-menu-item) {
+        font-size: 18px;
+      }
+    }
+    .right{
+      :global(.ant-modal-title) {
+        font-size: 21px;
+        font-weight: 700;
+        text-align: center;
+        color: #6d6d6d;
+      }
+    }
+    .dark {
+      :global(.ant-modal-title) {
+        font-size: 21px;
+        font-weight: 700;
+        text-align: center;
+        color: #6d6d6d;
+      }
+    }
+  }
+  // 帮助文档弹出层
+  .tableHelpWrapper{
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+
+

@@ -1,0 +1,241 @@
+.pageContent{
+  position: fixed;
+  right: 20px;
+  bottom: 2px;
+  width: 310px;
+  height: 190px;
+  color: #FFF;
+  background: url(./notesbackgroud.png);
+  //display:block;
+  overflow:hidden;
+  z-index: 999;
+}
+.pageContentHeader{
+  position: absolute;
+  width: 303px;
+  right: 0;
+  top:7px;
+  height: 20%;
+  background-color: #C91717;
+  z-index: 3;
+}
+.pageContentHeaderTitle{
+  position: absolute;
+  left: 30px;
+  top: 8px;
+  width: 299px;
+  word-wrap: break-word;
+  float: right;
+  z-index: 1;
+  font-family: "Microsoft YaHei", serif;
+  font-size: 15px;
+}
+.pageContentNote{
+  position: absolute;
+  left: 20px;
+  top: 54px;
+  font-family:"Microsoft YaHei", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  color: #666;
+  width: 92%;
+  height: 55%;
+  border-bottom: 1px dashed #C91717;
+  z-index:3;
+  display: flex;
+  flex-wrap: wrap;
+}
+.messageHidden{
+  position: absolute;
+  right: 6px;
+  top: 8px;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 24px;
+}
+.notice{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 17px;
+  height: 17px;
+  font-size:18px;
+}
+.pageContentMore{
+  position: absolute;
+  left: 20px;
+  top: 157px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Microsoft YaHei", serif;
+  font-size: 15px;
+  color: #6A5C42;
+  z-index: 3;
+  width: 93%;
+  height: 20%;
+  cursor: pointer;
+}
+.pageContentNoteTableTitle{
+  height: 100%;
+  width: 40%;
+
+  .pageContentNoteTableTr{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    td{
+      width: 100%;
+      cursor: pointer;
+      .noteTableV{
+        width: 107px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+.pageContentNoteTableContent{
+  height: 100%;
+  width: 60%;
+
+  .pageContentNoteTableTr{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    td{
+      width: 100%;
+      cursor: pointer;
+      .noteTableV{
+        width: 160px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 960px){
+  .pageContent{
+    position: fixed;
+    right: 2px;
+    bottom: 2px;
+    width: 215px;
+    height: 150px;
+    color: #FFF;
+    background: url(./notesbackgroud.png);
+    display:none;
+    overflow:hidden;
+    z-index: 999;
+  }
+  .pageContentHeader{
+    position: absolute;
+    width: 208px;
+    right: 0;
+    top:7px;
+    height: 20%;
+    background-color: #C91717;
+    z-index: 3;
+  }
+  .pageContentHeaderTitle{
+    position: absolute;
+    left: 30px;
+    top: 8px;
+    width: 299px;
+    word-wrap: break-word;
+    float: right;
+    z-index: 1;
+    font-family: "Microsoft YaHei", serif;
+    font-size: 14px;
+  }
+  .pageContentNote{
+    position: absolute;
+    left: 15px;
+    top: 45px;
+    font-family:"Microsoft YaHei", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    color: #666;
+    width: 90%;
+    height: 55%;
+    border-bottom: 1px dashed #C91717;
+    z-index:3;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .pageContentNoteTableTitle{
+    height: 100%;
+    width: 40%;
+    float: left;
+
+    .pageContentNoteTableTr{
+      height: 25%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      td{
+        cursor: pointer;
+        .noteTableV{
+          width: 77px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+  .pageContentNoteTableContent{
+    height: 100%;
+    width: 59%;
+
+    .pageContentNoteTableTr{
+      height: 25%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      td{
+        cursor: pointer;
+
+        .noteTableV{
+          width: 108px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+  .messageHidden{
+    top: 5px;
+  }
+  .pageContentMore{
+    position: absolute;
+    left: 15px;
+    top: 120px;
+    display: flex;
+    justify-content: center;
+    //align-items: center;
+    font-family: "Microsoft YaHei", serif;
+    font-size: 15px;
+    color: #6A5C42;
+    z-index: 3;
+    width: 93%;
+    height: 20%;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 3%;
+  }
+
+}
+
+
+

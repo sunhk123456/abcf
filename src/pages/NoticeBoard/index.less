@@ -1,0 +1,1188 @@
+.noticeBoard{
+  margin-bottom: 50px;
+  .noticeBoardTitle{
+    position: relative;
+    top: 20px;
+  }
+  .noticeBoardTabs{
+    :global{
+      .ant-tabs{
+        overflow: inherit;
+      }
+      .ant-tabs-extra-content{
+        position: absolute;
+        top: -40px;
+        right: 6px;
+        button{
+          color: #fff;
+          background-color: #C91717;
+          width: 105px;
+        }
+      }
+      .ant-tabs-bar{
+        margin: 0 6px 0 0;
+      }
+      .ant-tabs-nav-scroll {
+        border-bottom: 3px solid #c91717;
+      }
+      .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active{
+        background-color: #c91717;
+        border-radius: 8px 8px 0 0;
+        color: #fff;
+        padding-bottom: 0;
+        height: 100%;
+      }
+      .ant-tabs-tab {
+        color: #c91717;
+      }
+      .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab{
+        border: none;
+        line-height: 28px;
+        height: 100%;
+        background-color: #FFF;
+      }
+      .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-nav-container{
+        height: 35px;
+        font-size: 17px;
+        margin-bottom: -6px;
+      }
+    }
+  }
+  .noticecontentform{
+    display: none;
+    .formnotice{
+      margin-top: 1em;
+      display: flex ;
+      align-items: center;
+      height: 270px;
+      width: 95%;
+      background-color: #FBFAF8;
+      font-family: "Microsoft YaHei", serif;
+      font-size: 14px;
+      font-weight: 400;
+
+      .formnoticeName{
+        margin-left: 2em;
+        width: 100%;
+
+        .noticeinputtitle{
+          margin-left: 1em;
+          width: 253px;
+          height: 28px;
+          border: 1px solid #C91717;
+        }
+        .formnoticeNameleft{
+          color: #333;
+          font-weight: bold;
+
+        }
+        .formnoticeIndexNameleft{
+          color: #333;
+          font-weight: bold;
+          position: relative;
+          top: 25px;
+        }
+        .formnoticeNameleftblock{
+          position: relative;
+          top: 1.5em;
+          color: #333;
+          font-weight: bold;
+        }
+      }
+
+      .formnoticeText{
+        margin-left: 2em;
+        width: 100%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        display: flex;
+        align-items: flex-start;
+
+        textarea{
+          margin-left: 1em;
+          width: 941px;
+          height: 138px;
+          border: 1px solid #C91717;
+        }
+      }
+
+      .formbtn{
+        margin-left: 7.5em;
+        display: flex;
+        width: 250px;
+        justify-content: space-between;
+
+        .formBtn{
+          width: 100px;
+          height: 33px;
+          font-family: "Microsoft YaHei", serif;
+          font-size: 16px;
+          font-weight: 400;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+
+        .formsub{
+          background-color: #C91717;
+          color: #FAFAFA;
+        }
+        .formrem{
+          background-color: #FBFAF8;
+          border: 1px solid #C91717;
+          color: #C91717;
+        }
+      }
+    }
+  }
+
+  :global {
+    .ant-table-small .ant-table-content .ant-table-body{
+      margin: 0;
+    }
+    .ant-table table{
+      width: 100%;
+      table-layout: fixed;
+    }
+    .lightRow {
+      background-color: #F0F3F7;
+    }
+    .darkRow {
+      background-color: #F9F9F9;
+    }
+  }
+
+  .resultColumns{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: solid;
+
+    .resContent{
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+
+}
+
+
+
+@media only screen and (min-width: 700px) and (max-width: 960px) {
+  .noticeBoard{
+    margin-bottom: 50px;
+    .noticeBoardTitle{
+      position: relative;
+      top: 20px;
+    }
+    .noticeBoardAction{
+      text-align: left;
+    }
+    .noticeBoardTabs{
+      :global{
+        .ant-tabs-extra-content{
+          position: absolute;
+          top: -40px;
+          right: 6px;
+          button{
+            color: #fff;
+            background-color: #C91717;
+            width: 105px;
+          }
+        }
+        .ant-tabs-bar{
+          margin: 0 6px 0 0;
+        }
+        .ant-tabs-nav-scroll {
+          border-bottom: 3px solid #c91717;
+        }
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active{
+          background-color: #c91717;
+          border-radius: 8px 8px 0 0;
+          color: #fff;
+          padding-bottom: 0;
+        }
+        .ant-tabs-tab {
+          color: #c91717;
+        }
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab{
+          border: none;
+          line-height: 28px;
+        }
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-nav-container{
+          height: 35px;
+          font-size: 17px;
+          margin-bottom: -6px;
+        }
+      }
+    }
+    .noticecontentform{
+      display: none;
+      .formnotice{
+        margin-top: 1em;
+        display: flex ;
+        align-items: center;
+        height: 270px;
+        width: 95%;
+        background-color: #FBFAF8;
+        font-family: "Microsoft YaHei", serif;
+        font-size: 14px;
+        font-weight: 400;
+
+        .formnoticeName{
+          margin-left: 2em;
+          width: 100%;
+
+          .noticeinputtitle{
+            margin-left: 1em;
+            width: 253px;
+            height: 28px;
+            border: 1px solid #C91717;
+          }
+          .formnoticeNameleft{
+            color: #333;
+            font-weight: bold;
+
+          }
+          .formnoticeIndexNameleft{
+            color: #333;
+            font-weight: bold;
+            position: relative;
+            top: 25px;
+          }
+          .formnoticeNameleftblock{
+            position: relative;
+            top: 1.5em;
+            color: #333;
+            font-weight: bold;
+          }
+        }
+
+        .formnoticeText{
+          margin-left: 2em;
+          width: 100%;
+          margin-top: 1em;
+          margin-bottom: 1em;
+          display: flex;
+          align-items: flex-start;
+
+          textarea{
+            margin-left: 1em;
+            width: 501px;
+            height: 138px;
+            border: 1px solid #C91717;
+          }
+        }
+
+        .formbtn{
+          margin-left: 7.5em;
+          display: flex;
+          width: 250px;
+          justify-content: space-between;
+
+          .formBtn{
+            width: 100px;
+            height: 33px;
+            font-family: "Microsoft YaHei", serif;
+            font-size: 16px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+          }
+
+          .formsub{
+            background-color: #C91717;
+            color: #FAFAFA;
+          }
+          .formrem{
+            background-color: #FBFAF8;
+            border: 1px solid #C91717;
+            color: #C91717;
+          }
+        }
+      }
+    }
+
+    :global {
+      .ant-table-small .ant-table-content .ant-table-body{
+        margin: 0;
+      }
+      .ant-table table{
+        width: 100%;
+        table-layout: fixed;
+      }
+      .lightRow {
+        background-color: #F0F3F7;
+      }
+      .darkRow {
+        background-color: #F9F9F9;
+      }
+    }
+
+    .resultColumns{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-decoration: solid;
+
+      .resContent{
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1100px) {
+  .noticeBoard{
+    margin-bottom: 50px;
+    .noticeBoardTitle{
+      position: relative;
+      top: 20px;
+    }
+    .noticeBoardTabs{
+      :global{
+        .ant-tabs-extra-content{
+          position: absolute;
+          top: -40px;
+          right: 6px;
+          button{
+            color: #fff;
+            background-color: #C91717;
+            width: 105px;
+          }
+        }
+        .ant-tabs-bar{
+          margin: 0 6px 0 0;
+        }
+        .ant-tabs-nav-scroll {
+          border-bottom: 3px solid #c91717;
+        }
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active{
+          background-color: #c91717;
+          border-radius: 8px 8px 0 0;
+          color: #fff;
+          padding-bottom: 0;
+        }
+        .ant-tabs-tab {
+          color: #c91717;
+        }
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab{
+          border: none;
+          line-height: 28px;
+        }
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-nav-container{
+          height: 35px;
+          font-size: 17px;
+          margin-bottom: -6px;
+        }
+      }
+    }
+    .noticecontentform{
+      display: none;
+      .formnotice{
+        margin-top: 1em;
+        display: flex ;
+        align-items: center;
+        height: 270px;
+        width: 95%;
+        background-color: #FBFAF8;
+        font-family: "Microsoft YaHei", serif;
+        font-size: 14px;
+        font-weight: 400;
+
+        .formnoticeName{
+          margin-left: 2em;
+          width: 100%;
+
+          .noticeinputtitle{
+            margin-left: 1em;
+            width: 253px;
+            height: 28px;
+            border: 1px solid #C91717;
+          }
+          .formnoticeNameleft{
+            color: #333;
+            font-weight: bold;
+
+          }
+          .formnoticeIndexNameleft{
+            color: #333;
+            font-weight: bold;
+            position: relative;
+            top: 25px;
+          }
+          .formnoticeNameleftblock{
+            position: relative;
+            top: 1.5em;
+            color: #333;
+            font-weight: bold;
+          }
+        }
+
+        .formnoticeText{
+          margin-left: 2em;
+          width: 100%;
+          margin-top: 1em;
+          margin-bottom: 1em;
+          display: flex;
+          align-items: flex-start;
+
+          textarea{
+            margin-left: 1em;
+            width: 641px;
+            height: 138px;
+            border: 1px solid #C91717;
+          }
+        }
+
+        .formbtn{
+          margin-left: 7.5em;
+          display: flex;
+          width: 250px;
+          justify-content: space-between;
+
+          .formBtn{
+            width: 100px;
+            height: 33px;
+            font-family: "Microsoft YaHei", serif;
+            font-size: 16px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+          }
+
+          .formsub{
+            background-color: #C91717;
+            color: #FAFAFA;
+          }
+          .formrem{
+            background-color: #FBFAF8;
+            border: 1px solid #C91717;
+            color: #C91717;
+          }
+        }
+      }
+    }
+
+    :global {
+      .ant-table-small .ant-table-content .ant-table-body{
+        margin: 0;
+      }
+      .ant-table table{
+        width: 100%;
+        table-layout: fixed;
+      }
+      .lightRow {
+        background-color: #F0F3F7;
+      }
+      .darkRow {
+        background-color: #F9F9F9;
+      }
+    }
+
+    .resultColumns{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-decoration: solid;
+
+      .resContent{
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1315px) {
+  .noticeBoard{
+    margin-bottom: 50px;
+    .noticeBoardTitle{
+      position: relative;
+      top: 20px;
+    }
+    .noticeBoardTabs{
+      :global{
+        .ant-tabs-extra-content{
+          position: absolute;
+          top: -40px;
+          right: 6px;
+          button{
+            color: #fff;
+            background-color: #C91717;
+            width: 105px;
+          }
+        }
+        .ant-tabs-bar{
+          margin: 0 6px 0 0;
+        }
+        .ant-tabs-nav-scroll {
+          border-bottom: 3px solid #c91717;
+        }
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active{
+          background-color: #c91717;
+          border-radius: 8px 8px 0 0;
+          color: #fff;
+          padding-bottom: 0;
+        }
+        .ant-tabs-tab {
+          color: #c91717;
+        }
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab{
+          border: none;
+          line-height: 28px;
+        }
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-nav-container{
+          height: 35px;
+          font-size: 17px;
+          margin-bottom: -6px;
+        }
+      }
+    }
+    .noticecontentform{
+      display: none;
+      .formnotice{
+        margin-top: 1em;
+        display: flex ;
+        align-items: center;
+        height: 270px;
+        width: 95%;
+        background-color: #FBFAF8;
+        font-family: "Microsoft YaHei", serif;
+        font-size: 14px;
+        font-weight: 400;
+
+        .formnoticeName{
+          margin-left: 2em;
+          width: 100%;
+
+          .noticeinputtitle{
+            margin-left: 1em;
+            width: 253px;
+            height: 28px;
+            border: 1px solid #C91717;
+          }
+          .formnoticeNameleft{
+            color: #333;
+            font-weight: bold;
+
+          }
+          .formnoticeIndexNameleft{
+            color: #333;
+            font-weight: bold;
+            position: relative;
+            top: 25px;
+          }
+          .formnoticeNameleftblock{
+            position: relative;
+            top: 1.5em;
+            color: #333;
+            font-weight: bold;
+          }
+        }
+
+        .formnoticeText{
+          margin-left: 2em;
+          width: 100%;
+          margin-top: 1em;
+          margin-bottom: 1em;
+          display: flex;
+          align-items: flex-start;
+
+          textarea{
+            margin-left: 1em;
+            width: 841px;
+            height: 138px;
+            border: 1px solid #C91717;
+          }
+        }
+
+        .formbtn{
+          margin-left: 7.5em;
+          display: flex;
+          width: 250px;
+          justify-content: space-between;
+
+          .formBtn{
+            width: 100px;
+            height: 33px;
+            font-family: "Microsoft YaHei", serif;
+            font-size: 16px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+          }
+
+          .formsub{
+            background-color: #C91717;
+            color: #FAFAFA;
+          }
+          .formrem{
+            background-color: #FBFAF8;
+            border: 1px solid #C91717;
+            color: #C91717;
+          }
+        }
+      }
+    }
+
+    :global {
+      .ant-table-small .ant-table-content .ant-table-body{
+        margin: 0;
+      }
+      .ant-table table{
+        width: 100%;
+        table-layout: fixed;
+      }
+      .lightRow {
+        background-color: #F0F3F7;
+      }
+      .darkRow {
+        background-color: #F9F9F9;
+      }
+    }
+
+    .resultColumns{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-decoration: solid;
+
+      .resContent{
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+}
+
+@media only screen and (min-width: 1316px) and (max-width: 1389px) {
+  .noticeBoard{
+    margin-bottom: 50px;
+    .noticeBoardTitle{
+      position: relative;
+      top: 20px;
+    }
+    .noticeBoardTabs{
+      :global{
+        .ant-tabs-extra-content{
+          position: absolute;
+          top: -40px;
+          right: 6px;
+          button{
+            color: #fff;
+            background-color: #C91717;
+            width: 105px;
+          }
+        }
+        .ant-tabs-bar{
+          margin: 0 6px 0 0;
+        }
+        .ant-tabs-nav-scroll {
+          border-bottom: 3px solid #c91717;
+        }
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active{
+          background-color: #c91717;
+          border-radius: 8px 8px 0 0;
+          color: #fff;
+          padding-bottom: 0;
+        }
+        .ant-tabs-tab {
+          color: #c91717;
+        }
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab{
+          border: none;
+          line-height: 28px;
+        }
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-nav-container{
+          height: 35px;
+          font-size: 17px;
+          margin-bottom: -6px;
+        }
+      }
+    }
+    .noticecontentform{
+      display: none;
+      .formnotice{
+        margin-top: 1em;
+        display: flex ;
+        align-items: center;
+        height: 270px;
+        width: 95%;
+        background-color: #FBFAF8;
+        font-family: "Microsoft YaHei", serif;
+        font-size: 14px;
+        font-weight: 400;
+
+        .formnoticeName{
+          margin-left: 2em;
+          width: 100%;
+
+          .noticeinputtitle{
+            margin-left: 1em;
+            width: 253px;
+            height: 28px;
+            border: 1px solid #C91717;
+          }
+          .formnoticeNameleft{
+            color: #333;
+            font-weight: bold;
+
+          }
+          .formnoticeIndexNameleft{
+            color: #333;
+            font-weight: bold;
+            position: relative;
+            top: 25px;
+          }
+          .formnoticeNameleftblock{
+            position: relative;
+            top: 1.5em;
+            color: #333;
+            font-weight: bold;
+          }
+        }
+
+        .formnoticeText{
+          margin-left: 2em;
+          width: 100%;
+          margin-top: 1em;
+          margin-bottom: 1em;
+          display: flex;
+          align-items: flex-start;
+
+          textarea{
+            margin-left: 1em;
+            width: 941px;
+            height: 138px;
+            border: 1px solid #C91717;
+          }
+        }
+
+        .formbtn{
+          margin-left: 7.5em;
+          display: flex;
+          width: 250px;
+          justify-content: space-between;
+
+          .formBtn{
+            width: 100px;
+            height: 33px;
+            font-family: "Microsoft YaHei", serif;
+            font-size: 16px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+          }
+
+          .formsub{
+            background-color: #C91717;
+            color: #FAFAFA;
+          }
+          .formrem{
+            background-color: #FBFAF8;
+            border: 1px solid #C91717;
+            color: #C91717;
+          }
+        }
+      }
+    }
+
+    :global {
+      .ant-table-small .ant-table-content .ant-table-body{
+        margin: 0;
+      }
+      .ant-table table{
+        width: 100%;
+        table-layout: fixed;
+      }
+      .lightRow {
+        background-color: #F0F3F7;
+      }
+      .darkRow {
+        background-color: #F9F9F9;
+      }
+    }
+
+    .resultColumns{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-decoration: solid;
+
+      .resContent{
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+}
+
+@media only screen and (min-width: 1390px) and (max-width: 1869px){
+  .noticeBoard{
+    margin-bottom: 50px;
+    .noticeBoardTitle{
+      position: relative;
+      top: 20px;
+    }
+    .noticeBoardTabs{
+      :global{
+        .ant-tabs-extra-content{
+          position: absolute;
+          top: -40px;
+          right: 6px;
+          button{
+            color: #fff;
+            background-color: #C91717;
+            width: 105px;
+          }
+        }
+        .ant-tabs-bar{
+          margin: 0 6px 0 0;
+          border: none;
+        }
+        .ant-tabs-nav-scroll {
+          border-bottom: 3px solid #c91717;
+        }
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active{
+          background-color: #c91717;
+          border-radius: 8px 8px 0 0;
+          color: #fff;
+          padding-bottom: 0;
+          height: 100%;
+        }
+        .ant-tabs-tab {
+          color: #c91717;
+        }
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab{
+          border: none;
+          line-height: 28px;
+          height: 100%;
+        }
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-nav-container{
+          height: 35px;
+          font-size: 17px;
+          margin-bottom: -6px;
+        }
+      }
+    }
+    .noticecontentform{
+      display: none;
+      .formnotice{
+        margin-top: 1em;
+        display: flex ;
+        align-items: center;
+        height: 270px;
+        width: 95%;
+        background-color: #FBFAF8;
+        font-family: "Microsoft YaHei", serif;
+        font-size: 14px;
+        font-weight: 400;
+
+        .formnoticeName{
+          margin-left: 2em;
+          width: 100%;
+
+          .noticeinputtitle{
+            margin-left: 1em;
+            width: 253px;
+            height: 28px;
+            border: 1px solid #C91717;
+          }
+          .formnoticeNameleft{
+            color: #333;
+            font-weight: bold;
+
+          }
+          .formnoticeIndexNameleft{
+            color: #333;
+            font-weight: bold;
+            position: relative;
+            top: 25px;
+          }
+          .formnoticeNameleftblock{
+            position: relative;
+            top: 1.5em;
+            color: #333;
+            font-weight: bold;
+          }
+        }
+
+        .formnoticeText{
+          margin-left: 2em;
+          width: 100%;
+          margin-top: 1em;
+          margin-bottom: 1em;
+          display: flex;
+          align-items: flex-start;
+
+          textarea{
+            margin-left: 1em;
+            width: 941px;
+            height: 138px;
+            border: 1px solid #C91717;
+          }
+        }
+
+        .formbtn{
+          margin-left: 7.5em;
+          display: flex;
+          width: 250px;
+          justify-content: space-between;
+
+          .formBtn{
+            width: 100px;
+            height: 33px;
+            font-family: "Microsoft YaHei", serif;
+            font-size: 16px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+          }
+
+          .formsub{
+            background-color: #C91717;
+            color: #FAFAFA;
+          }
+          .formrem{
+            background-color: #FBFAF8;
+            border: 1px solid #C91717;
+            color: #C91717;
+          }
+        }
+      }
+    }
+
+    :global {
+      .ant-table-small .ant-table-content .ant-table-body{
+        margin: 0;
+      }
+      .ant-table table{
+        width: 100%;
+        table-layout: fixed;
+      }
+      .lightRow {
+        background-color: #F0F3F7;
+      }
+      .darkRow {
+        background-color: #F9F9F9;
+      }
+    }
+
+    .resultColumns{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-decoration: solid;
+
+      .resContent{
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+}
+
+@media only screen and (min-width: 1870px) {
+  .noticeBoard{
+    margin-bottom: 50px;
+    .noticeBoardTitle{
+      position: relative;
+      top: 20px;
+    }
+    .noticeBoardTabs{
+      :global{
+        .ant-tabs-extra-content{
+          position: absolute;
+          top: -40px;
+          right: 6px;
+          button{
+            color: #fff;
+            background-color: #C91717;
+            width: 105px;
+          }
+        }
+        .ant-tabs-bar{
+          margin: 0 6px 0 0;
+        }
+        .ant-tabs-nav-scroll {
+          border-bottom: 3px solid #c91717;
+        }
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active{
+          background-color: #c91717;
+          border-radius: 8px 8px 0 0;
+          color: #fff;
+          padding-bottom: 0;
+        }
+        .ant-tabs-tab {
+          color: #c91717;
+        }
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab{
+          border: none;
+          line-height: 28px;
+        }
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-nav-container{
+          height: 35px;
+          font-size: 17px;
+          margin-bottom: -6px;
+        }
+      }
+    }
+
+
+    .noticecontentform{
+      display: none;
+      .formnotice{
+        margin-top: 1em;
+        display: flex ;
+        align-items: center;
+        height: 270px;
+        width: 95%;
+        background-color: #FBFAF8;
+        font-family: "Microsoft YaHei", serif;
+        font-size: 14px;
+        font-weight: 400;
+
+        .formnoticeName{
+          margin-left: 2em;
+          width: 100%;
+
+          .noticeinputtitle{
+            margin-left: 1em;
+            width: 253px;
+            height: 28px;
+            border: 1px solid #C91717;
+          }
+          .formnoticeNameleft{
+            color: #333;
+            font-weight: bold;
+          }
+          .formnoticeIndexNameleft{
+            color: #333;
+            font-weight: bold;
+            position: relative;
+            top: 25px;
+          }
+          .formnoticeNameleftblock{
+            position: relative;
+            top: 1.5em;
+            color: #333;
+            font-weight: bold;
+          }
+        }
+
+        .formnoticeText{
+          margin-left: 2em;
+          width: 100%;
+          margin-top: 1em;
+          margin-bottom: 1em;
+          display: flex;
+          align-items: flex-start;
+
+          textarea{
+            margin-left: 1em;
+            width: 941px;
+            height: 138px;
+            border: 1px solid #C91717;
+          }
+        }
+
+        .formbtn{
+          margin-left: 7.5em;
+          display: flex;
+          width: 250px;
+          justify-content: space-between;
+
+          .formBtn{
+            width: 100px;
+            height: 33px;
+            font-family: "Microsoft YaHei", serif;
+            font-size: 16px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+          }
+
+          .formsub{
+            background-color: #C91717;
+            color: #FAFAFA;
+          }
+          .formrem{
+            background-color: #FBFAF8;
+            border: 1px solid #C91717;
+            color: #C91717;
+          }
+        }
+      }
+    }
+
+    :global {
+      .ant-table-small .ant-table-content .ant-table-body{
+        margin: 0;
+      }
+      .ant-table table{
+        width: 100%;
+        table-layout: fixed;
+      }
+      .lightRow {
+        background-color: #F0F3F7;
+      }
+      .darkRow {
+        background-color: #F9F9F9;
+      }
+    }
+
+    .resultColumns{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-decoration: solid;
+
+      .resContent{
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+}
+
+:global{
+  .ant-btn.ant-btn-primary{
+    background-color: #C91717;
+    border-color: #C91717;
+  }
+  .ant-btn.ant-btn-primary:hover{
+    background-color: #C91717;
+    color: #fff;
+  }
+  .ant-btn:hover{
+    border-color: #D9D9D9;
+    color: #0C0C0C;
+  }
+}

@@ -1,0 +1,303 @@
+@import '~@/utils/utils.less';
+//.inputShow{
+//
+//}
+//.dropdown{
+//  width: 300px;
+//  height: 300px;
+//}
+.overviewIndex{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.298039);
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+}
+.overviewIndexContent{
+  width: 80%;
+  height: 94%;
+  margin: auto;
+  position: relative;
+  top:3%;
+  background-color: rgb(249,249,249);
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.overviewScreen{
+  height: 10%;
+  background-color:#FAFAFA;
+  padding: 2% 1%;
+  border-bottom: 1px solid #ccc;
+  .dateName{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    line-height: 32px;
+    margin-right: 10px;
+  }
+  :global{
+    .ant-col-md-3{
+      position: relative;
+      left:4%;
+    }
+    .ant-btn-primary{
+      background-color: #FFF;
+      border-color: #E3E3E3;
+      color:rgba(0,0,0,.65);
+    }
+    .ant-col-md-1{
+      position: relative;
+      left:2%;
+    }
+  }
+}
+
+.overviewIndexEchart{
+  height: 90%;
+}
+.overviewCarousel{
+  width: 90%;
+  position: relative;
+  left: 5%;
+  top:3%;
+  background-color:#FFF;
+  height: 350px;
+  :global {
+
+    .ant-carousel .slick-slide {
+      text-align: center;
+      width: 100%;
+      height: 350px;
+      overflow: hidden;
+    }
+    .slick-list{
+      width: 100%;
+    }
+    .slick-slide > div{
+      height: 100%;
+    }
+  }
+}
+.bannerList{
+  width: 100%;
+  height: 100%;
+}
+.bannerBtnPre{
+  position: absolute;
+  left: 52px;
+  font-size: 50px;
+  color: #DBDBDB;
+  z-index: 10;
+  top:40%;
+  margin-top: -50px;
+  cursor: pointer;
+  display: block;
+}
+.test{
+
+}
+.bannerBtnNext{
+  position: absolute;
+  right: 52px;
+  font-size: 50px;
+  color: #DBDBDB;
+  z-index: 10;
+  top:40%;
+  margin-top: -50px;
+  cursor: pointer;
+  display: block;
+}
+.overviewSmallEchart{
+  width: 90%;
+  position: relative;
+  left: 5%;
+  top:5%;
+  height:150px;
+  ul{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+    li{
+      width: 15%;
+      height: 100%;
+      display: inline-block;
+      margin-right: 10px;
+      cursor: pointer;
+      background-color:#FFF;
+    }
+  }
+}
+.smallList{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #efefef;
+  overflow: hidden;
+}
+
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 960px){
+  .overviewIndexContent{
+    width: 94%;
+    height: 94%;
+  }
+  .overviewCarousel{
+    width: 94%;
+    position: relative;
+    left:3%;
+    top:3%;
+    background-color:#FFF;
+    height: 350px;
+  }
+  .overviewSmallEchart{
+    width: 94%;
+    position: relative;
+    left: 3%;
+    top:5%;
+    height:100px;
+  }
+
+
+  .overviewScreen{
+    .dateName{
+      margin-right: 0;
+    }
+    :global{
+      .ant-calendar-picker{
+        width: 120px;
+      }
+
+    }
+  }
+}
+// 1024 分辨率
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+  .overviewIndexContent{
+    width: 94%;
+    height: 94%;
+  }
+  .overviewCarousel{
+    width: 94%;
+    position: relative;
+    left:3%;
+    top:3%;
+    background-color:#FFF;
+    height: 350px;
+  }
+  .overviewSmallEchart{
+    width: 94%;
+    position: relative;
+    left: 3%;
+    top:5%;
+    height:130px;
+  }
+
+
+  .overviewScreen{
+    .dateName{
+      margin-right: 0;
+    }
+    :global{
+      .ant-calendar-picker{
+        width: 120px;
+      }
+
+    }
+  }
+}
+// 1280 分辨率
+@media only screen and (min-width: 1101px) and (max-width: 1315px){
+  .overviewIndexContent{
+    width: 94%;
+    height: 94%;
+  }
+  .overviewCarousel{
+    width: 94%;
+    position: relative;
+    left:3%;
+    top:3%;
+    background-color:#FFF;
+    height: 350px;
+  }
+  .overviewSmallEchart{
+    width: 94%;
+    position: relative;
+    left: 3%;
+    top:5%;
+    height:150px;
+  }
+
+
+  .overviewScreen{
+    .dateName{
+      margin-right: 0;
+    }
+    :global{
+      .ant-calendar-picker{
+        width: 120px;
+      }
+
+    }
+  }
+}
+// 1366 分辨率
+@media only screen and (min-width: 1316px) and (max-width: 1389px){
+  .overviewCarousel{
+    height: 330px;
+    :global {
+      .ant-carousel .slick-slide {
+        height: 330px;
+      }
+    }
+  }
+}
+// 1440 分辨率
+@media only screen and (min-width: 1390px) and (max-width: 1869px){
+  .overviewCarousel{
+    height: 420px;
+    :global {
+      .ant-carousel .slick-slide {
+        height: 420px;
+      }
+    }
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .overviewScreen{
+    .dateName{
+      font-size: 20px;
+      width: 65px;
+    }
+    .queryBtn,.closeBtn{
+      font-size: 16px;
+    }
+  }
+  .overviewCarousel{
+    height: 500px;
+    :global {
+      .ant-carousel .slick-slide {
+        height: 500px;
+      }
+    }
+  }
+  .bannerBtnPre{
+    left: 60px;
+    font-size: 70px;
+    top: 40%;
+  }
+  .bannerBtnNext{
+    right: 60px;
+    font-size: 70px;
+    top: 40%;
+  }
+  .overviewSmallEchart{
+    height:210px;
+  }
+}
+
+

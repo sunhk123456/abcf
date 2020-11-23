@@ -1,0 +1,346 @@
+.tableOuter{
+  position: relative;
+  width: 96%;
+  left: 2%;
+  height: 90%;
+  background-color: white;
+  .chartTitle{
+    position: absolute;
+    font-size: 20px;
+    line-height: 40px;
+    margin-left: 20px;
+  }
+  .changeButton{
+    position: absolute;
+    float: right;
+    right: 40px;
+    top: 10px;
+    z-index: 10;
+    .downBtn{
+      position: relative;
+      left: 20px;
+    }
+    :global{
+      .ant-btn-primary{
+        background-color: #6A6A6A;
+        color: #EFEFEF;
+        border: #6A6A6A solid 1px;
+        font-size: 15px;
+      }
+      .ant-btn-normal{
+        margin-left: 0.1px;
+        background-color: #FAFAFA;
+        color: #6A6A6A;
+        border: #6A6A6A solid 1px;
+        font-size: 15px;
+        z-index: 1;
+      }
+      .ant-btn:hover{
+        border: #6A6A6A solid 1px;
+        font-size: 15px;
+      }
+      .ant-btn:focus{
+        border: #6A6A6A solid 1px;
+        font-size: 15px;
+      }
+    }
+  }
+  .leftTable{
+    position: relative;
+    float: left;
+    top: 8%;
+    width: 48%;
+    height: 91.5%;
+    left: 1.5%;
+    .table{
+      tr{
+        height: 30.5px ;
+      }
+      td{
+        height: 30.5px ;
+        padding: 0 10px;
+        border-bottom: none;
+      }
+      th{
+        height: 42px ;
+        padding: 0 10px;
+      }
+    }
+  }
+  .rightTable{
+    position: relative;
+    float: left;
+    width: 48%;
+    top: 8%;
+    height: 91.5%;
+    left: 1.5%;
+    margin-left: 1%;
+    .table{
+      tr{
+        height: 33px ;
+      }
+      td{
+        height: 33px ;
+        padding: 0 10px;
+        border-bottom: none;
+      }
+      th{
+        height: 40px ;
+        padding: 0 10px;
+      }
+      :global{
+        .ant-table-placeholder{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and(max-width: 850px){
+  .tableOuter{
+    .leftTable{
+      top: 12%;
+      width: 48%;
+      height: 91.5%;
+      left: 1.5%;
+      .table{
+        tr{
+          height: 12px ;
+        }
+        td{
+          height: 12px ;
+        }
+        th{
+          height: 40px ;
+        }
+      }
+    }
+    .rightTable{
+      width: 48%;
+      top: 12%;
+      height: 91.5%;
+      left: 1.5%;
+      margin-left: 1%;
+      .table{
+        tr{
+          height: 13.5px ;
+        }
+        td{
+          height: 13.5px ;
+        }
+        th{
+          height: 40px ;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 851px)  and (max-width: 1070px){
+  .tableOuter{
+    .leftTable{
+      top: 10%;
+      width: 48%;
+      height: 91.5%;
+      left: 1.5%;
+      .table{
+        tr{
+          height: 22px ;
+        }
+        td{
+          height: 22px ;
+        }
+        th{
+          height: 40px ;
+        }
+      }
+    }
+    .rightTable{
+      width: 48%;
+      top: 10%;
+      height: 91.5%;
+      left: 1.5%;
+      margin-left: 1%;
+      .table{
+        tr{
+          height: 24px ;
+        }
+        td{
+          height: 24px ;
+        }
+        th{
+          height: 40px ;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1071px)  and (max-width: 1290px){
+  .tableOuter{
+    .leftTable{
+      top: 9.5%;
+      width: 48%;
+      height: 91.5%;
+      left: 1.5%;
+      .table{
+        tr{
+          height: 22.5px ;
+        }
+        td{
+          height: 22.5px ;
+        }
+        th{
+          height: 40px ;
+        }
+      }
+    }
+    .rightTable{
+      width: 48%;
+      top: 9.5%;
+      height: 91.5%;
+      left: 1.5%;
+      margin-left: 1%;
+      .table{
+        tr{
+          height: 24px ;
+        }
+        td{
+          height: 24px ;
+        }
+        th{
+          height: 40px ;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1291px)  and (max-width: 1380px){
+  .tableOuter{
+    .leftTable{
+      top: 9%;
+      width: 48%;
+      height: 91.5%;
+      left: 1.5%;
+      .table{
+        tr{
+          height: 24.5px ;
+        }
+        td{
+          height: 24.5px ;
+        }
+        th{
+          height: 40px ;
+          padding: 0;
+        }
+      }
+    }
+    .rightTable{
+      width: 48%;
+      top: 9%;
+      height: 91.5%;
+      left: 1.5%;
+      margin-left: 1%;
+      .table{
+        tr{
+          height: 26px ;
+        }
+        td{
+          height: 26px ;
+        }
+        th{
+          height: 40px ;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1381px)  and (max-width: 1450px){
+  .tableOuter{
+    .leftTable{
+      top: 8%;
+      width: 48%;
+      height: 91.5%;
+      left: 1.5%;
+      .table{
+        tr{
+          height: 29.5px ;
+        }
+        td{
+          height: 29.5px ;
+        }
+        th{
+          height: 40px ;
+          padding: 0;
+        }
+      }
+    }
+    .rightTable{
+      width: 48%;
+      top: 8%;
+      height: 91.5%;
+      left: 1.5%;
+      margin-left: 1%;
+      .table{
+        tr{
+          height: 32px ;
+        }
+        td{
+          height: 32px ;
+        }
+        th{
+          height: 40px ;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1451px)  and (max-width: 1800px){
+  .tableOuter{
+    .leftTable{
+      top: 8%;
+      width: 48%;
+      height: 91.5%;
+      left: 1.5%;
+      .table{
+        tr{
+          height: 29.5px ;
+        }
+        td{
+          height: 29.5px ;
+        }
+        th{
+          height: 40px ;
+        }
+      }
+    }
+    .rightTable{
+      width: 48%;
+      top: 8%;
+      height: 91.5%;
+      left: 1.5%;
+      margin-left: 1%;
+      .table{
+        tr{
+          height: 32px ;
+        }
+        td{
+          height: 32px ;
+        }
+        th{
+          height: 40px ;
+        }
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,282 @@
+.indicatorsTab{
+  margin-top: 1%;
+  margin-bottom: 2%;
+  .condition{
+    padding: 10px 15px;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: space-between;
+  }
+  .condition:after{
+    content:"";
+    height:0;
+    line-height:0;
+    display:block;
+    visibility:hidden;
+    clear:both;
+  }
+  .liList{
+    position: absolute;
+    left: 70px;
+    width: 158px;
+    background-color: #fff;
+    font-size: 14px;
+    color:#999;
+    border-radius: 2%;
+    z-index: 1;
+    div{
+      padding: 2% 0 2% 5%;
+      cursor: pointer;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+    }
+    div:hover{
+      background-color: #FAE8E8;
+    }
+  }
+  .DateStyle{
+    float: right;
+    font-size: 14px;
+    input{
+      cursor: pointer;
+      width: 158px;
+      height: 31px;
+      font-size: 14px;
+    }
+  }
+  .inputStyle{
+    font-size: 14px;
+    position: relative;
+    width: 23%;
+    input{
+      cursor: pointer;
+      width: 158px;
+      height: 31px;
+      font-size: 14px;
+    }
+  }
+  .ProCityDiv{
+    //float: left;
+    height: 32px;
+    width: 45%;
+  }
+  .queryDownload{
+    float: right;
+  }
+
+  .query{
+    display: inline-block;
+    background-color: #fff;
+    border: 1px dotted #E1E1E1;
+    border-radius: 3px;
+    padding: 4px 10px;
+    cursor:pointer;
+    margin-left: 5px;
+    font-size: 14px;
+  }
+  .tableTop{
+    position: relative;
+    margin: 1.5% 0;
+  }
+.changeButton{
+  margin-left: 1%;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+  .selected{
+    padding: 0 0.5%;
+    background-color: #6e6d6e;
+    color: #fff;
+    cursor: pointer;
+  }
+  .unSelected{
+    cursor: pointer;
+    padding: 0 0.5%;
+    color:#333;
+    background-color: transparent;
+  }
+  .iconRed{
+    position: absolute;
+    width: 5px;
+    height: 14px;
+    top:4px;
+    background-color: #C91717;
+  }
+  .tableName{
+    margin-left: 11px;
+    font-size: 14px;
+  }
+  .channelInfo{
+    margin-bottom: 1%;
+  }
+  .circleRed{
+    margin-right: 8px;
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    background-color: #C91717;
+    border-radius: 25px;
+    margin-bottom: 2px;
+  }
+  .infoTitle{
+    margin-bottom: 1%;
+  }
+  .infoItemName{
+    color: #999;
+    //display: inline-block;
+  }
+  .baseInfo{
+    display: flex;
+    background-color: rgba(249, 249, 249, 1);
+    margin-bottom: 1%;
+    padding: 20px 15px;
+    font-size: 12px;
+    >div{
+      margin-left: 15px;
+    }
+  }
+  .baseInfoItem{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    tr{
+      height: 35px;
+      cursor: pointer;
+    }
+    td{
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .echartsList{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    >div{
+      background-color: #f9f9f9;
+      width:49.5%;
+      height: 380px;
+    }
+  }
+
+  .selectedIndex{
+    margin-bottom: 1%;
+    font-size: 14px;
+  }
+  .underline{
+    text-decoration: underline;
+  }
+}
+.dateDropdown{
+  z-index: 1;
+}
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 960px){
+  .indicatorsTab {
+    .liList{
+      width: 100px;
+      font-size: 12px;
+    }
+    .condition{
+      padding: 10px;
+    }
+    .DateStyle{
+      font-size: 12px;
+      input{
+        width: 100px;
+        font-size: 12px;
+      }
+    }
+    .inputStyle{
+      font-size: 12px;
+      input{
+        width: 100px;
+        font-size: 12px;
+      }
+    }
+    .ProCityDiv{
+      width: 44%;
+    }
+    .query{
+      font-size: 12px;
+      padding:4px;
+    }
+    .baseInfo{
+      font-size: 12px;
+      width: 100%;
+      >div{
+        margin-left: 5px;
+      }
+    }
+    .baseInfoItem{
+      width: 100%;
+      margin-left: 0;
+      tr{
+        height: 25px;
+      }
+    }
+  }
+}
+// 1024 分辨率
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+  .indicatorsTab {
+    .liList{
+      width: 120px;
+    }
+    .DateStyle{
+      input{
+        width: 120px;
+      }
+    }
+    .inputStyle{
+      input{
+        width: 120px;
+      }
+    }
+    .tableName{
+      font-size: 12px;
+    }
+    .baseInfo{
+      font-size: 12px;
+    }
+  }
+}
+
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .indicatorsTab{
+    .liList{
+      left: 100px;
+      width: 240px;
+      font-size: 16px;
+    }
+    .DateStyle{
+      font-size: 20px;
+      input{
+        width: 240px;
+        height: 40px;
+        font-size: 20px;
+      }
+    }
+    .query{
+      font-size: 20px;
+    }
+    .inputStyle{
+      font-size: 20px;
+      input{
+        width: 240px;
+        height: 40px;
+        font-size: 20px;
+      }
+    }
+    .tableName{
+      font-size: 16px;
+    }
+    .baseInfo{
+      font-size: 16px;
+    }
+  }
+}

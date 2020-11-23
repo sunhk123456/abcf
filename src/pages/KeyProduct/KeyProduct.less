@@ -1,0 +1,659 @@
+// 提示框
+.warningTip{
+  :global{
+    .ant-tooltip-arrow{
+      border-color: #C91717;
+    }
+    .ant-tooltip-inner{
+      background-color: #FBEFA1;
+      color: #333;
+      border-color: #c91717;
+    }
+  }
+}
+.checkBoxDiv{
+  :global{
+    .ant-checkbox-wrapper{
+      font-size: 14px;
+    }
+    .ant-dropdown-menu-item{
+      font-size: 14px;
+    }
+    .ant-checkbox-checked .ant-checkbox-inner {
+      background-color: lightgrey;
+      border-color: gray;
+    }
+    .ant-checkbox-inner {
+      background-color: lightgrey;
+      border-color: gray;
+    }
+    .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+    .ant-checkbox:hover .ant-checkbox-inner,
+    .ant-checkbox-input:focus + .ant-checkbox-inner {
+      border-color: black;
+    }
+  }
+}
+.allOpen{
+  margin-top: 50px;
+  float: right;
+  font-size: 15px;
+  margin-right: 20px;
+}
+.foldTable {
+  width: 100%;
+
+  tbody {
+    tr.trStyle {
+      background-color: #fafafa;
+      td {
+        padding: 1px;
+        border-bottom: 5px solid #fff;
+      }
+    }
+    tr.trStyle:hover td {
+      background-color: #f0f0f0;
+    }
+  }
+
+  .trGreen0 {
+    .tdColor0 {
+      color: rgb(51, 153, 0);
+    }
+  }
+  .trRed0 {
+    .tdColor0 {
+      color: rgb(255, 0, 0);
+    }
+  }
+
+  .trGreen1 {
+    .tdColor1 {
+      color: rgb(51, 153, 0);
+    }
+  }
+  .trRed1 {
+    .tdColor1 {
+      color: rgb(255, 0, 0);
+    }
+  }
+
+  .trGreen2 {
+    .tdColor2 {
+      color: rgb(51, 153, 0);
+    }
+  }
+  .trRed2 {
+    .tdColor2 {
+      color: rgb(255, 0, 0);
+    }
+  }
+
+  .trGreen3 {
+    .tdColor3 {
+      color: rgb(51, 153, 0);
+    }
+  }
+  .trRed3 {
+    .tdColor3 {
+      color: rgb(255, 0, 0);
+    }
+  }
+
+  .trGreen4 {
+    .tdColor4 {
+      color: rgb(51, 153, 0);
+    }
+  }
+  .trRed4 {
+    .tdColor4 {
+      color: rgb(255, 0, 0);
+    }
+  }
+
+  .trGreen5 {
+    .tdColor5 {
+      color: rgb(51, 153, 0);
+    }
+  }
+  .trRed5 {
+    .tdColor5 {
+      color: rgb(255, 0, 0);
+    }
+  }
+}
+// 暂时作废，待使用的样式
+.firstAreaDiv{
+  width:327px;
+  height:250px;
+  overflow:auto;
+  z-index: 2;
+  position:absolute;
+  background-color:#F7F7F7;
+  :global{
+    .ant-radio-button-wrapper{
+      padding: 0;
+      width: 71px;
+      text-align: center;
+      margin-left: 5px;
+      margin-top: 5px;
+      border-radius: 15px;
+    }
+    .ant-radio-group{
+      width: 320px;
+    }
+    .ant-radio-button-wrapper:hover {
+      color: #fff;
+      background-color: #C91717;
+      border-radius: 15px;
+      position: relative;
+    }
+    .ant-radio-button-wrapper:not(:first-child)::before{
+      display: none;
+    }
+    .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+      background: #C91717;
+      border-color: #C91717;
+      color: #fff;
+    }
+  }
+}
+// 暂时作废，待使用的样式
+.secondAreaDiv{
+  width:327px;
+  height:250px;
+  overflow:auto;
+  :global{
+    .ant-radio-group{
+      width: 320px;
+    }
+  }
+}
+// 按钮筛选条件的未选中按钮样式
+.btnStyle{
+  margin-top:15px;
+      padding: 0;
+      width: 93px;
+      margin-left: 5px;
+      color: rgba(0,0,0,0.65);
+      background-color: #fafafa;
+      border-color: white;
+      font-size: 14px;
+}
+.btnDiv{
+  :global{
+    .ant-btn:hover{
+      color: lightgrey;
+      background-color: #fff;
+      border-color: white;
+    }
+    .ant-btn:focus {
+      color: lawngreen;
+      background-color: #fff;
+      border-color: white;
+    }
+  }
+}
+// 按钮筛选条件的已选中按钮样式
+.btnStyleChoosed{
+  margin-top:15px;
+  padding: 0;
+  width: 93px;
+  margin-left: 5px;
+  color: white;
+  background-color: #C91717;
+  border-color: white;
+  border-radius: 15px;
+  font-size: 14px;
+}
+// 表格中“单位”列表头的左右切换按钮样式
+.btnOfUnit{
+  font-size: 12px;
+  height: 18px;
+  width: 15px;
+  text-align: center;
+}
+// 包围“单位”列表头的span标签，用于更改其内部的按钮细节样式
+.btnUnitSpan{
+  :global{
+    .ant-btn-sm{
+      padding: 0;
+    }
+    .ant-btn:hover{
+      color: #C91717;
+      background-color: #fff;
+      border-color: #C91717;
+    }
+  }
+}
+// 表格的Tab切换栏（已选中）样式
+.tabForTable{
+  border-bottom: 2px solid #C91717;
+  font-size:16px;
+  margin-left:15px;
+}
+// 表格的Tab切换栏（未选中）样式
+.tabForTableNotChoose{
+  border-bottom: none;
+  font-size:16px;
+  margin-left:15px;
+}
+// 待使用样式
+.colSql {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  background-color: lightgreen;
+}
+// 指标详细解释弹窗表格样式
+.tableDiv{
+  overflow-y:auto;
+  :global{
+    .ant-table-body {
+      height: 66vh;
+      width: 100%;
+      &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+      }
+      // 正常情况下滑块的样式
+      &::-webkit-scrollbar-thumb {
+        background-color: rgba(0,0,0,.05);
+        border-radius: 10px;
+        -webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1);
+      }
+      // 鼠标悬浮在该类指向的控件上时滑块的样式
+      &:hover::-webkit-scrollbar-thumb {
+        background-color: rgba(0,0,0,.2);
+        border-radius: 10px;
+        -webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1);
+      }
+      // 鼠标悬浮在滑块上时滑块的样式
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(0,0,0,.4);
+        -webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1);
+      }
+      // 正常时候的主干部分
+      &::-webkit-scrollbar-track {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+        background-color: white;
+      }
+      // 鼠标悬浮在滚动条上的主干部分
+      &::-webkit-scrollbar-track:hover {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.4);
+        background-color: rgba(0,0,0,.01);
+      }
+    }
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td {
+      padding: 3px 2px !important;
+    }
+    .ant-form-item{
+      margin-bottom: 0;
+    }
+    .ant-btn:hover,
+    .ant-btn:focus {
+      color: #C91717;
+      background-color: #fff;
+      border-color: #C91717;
+    }
+    .lightRow {
+      background-color: #F0F3F7;
+    }
+    .darkRow {
+      background-color: #F9F9F9;
+    }
+  }
+}
+// "查询"按钮样式
+.searchButtonDiv{
+  :global{
+    .ant-btn:hover,
+    .ant-btn:focus {
+      color: #C91717;
+      background-color: #fff;
+      border-color: #C91717;
+    }
+    .ant-tooltip .ant-tooltip-content .ant-tooltip-inner{
+      background-color: lightgrey;
+    }
+  }
+}
+// tooltip样式
+.toolTipDiv{
+  :global{
+    .ant-tooltip-inner{
+      background-color: #fafafa;
+    }
+  }
+}
+.ant-tooltip-inner{
+  background-color: lightgrey;
+}
+// "下载"按钮的附属按钮
+.downLoadButtonDiv{
+  :global{
+    .ant-btn:hover,
+    .ant-btn:focus {
+      color: #fff;
+      background-color: #C91717;
+      border-color: #fff;
+    }
+  }
+}
+// 指标详细解释弹窗“取消”按钮的样式
+.modalCancelDiv{
+  :global{
+    .ant-btn:hover,
+    .ant-btn:focus {
+      color: #fff;
+      background-color: #C91717;
+      border-color: #C91717;
+    }
+  }
+}
+// 待使用样式
+.provinceSpan{
+  :global{
+    .ant-btn:hover,
+    .ant-btn:focus {
+      color: #fff;
+      background-color: #C91717;
+      border-color: #C91717;
+    }
+  }
+}
+// 标题样式
+.titleDiv{
+  font-size:17px;
+  padding:10px;
+  display:inline-block
+}
+.titleIcon{
+  font-size:22px;
+  cursor:pointer;
+}
+.ProCityDiv{
+  display:inline-block;
+  float: left;
+  width:65%;
+  padding-top:5px;
+  //margin-bottom:-10px;
+}
+.commonFontSize{
+  font-size: 14px;
+}
+.dateSpan{
+  //margin-left:50px;
+  margin-top:5px;
+  :global{
+    .ant-input{
+      font-size: 14px;
+    }
+  }
+}
+.searchButton{
+font-size: 14px;
+  margin-left: 3px;
+}
+.tabDiv{
+font-size: 14px;
+}
+.modalDiv{
+  :global{
+    .ant-modal-title{
+      font-size: 16px;
+    }
+  }
+}
+.moreChoiceDiv{
+  font-size: 14px;
+}
+.miniLineDiv{
+  margin-left: 0;
+}
+// 背景透明的按钮
+.clearLoveButton{
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.screenConditionContet{
+  position: relative;
+}
+.showScreenCondition{
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+.showText{
+  color: #999;
+  font-size: 14px;
+  cursor: pointer;
+}
+.showTextIcon{
+  margin-left: 5px;
+}
+.screenConditionButton{
+  border: 1px solid #cfcfcf;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 3px 10px;
+  background-color: #fff;
+  font-size: 14px;
+  margin: 0 12px;
+}
+.screenConditionHide{
+  cursor: pointer;
+  width: 61px;
+  height: 27px;
+}
+.screenConditionNone{
+  display: none;
+}
+@media screen and (min-width: 800px) and(max-width: 1023px){
+  .titleDiv{
+    font-size:14px;
+    padding:10px;
+    display:inline-block
+  }
+  .titleIcon{
+    font-size:16px;
+    cursor:pointer;
+  }
+  .commonFontSize{
+    font-size: 12px;
+  }
+  .dateSpan{
+    margin-left:-12px;
+    :global{
+      .ant-input{
+        font-size: 12px;
+      }
+    }
+  }
+  .moreChoiceDiv{
+    font-size: 12px;
+    margin-left: -20px;
+  }
+  .searchButton{
+    font-size: 12px;
+  }
+  .btnStyle{
+    margin-top:15px;
+    padding: 0;
+    width: 70px;
+    margin-left: 3px;
+    color: rgba(0,0,0,0.65);
+    background-color: #fafafa;
+    border-color: white;
+    font-size: 12px;
+  }
+  .btnDiv{
+    font-size: 12px;
+  }
+  .btnStyleChoosed{
+    margin-top:15px;
+    padding: 0;
+    width: 70px;
+    margin-left: 3px;
+    color: white;
+    background-color: #C91717;
+    border-color: white;
+    border-radius: 15px;
+    font-size: 12px;
+  }
+  .tabDiv{
+    font-size: 12px;
+  }
+  .tabForTable{
+    border-bottom: 2px solid #C91717;
+    font-size:13px;
+    margin-left:15px;
+  }
+  .tabForTableNotChoose{
+    border-bottom: none;
+    font-size:13px;
+    margin-left:15px;
+  }
+  .miniLineDiv{
+    margin-left: -15px;
+  }
+}
+@media screen and (min-width: 1024px) and(max-width: 1279px){
+  .dateSpan{
+    margin-left:0;
+    :global{
+      .ant-input{
+        font-size: 14px;
+      }
+    }
+  }
+  .miniLineDiv{
+    margin-left: -47px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .titleDiv{
+    font-size:25px;
+    padding:10px;
+    display:inline-block
+  }
+  .titleIcon{
+    font-size:25px;
+    cursor:pointer;
+  }
+  .ProCityDiv{
+    display:inline-block;
+    width:65%;
+    padding-top:5px;
+    //margin-bottom:-10px;
+    font-size: 20px;
+  }
+  .commonFontSize{
+    font-size: 20px;
+  }
+  .dateSpan{
+    margin-left:50px;
+    :global{
+      .ant-input{
+        font-size: 20px;
+        height: 42px;
+      }
+    }
+  }
+  .searchButton{
+    width: 75px;
+    height: 35px;
+    font-size: 20px;
+  }
+  .btnStyle{
+    margin-top:15px;
+    padding: 0;
+    width: 125px;
+    margin-left: 5px;
+    color: rgba(0,0,0,0.65);
+    background-color: #fafafa;
+    border-color: white;
+    font-size: 20px;
+  }
+  .btnStyleChoosed{
+    margin-top:15px;
+    padding: 0;
+    width: 125px;
+    margin-left: 5px;
+    color: white;
+    background-color: #C91717;
+    border-color: white;
+    border-radius: 15px;
+    font-size: 20px;
+  }
+  .btnDiv{
+   font-size: 20px;
+  }
+  .tabDiv{
+    font-size: 20px;
+  }
+  .tableDiv{
+    :global{
+      .ant-table{
+        font-size: 18px;
+      }
+      .ant-modal-title{
+        font-size: 18px;
+      }
+    }
+  }
+  .modalDiv{
+    :global{
+      .ant-modal-title{
+        font-size: 20px;
+      }
+    }
+  }
+  .tabForTable{
+    font-size:20px;
+    margin-left:25px;
+  }
+  // 表格的Tab切换栏（未选中）样式
+  .tabForTableNotChoose{
+    font-size:20px;
+    margin-left:25px;
+  }
+  .moreChoiceDiv{
+    font-size: 20px;
+  }
+  .allOpen{
+    margin-top: 50px;
+    float: right;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  .checkBoxDiv{
+    :global{
+      .ant-checkbox-wrapper{
+        font-size: 20px;
+      }
+      .ant-dropdown-menu-item{
+        font-size: 14px;
+      }
+      .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: lightgrey;
+        border-color: gray;
+      }
+      .ant-checkbox-inner {
+        background-color: lightgrey;
+        border-color: gray;
+        height: 20px;
+        width: 20px;
+      }
+      .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+      .ant-checkbox:hover .ant-checkbox-inner,
+      .ant-checkbox-input:focus + .ant-checkbox-inner {
+        border-color: black;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,234 @@
+:global{
+  .ant-calendar-year-panel-year{
+    width: 70px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 8px;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+  .ant-calendar-year-panel-year:hover{
+    background: #c91717;
+    cursor: pointer;
+  }
+
+  .ant-calendar-month-panel-month {
+    width: 70px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 8px;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+  .ant-calendar-month-panel-month:hover {
+    background: #c91717;
+    cursor: pointer;
+  }
+  .ant-calendar-header a:hover {
+    color:#fff;
+  }
+  .ant-calendar-month-panel-header a.ant-calendar-month-panel-prev-year-btn:hover{
+    color:#c91717;
+  }
+  .ant-calendar-month-panel-header a.ant-calendar-month-panel-year-select:hover{
+    color:#c91717;
+  }
+  .ant-calendar-month-panel-header a.ant-calendar-month-panel-next-year-btn:hover{
+    color:#c91717;
+  }
+  .ant-calendar-month-panel-cell.ant-calendar-month-panel-selected-cell .ant-calendar-month-panel-month {
+    background: #c91717;
+    color: #fff;
+  }
+  .ant-calendar-month-panel-cell.ant-calendar-month-panel-selected-cell .ant-calendar-month-panel-month:hover {
+    background: #c91717;
+    color: #fff;
+  }
+  td.ant-calendar-month-panel-cell.ant-calendar-month-panel-cell-disabled.ant-calendar-month-panel-selected-cell{
+    a.ant-calendar-month-panel-month{
+      cursor: not-allowed;
+      color: #bcbcbc;
+      background: #f5f5f5;
+    }
+  }
+
+
+  .ant-calendar-cell{
+    .ant-calendar-date{
+      border-radius: 5px !important;
+    }
+  }
+  .ant-calendar-selected-day{
+    .ant-calendar-date{
+      background: #fff !important;
+      color: #000 !important;
+    }
+  }
+  .ant-calendar-selected-day:hover{
+    .ant-calendar-date{
+      background: #c91717 !important;
+      color: #fff !important;
+    }
+  }
+  .ant-calendar-selected-date{
+    .ant-calendar-date{
+      background: #c91717 !important;
+      color: #fff !important;
+    }
+  }
+  .ant-calendar-disabled-cell{
+    .ant-calendar-date{
+      width: auto;
+      border-radius: 0 !important;
+      background: #f5f5f5 !important;
+      color: rgba(0,0,0,0.25) !important;
+    }
+    .ant-calendar-date:hover{
+      width: auto;
+      border-radius: 0 !important;
+      background: #f5f5f5 !important;
+      color: rgba(0,0,0,0.25) !important;
+    }
+  }
+
+  // 去掉input框的边框
+  //input.ant-calendar-picker-input.ant-input{
+  //  display: block;
+  //  outline:none;
+  //  cursor: pointer;
+  //  height: 28px;
+  //}
+  //input.ant-calendar-picker-input.ant-input:focus{
+  //  outline:none;
+  //  cursor: pointer
+  //}
+  //.ant-input:focus {
+  //  outline: 0;
+  //  box-shadow:none;
+  //  border-right-width: 0;
+  //}
+}
+.table {
+  :global{
+    .lightRow {
+      background-color: #F0F3F7;
+    }
+    .darkRow {
+      background-color: #F9F9F9;
+    }
+  }
+  tr{
+    height: 40px !important;
+  }
+  td{
+    height: 40px !important;
+    padding: 0 10px !important;
+  }
+  th{
+    height: 50px !important;
+    padding: 0 10px !important;
+  }
+  z-index: 1;
+}
+.mainTitle{
+  position: relative;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  left: 50%;
+  margin-left: -100px;
+}
+.menu{
+  display: flex;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 15px;
+  .time{
+    position: relative;
+    height: 100%;
+    margin-right: 35px;
+    .spann{
+      margin-right: 20px;
+      font-size: 16px;
+      line-height: 40px;
+    }
+  }
+  .specialList{
+    z-index: 3;
+    position: relative;
+    width: 50%;
+    display: flex;
+    height: 40px;
+    padding-top: 5px;
+    .specialListTitle{
+      padding-top: 4px;
+      margin: 0 10px 0 10px;
+    }
+    span{
+      margin: 0 0 0 10px;
+      font-size: 14px;
+    }
+  }
+  .options{
+    position: relative;
+    float: right;
+    right: 30px;
+    height: 100%;
+    :global{
+      .ant-btn.antd-pro-pages-range-release-day-special-change-index-button{
+        color: rgba(0,0,0,0.65);
+        border-color: #d9d9d9;;
+      }
+      .ant-btn:focus.antd-pro-pages-range-release-day-special-change-index-button:focus{
+        color: rgba(0,0,0,0.65);
+        border-color: #d9d9d9;;
+      }
+      .ant-btn.antd-pro-pages-range-release-day-date-change-index-button{
+        color: rgba(0,0,0,0.65);
+        border-color: #d9d9d9;
+      }
+      .ant-btn:focus.antd-pro-pages-range-release-day-date-change-index-button:focus{
+        color: rgba(0,0,0,0.65);
+        border-color: #d9d9d9;
+      }
+      .ant-btn.antd-pro-pages-range-release-month-date-change-index-button{
+        color: rgba(0,0,0,0.65);
+        border-color: #d9d9d9;;
+      }
+      .ant-btn:focus.antd-pro-pages-range-release-month-date-change-index-button:focus{
+        color: rgba(0,0,0,0.65);
+        border-color: #d9d9d9;;
+      }
+      .ant-btn.antd-pro-pages-range-release-month-special-change-index-button{
+        color: rgba(0,0,0,0.65);
+        border-color: #d9d9d9;;
+      }
+      .ant-btn:focus.antd-pro-pages-range-release-month-special-change-index-button:focus{
+        color: rgba(0,0,0,0.65);
+        border-color: #d9d9d9;;
+      }
+    }
+    .button{
+      position: relative;
+      float: left;
+      margin-left: 20px;
+      font-size: 15px;
+    }
+  }
+}
+.tableTd{
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+@media only screen and (min-width: 1870px) {
+  .specialList{
+    width: 45%;
+    padding-bottom: 6px;
+    span{
+      margin: 5px 20px 0 10px;
+      font-size: 16px;
+    }
+  }
+}

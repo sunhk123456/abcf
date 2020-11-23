@@ -1,0 +1,319 @@
+.outerArea{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.areaTitle{
+  width: 100%;
+  height: 100%;
+  :global{
+    .ant-btn-primary{
+      height: 28px;
+      background-color: #fff;
+      color: #666;
+      font-weight: 400;
+      font-family: "Microsoft YaHei";
+      width: 80%;
+      border-color: #d9d9d9 !important;
+      border-radius: 0;
+      border:1px dotted;
+    }
+  }
+  .areaName{
+    display: block;
+    width: 100%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+  }
+  .iconCaretDown{
+    float: right;
+    margin-top: 3px;
+  }
+}
+.selectedArea{
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0 2%;
+  margin: 1%;
+}
+.areaTitleName{
+  float: left;
+  position: relative;
+  top: 4px;
+}
+.modalOuter{
+  position: absolute;
+  width: 810px;
+  color: #333;
+  height: 350px;
+  top: 32px;
+  left: -150px;
+  border-radius: 3px;
+  background-color: #fafafa;
+  border: 1px solid #e4e4e4;
+  box-shadow: 1px 1px 3px 1px #e7e7e7;
+  z-index: 11;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.modalLeft,.modalRight{
+  width: 49%;
+  height: 100%;
+  padding: 5px 0 0 10px;
+}
+.modalLeftTop{
+  width: 100%;
+  height: 10%;
+  border-bottom: 1px solid #e4e4e4;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  .modalTitle{
+    font-size: 14px;
+  }
+}
+.permissionsOuter{
+   display: inline-block;
+   position: relative;
+   left: 10%;
+  :global{
+    .ant-tag-checkable-checked {
+      background-color: #c91717;
+    }
+    .ant-tag{
+      margin-right: 0;
+      border: 1px solid #e7e7e7;
+    }
+    .ant-tag-checkable:not(.ant-tag-checkable-checked):hover{
+      color:#333;
+      border: 1px solid #e7e7e7;
+    }
+  }
+}
+.modalLeftBottom{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.provItem{
+  width: 20%;
+  height: 36px;
+  span{
+    cursor: pointer;
+  }
+}
+.cityOuter{
+  position: absolute;
+  width: 66%;
+  height: 66%;
+  z-index: 12;
+  min-height: 150px;
+  background-color: #fff;
+  left: 15%;
+  top: 15%;
+  border: 1px solid #e4e4e4;
+  box-shadow: 0 4px 7px rgba(153, 153, 153, 0.1);
+  border-radius: 6px;
+  overflow: auto;
+  color: #333;
+  .closeCityModal{
+    float: right;
+    margin: 0 4px;
+  }
+  .cityBox{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4px;
+    margin-left: 6px;
+    .cityCheckBox{
+      font-size: 14px;
+      font-family: "Microsoft YaHei";
+      margin: 4px 2px;
+    }
+  }
+}
+
+.modalRightTop{
+  width: 100%;
+  height: 10%;
+  border-bottom: 1px solid #e4e4e4;
+  margin-top:8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  .clearBtn{
+    display: block;
+    width: 36px;
+    text-align: center;
+    float: right;
+    background: #fff;
+    margin: 0 8px;
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+}
+.modalRightBottom{
+  width: 100%;
+  height: 85%;
+  .selectedContent{
+    width: 100%;
+    height: 85%;
+    overflow: auto;
+    :global{
+      .ant-tag{
+        margin-top: 8px;
+        background: #fff;
+      }
+    }
+  }
+  .selectedBtn{
+    width: 100%;
+    height: 10%;
+    .defineBtn{
+      height: 24px;
+      margin-left: 25%;
+      background-color: #c91717;
+      color: #fff;
+      cursor: pointer;
+      font-family: "Microsoft YaHei";
+      font-size: 14px;
+      font-weight: 400;
+      border-color: #d9d9d9 !important;
+    }
+    .cancelBtn{
+      height: 24px;
+      margin-left: 5%;
+      background-color: #fff;
+      color: #333;
+      cursor: pointer;
+      font-family: "Microsoft YaHei";
+      font-size: 14px;
+      font-weight: 400;
+      border-color: #d9d9d9 !important;
+    }
+  }
+}
+// 1280 分辨率
+@media only screen and (min-width: 1101px) and (max-width: 1315px){
+  .areaTitle{
+    :global{
+      .ant-btn-primary{
+        width: 74%;
+      }
+    }
+  }
+}
+//  1024分辨率
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+  .areaTitle{
+    :global{
+      .ant-btn-primary{
+        width: 60%;
+        font-size:12px;
+      }
+    }
+  }
+  .modalOuter{
+    width:600px;
+  }
+  .modalLeftTop{
+    .modalTitle{
+      font-size: 12px;
+    }
+  }
+  .selectedContent{
+    :global{
+      .ant-tag{
+        font-size: 10px;
+      }
+      .ant-tag-checkable-checked {
+        font-size: 11px;
+      }
+    }
+  }
+  .modalRightTop{
+    font-size: 12px;
+  }
+  .modalRightBottom{
+    .selectedBtn{
+      .defineBtn{
+        font-size: 11px;
+      }
+      .cancelBtn{
+        font-size: 11px;
+      }
+    }
+  }
+}
+//  800分辨率
+@media only screen and (min-width: 700px) and (max-width: 960px){
+  .areaTitle{
+    :global{
+      .ant-btn-primary{
+        width: 70%;
+        font-size:10px;
+      }
+    }
+  }
+  .areaTitleName{
+    top: 6px;
+  }
+  .modalOuter{
+    width:500px;
+  }
+  .modalLeftTop{
+    .modalTitle{
+      font-size: 12px;
+    }
+  }
+  .selectedContent{
+    :global{
+      .ant-tag{
+        font-size: 10px;
+      }
+      .ant-tag-checkable-checked {
+        font-size: 11px;
+      }
+    }
+  }
+  .modalRightTop{
+    font-size: 12px;
+  }
+  .modalRightBottom{
+    .selectedBtn{
+      .defineBtn{
+        font-size: 11px;
+      }
+      .cancelBtn{
+        font-size: 11px;
+      }
+    }
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .areaTitle{
+    .areaTitleName{
+      font-size: 20px;
+    }
+    :global{
+      .ant-btn-primary{
+        height: 40px;
+        font-size: 20px;
+      }
+    }
+  }
+  .modalOuter{
+    font-size: 14px;
+    :global{
+      .ant-tag-checkable{
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,131 @@
+@color-F7F7F7: #F7F7F7;
+@color-FFFFFF: #fff;
+@color-cfcfcf: #cfcfcf;
+@color-red: #C91717;
+@color-f0f0f0: #f0f0f0;
+@color-009DD9: #009DD9;
+.queryPopup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  background-color: rgba(0,0,0,.6);
+  .container{
+    position: absolute;
+    width: 65%;
+    min-width: 800px;
+    height: 70%;
+    min-height: 580px;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%,-50%);
+    background-color: @color-F7F7F7;
+    display: flex;
+    flex-direction: column;
+  }
+  .title{
+    position: relative;
+    flex: 0 0 30px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 18px;
+    flex-basis: 30px;
+  }
+  .close{
+    position: absolute;
+    right: 2px;
+    top: -3px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .tableContent{
+    //flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 10px 15px;
+    border:1px solid #e8e8e8;
+  }
+  .buttonContent{
+    text-align: right;
+    margin-right: 20px;
+    //flex: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    button{
+      margin-left: 10px;
+      background-color: #C91717;
+      color:#fff;
+      span{
+        margin: 0;
+      }
+    }
+  }
+
+  .error{
+    color: #C91717;
+    text-align: center;
+  }
+  .tableItem{
+    max-width: 10px;
+  }
+  .renderText{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+  }
+  :global{
+    .ant-table-thead > tr > th{
+      color: #666;
+      text-align: center;
+      //border-right: 1px solid #fff;
+      //border-bottom: 1px solid #fff;
+      background-color: #F8F8F8;
+    }
+    .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+      padding: 5px 10px;
+    }
+    .ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td, .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td, .ant-table-thead > tr:hover:not(.ant-table-expanded-row) > td, .ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td {
+      background: #f0f0f0;
+    }
+    .ant-table-scroll table{
+      min-width: auto;
+    }
+
+    .ant-radio-checked .ant-radio-inner{
+      border-color: @color-red;
+    }
+    .ant-radio-inner::after{
+      background-color:@color-red;
+    }
+    .ant-radio:hover .ant-radio-inner{
+      border-color: @color-red;
+    }
+  }
+  tbody {
+    .trStyle:nth-child(even){
+      background-color: #F8F8F8;
+    }
+    .trStyle:nth-child(odd){
+      background-color: #EFF2F6;
+    }
+    .trStyle > td{
+      //border-right: 1px solid #fff;
+      //border-bottom: 1px solid #fff;
+      color: #333;
+      text-align: center;
+    }
+    tr.trStyle:hover td {
+      background-color: #f0f0f0;
+    }
+
+  }
+
+}

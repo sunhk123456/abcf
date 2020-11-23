@@ -1,0 +1,669 @@
+@color1:#E9A23E;
+@color2:#3B5163;
+@color3:#54A7D0;
+@color4:#0BAE97;
+@color5:#D71A20;
+.page{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  .titleName{
+    padding-left: 25px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #333;
+  }
+  .content{
+    position: relative;
+    flex: 1;
+    width: 100%;
+    .line{
+      position: absolute;
+      left:4%;
+      top:50%;
+      transform: translateY(-50%);
+      width: 93%;
+      height: 2px;
+      background: #797979;
+    }
+    .rhombus{
+      position: absolute;
+      left:4%;
+      top:50%;
+      width: 5px;
+      height: 5px;
+      transform: translateY(-50%) rotate(45deg);
+      background: #797979;
+    }
+    .rhombus2{
+      position: absolute;
+      left:97%;
+      top:50%;
+      width: 5px;
+      height: 5px;
+      transform: translateY(-50%) rotate(45deg);
+      background: #797979;
+    }
+    .itemTop1{
+      position: absolute;
+      left:23%;
+      top:50%;
+      transform: translate(-100%,-100%);
+      width: 17%;
+      height: 150px;
+      .circle{
+        z-index: 3;
+        position: absolute;
+        top:100%;
+        left: 0;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: @color1;
+        transform: translate(-50%,-50%);
+      }
+      .circle2{
+        z-index: 2;
+        position: absolute;
+        top:100%;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid @color1;
+        transform: translate(-50%,-50%);
+      }
+      .circle3{
+        z-index: 2;
+        position: absolute;
+        top:20%;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: @color1;
+        transform: translate(-50%,-50%);
+      }
+      .verticalLine{
+        position: absolute;
+        top:100%;
+        left: 0;
+        transform: translate(-50%,-100%);
+        z-index: 1;
+        width: 2px;
+        height: 80%;
+        background: @color1;
+      }
+      .rect{
+        position: absolute;
+        top:55%;
+        left: 0;
+        transform: translate(0%,-50%);
+        width: 100%;
+        padding: 0 5px 0 5px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        color: #fff;
+        word-break: break-all;
+        background: @color1;
+        .triangle{
+          position: absolute;
+          top: 100%;
+          left: 100%;
+          height: 70.7%;
+          width: 70px;
+          transform-origin: 0 0;
+          transform: rotate(-45deg);
+          background: #F7F8FC;
+        }
+        .triangle1{
+          position: absolute;
+          top: -100%;
+          left: 100%;
+          height: 70.7%;
+          width: 70px;
+          transform-origin: 0 0;
+          transform: rotate(45deg);
+          background: #F7F8FC;
+        }
+        .triangle2{
+          z-index: -1;
+          position: absolute;
+          top: 0%;
+          left: 99%;
+          height: 100%;
+          width: 26px;
+          transform-origin: 0 0;
+          transform: rotate(0deg);
+          background: @color1;
+        }
+        .rectText{
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          line-height: 22px;
+          max-height: 44px;
+          min-height: 22px;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+        }
+      }
+      .text{
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        transform: translate(-50%,-50%);
+      }
+    }
+    .itemTop2{
+      position: absolute;
+      left:59%;
+      top:50%;
+      transform: translate(-100%,-100%);
+      width: 17%;
+      height: 150px;
+      .circle{
+        z-index: 3;
+        position: absolute;
+        top:100%;
+        left: 0;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: @color3;
+        transform: translate(-50%,-50%);
+      }
+      .circle2{
+        z-index: 2;
+        position: absolute;
+        top:100%;
+        left:0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid @color3;
+        transform: translate(-50%,-50%);
+      }
+      .circle3{
+        z-index: 2;
+        position: absolute;
+        top:20%;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: @color3;
+        transform: translate(-50%,-50%);
+      }
+      .verticalLine{
+        position: absolute;
+        top:100%;
+        left: 0;
+        transform: translate(-50%,-100%);
+        z-index: 1;
+        width: 2px;
+        height: 80%;
+        background: @color3;
+      }
+      .rect{
+        position: absolute;
+        top:55%;
+        left: 0;
+        transform: translate(0%,-50%);
+        width: 100%;
+        padding: 0 5px 0 5px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        word-break: break-all;
+        color: #fff;
+        background: @color3;
+        .triangle{
+          position: absolute;
+          top: 100%;
+          left: 100%;
+          height: 70.7%;
+          width: 70px;
+          transform-origin: 0 0;
+          transform: rotate(-45deg);
+          background: #F7F8FC;
+        }
+        .triangle1{
+          position: absolute;
+          top: -100%;
+          left: 100%;
+          height: 70.7%;
+          width: 70px;
+          transform-origin: 0 0;
+          transform: rotate(45deg);
+          background: #F7F8FC;
+        }
+        .triangle2{
+          z-index: -1;
+          position: absolute;
+          top: 0%;
+          left: 99%;
+          height: 100%;
+          width: 26px;
+          transform-origin: 0 0;
+          transform: rotate(0deg);
+          background: @color3;
+        }
+        .rectText{
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          line-height: 22px;
+          max-height: 44px;
+          min-height: 22px;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+        }
+      }
+      .text{
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        transform: translate(-50%,-50%);
+      }
+    }
+    .itemTop3{
+      position: absolute;
+      left:96%;
+      top:50%;
+      transform: translate(-100%,-100%);
+      width:17%;
+      height: 150px;
+      .circle{
+        z-index: 3;
+        position: absolute;
+        top:100%;
+        left: 0;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: @color5;
+        transform: translate(-50%,-50%);
+      }
+      .circle2{
+        z-index: 2;
+        position: absolute;
+        top:100%;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid @color5;
+        transform: translate(-50%,-50%);
+      }
+      .circle3{
+        z-index: 2;
+        position: absolute;
+        top:20%;
+        left:0;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: @color5;
+        transform: translate(-50%,-50%);
+      }
+      .verticalLine{
+        position: absolute;
+        top:100%;
+        left: 0;
+        transform: translate(-50%,-100%);
+        z-index: 1;
+        width: 2px;
+        height: 80%;
+        background: @color5;
+      }
+      .rect{
+        position: absolute;
+        top:55%;
+        left: 0;
+        transform: translate(0%,-50%);
+        width: 100%;
+        padding: 0 5px 0 5px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        color: #fff;
+        word-break: break-all;
+        background: @color5;
+        .triangle{
+          position: absolute;
+          top: 100%;
+          left: 100%;
+          height: 70.7%;
+          width: 70px;
+          transform-origin: 0 0;
+          transform: rotate(-45deg);
+          background: #F7F8FC;
+        }
+        .triangle1{
+          position: absolute;
+          top: -100%;
+          left: 100%;
+          height: 70.7%;
+          width: 70px;
+          transform-origin: 0 0;
+          transform: rotate(45deg);
+          background: #F7F8FC;
+        }
+        .triangle2{
+          z-index: -1;
+          position: absolute;
+          top: 0%;
+          left: 99%;
+          height: 100%;
+          width: 26px;
+          transform-origin: 0 0;
+          transform: rotate(0deg);
+          background: @color5;
+        }
+        .rectText{
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          line-height: 22px;
+          max-height: 44px;
+          min-height: 22px;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+        }
+      }
+      .text{
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        transform: translate(-50%,-50%);
+      }
+    }
+    .itemBottom1{
+      position: absolute;
+      left:41%;
+      top:50%;
+      transform: translate(-100%,-100%);
+      width: 17%;
+      height: 150px;
+      .circle{
+        z-index: 3;
+        position: absolute;
+        top:100%;
+        left: 0;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: @color2;
+        transform: translate(-50%,-50%);
+      }
+      .circle2{
+        z-index: 2;
+        position: absolute;
+        top:100%;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid @color2;
+        transform: translate(-50%,-50%);
+      }
+      .circle3{
+        z-index: 2;
+        position: absolute;
+        bottom:-80%;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: @color2;
+        transform: translate(-50%,50%);
+      }
+      .verticalLine{
+        position: absolute;
+        bottom:0;
+        left: 0;
+        transform: translate(-50%,100%);
+        z-index: 1;
+        width: 2px;
+        height: 80%;
+        background: @color2;
+      }
+      .rect{
+        position: absolute;
+        bottom:-65%;
+        left: 0;
+        transform: translate(0%,0%);
+        width: 100%;
+        padding: 0 5px 0 5px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        color: #fff;
+        word-break: break-all;
+        background: @color2;
+        .triangle{
+          position: absolute;
+          top: 100%;
+          left: 100%;
+          height: 70.7%;
+          width: 70px;
+          transform-origin: 0 0;
+          transform: rotate(-45deg);
+          background: #F7F8FC;
+        }
+        .triangle1{
+          position: absolute;
+          top: -100%;
+          left: 100%;
+          height: 70.7%;
+          width: 70px;
+          transform-origin: 0 0;
+          transform: rotate(45deg);
+          background: #F7F8FC;
+        }
+        .triangle2{
+          z-index: -1;
+          position: absolute;
+          top: 0%;
+          left: 99%;
+          height: 100%;
+          width: 26px;
+          transform-origin: 0 0;
+          transform: rotate(0deg);
+          background: @color2;
+        }
+        .rectText{
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          line-height: 22px;
+          max-height: 44px;
+          min-height: 22px;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+        }
+      }
+      .text{
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        transform: translate(-50%,50%);
+      }
+    }
+    .itemBottom2{
+      position: absolute;
+      left:77%;
+      top:50%;
+      transform: translate(-100%,-100%);
+      width: 17%;
+      height: 150px;
+      .circle{
+        z-index: 3;
+        position: absolute;
+        top:100%;
+        left: 0;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: @color4;
+        transform: translate(-50%,-50%);
+      }
+      .circle2{
+        z-index: 2;
+        position: absolute;
+        top:100%;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid @color4;
+        transform: translate(-50%,-50%);
+      }
+      .circle3{
+        z-index: 2;
+        position: absolute;
+        bottom:-80%;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: @color4;
+        transform: translate(-50%,50%);
+      }
+      .verticalLine{
+        position: absolute;
+        bottom:0;
+        left:0;
+        transform: translate(-50%,100%);
+        z-index: 1;
+        width: 2px;
+        height: 80%;
+        background: @color4;
+      }
+      .rect{
+        position: absolute;
+        bottom:-65%;
+        left: 0;
+        transform: translate(0%,0%);
+        width: 100%;
+        padding: 0 5px 0 5px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        color: #fff;
+        word-break: break-all;
+        background: @color4;
+        .triangle{
+          position: absolute;
+          top: 100%;
+          left: 100%;
+          height: 70.7%;
+          width: 70px;
+          transform-origin: 0 0;
+          transform: rotate(-45deg);
+          background: #F7F8FC;
+        }
+        .triangle1{
+          position: absolute;
+          top: -100%;
+          left: 100%;
+          height: 70.7%;
+          width: 70px;
+          transform-origin: 0 0;
+          transform: rotate(45deg);
+          background: #F7F8FC;
+        }
+        .triangle2{
+          z-index: -1;
+          position: absolute;
+          top: 0%;
+          left: 99%;
+          height: 100%;
+          width: 26px;
+          transform-origin: 0 0;
+          transform: rotate(0deg);
+          background: @color4;
+        }
+        .rectText{
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          line-height: 22px;
+          max-height: 44px;
+          min-height: 22px;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+        }
+      }
+      .text{
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        transform: translate(-50%,50%);
+      }
+    }
+  }
+  .welcome{
+    width: 100%;
+    height: calc(100% - 50px);
+    color: #C91717;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and(min-width: 760px)  and (max-width: 960px){
+  .page .titleName{
+    font-size:12px;
+  }
+}
+@media only screen and(min-width: 961px)  and (max-width: 1100px){
+  .page .titleName{
+    font-size:14px;
+  }
+}
+@media only screen and(min-width: 1101px)  and (max-width: 1315px){
+  .page .titleName{
+    font-size:14px;
+  }
+}
+@media only screen and(min-width: 1316px)  and (max-width: 1869px){
+  .page .titleName{
+    font-size:18px;
+  }
+}
+@media screen and (min-width: 1870px){
+  .page .titleName{
+    font-size: 23px;
+  }
+  .rect {
+    font-size: 18px !important;
+  }
+  .text{
+    font-size: 18px !important;
+  }
+}

@@ -1,0 +1,52 @@
+.templatePopup {
+  .title {
+    font-size: 16px;
+    color: #000;
+    padding-bottom: 15px;
+  }
+  .img {
+    width: 142px;
+    height: 89px;
+    border: 1px dashed #CCC;
+  }
+  :global {
+    .ant-modal-content {
+      width: 460px;
+      margin: 0 auto;
+      .ant-modal-body {
+        padding: 12px 24px 0 24px;
+        .ant-radio-group {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding-right: 20px;
+          .ant-radio-wrapper {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+          }
+        }
+        .ant-radio-checked .ant-radio-inner {
+          border-color: #D44545;
+        }
+        .ant-radio-inner::after{
+          background-color: #D44545;
+        }
+        .ant-radio-wrapper:hover .ant-radio, .ant-radio:hover .ant-radio-inner, .ant-radio-input:focus + .ant-radio-inner {
+          border-color: #D44545;
+        }
+      }
+      .ant-modal-footer {
+        display: flex;
+        justify-content: center;
+        border-top: none;
+      }
+      .ant-modal-footer > div{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,111 @@
+/**
+ * title: myReportCard
+ * description:
+ * @author: zhaidengke
+ * @date 2019/1/17 0017
+ */
+
+.myReportCardContent {
+  width: 100%;
+  .titleContent{
+    width: 100%;
+  }
+  .Row{
+    height: 100%;
+    position: relative;
+  }
+  .leftContent{
+    height: 100%;
+    padding: 0 20px 0 0;
+  }
+  .echartPic{
+    height: 100%;
+    position: relative;
+    //border: 1px solid rgb(239, 239, 239);
+    border: 1px solid #c3b295;
+    img{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+  }
+  .rightContent{
+    padding: 5px 0;
+  }
+  .title{
+    font-size: 16px;
+    color: #4f4f4f;
+    border-bottom: 1px solid #4f4f4f; // 4.29 xingxiaodong 更改下划线
+    // text-decoration: underline ;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  .listCol{
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  .btn{
+    color: #C91717;
+    cursor: pointer;
+    height: 39px;
+    line-height: 39px;
+  }
+  .colDel{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .red{
+    color: red;
+  }
+  .selectSt{
+    width: 170px;
+  }
+  .mustText{
+    color: #999;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  :global{
+    .ant-form-inline .ant-form-item-with-help{
+      margin-bottom: 0;
+    }
+  }
+}
+// 1440 分辨率
+@media only screen and (min-width: 1390px) and (max-width: 1869px){
+  .myReportCardContent{
+    .rightContent{
+      padding: 10px 0;
+    }
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .myReportCardContent{
+    font-size: 19px;
+    .leftContent{
+     max-width: 240px;
+    }
+    .rightContent{
+      padding: 15px 0;
+    }
+    :global{
+      .ant-form label{
+        font-size: 19px;
+      }
+      .ant-form {
+        font-size: 19px;
+      }
+      .ant-input, .ant-form label > span, .ant-select{
+        font-size: 17px;
+      }
+    }
+    .mustText{
+      font-size: 16px;
+    }
+  }
+  :global(.ant-select-dropdown){
+    font-size: 17px;
+  }
+}

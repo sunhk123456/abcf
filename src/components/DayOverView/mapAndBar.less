@@ -1,0 +1,251 @@
+@import '~@/utils/utils.less';
+@import '~@/components/DayOverView/earlyWarning.less';
+
+//指标异动样式引入
+.earlyTip();
+// 智能预警样式
+.overViewEarlyWarning();
+
+
+// 1366 、1440分辨率
+.containerTop {
+  height: 70%;
+  width: 95%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Microsoft Yahei', serif;
+  color: #666;
+
+}
+.text {
+  height: 100%;
+  width: 34%;
+}
+.titleData{
+  padding: 0 5px 5px 0;
+  border-bottom: solid 1px #999;
+  font-size: 16px;
+  cursor: pointer;
+}
+.dataTop{
+  margin-top: 8%;
+  height: 30%;
+  margin-left: 3%;
+}
+.dataBottom{
+  height: 25%;
+  margin-left: 3%;
+}
+.totalName{
+  height: 43%;
+}
+.totalValue{
+  //font-family: Arial-BoldMT,Arial Bold,Arial;
+  font-size: 22px;
+  height: 55%;
+  font-weight: 700;
+}
+.totalValueRight{
+  margin-right: 5%;
+}
+.totalValueWarning{
+  font-size: 22px;
+  height: 55%;
+  font-weight: 700;
+}
+.unit{
+  font-size: 18px;
+}
+.value{
+  font-size: 18px;
+  height: 55%;
+  font-weight: 700;
+  font-family: ArialMT,Arial;
+}
+.map {
+  height: 100%;
+  width: 55%;
+  left: 12%;
+}
+
+.bar{
+  width: 95%;
+  height: 30%;
+}
+.dataBlank{
+  color: #666;
+}
+.dataRed{
+  color: red;
+}
+.dateGreen{
+  color: #390;
+}
+.backChina{
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  font-weight: 600;
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+}
+.backImg{
+  position: absolute;
+  top: 15%;
+  left: -35%;
+}
+.fenxi{
+  margin-left: 15px;
+  width: 5%;
+  height: 100%;
+  background-color: #f2f1f2;
+  color: #C73E48;
+  font-size: 15px;
+  line-height: 20px;
+  position: relative;
+  float: right;
+  top: -100%;
+  text-align: center;
+  cursor: pointer;
+  .fenxiSpann{
+    width: 25px;
+    position: relative;
+    left: 50%;
+    margin-left: -12.5px;
+    top: 50%;
+    margin-top: -83px;
+  }
+}
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 900px){
+  .text {
+    width: 50%;
+  }
+  .map {
+    width: 57%;
+    left: -4%;
+  }
+  .containerTop {
+    font-size: 14px;
+  }
+  .titleData{
+    font-size: 14px;
+  }
+  .totalValue,.totalValueWarning{
+    font-size: 16px;
+  }
+  .unit{
+    font-size: 14px;
+  }
+  .value{
+    font-size: 14px;
+  }
+  .mixEchartsGauge{
+    top:-39%;
+  }
+  .backChina{
+    right: 2%;
+  }
+  .fenxi{
+    margin-right: -10px;
+    width: 7%;
+    .fenxiSpann{
+      width: 20px;
+      font-size: 12px;
+    }
+  }
+
+}
+// 1024 分辨率
+@media only screen and (min-width: 1000px) and (max-width: 1200px){
+  .map {
+    width: 57%;
+    left: 10%;
+  }
+  .containerTop {
+    font-size: 14px;
+  }
+  .text {
+    width: 35%;
+  }
+  .titleData{
+    font-size: 14px;
+  }
+  .totalValue,.totalValueWarning{
+    font-size: 16px;
+  }
+  .unit{
+    font-size: 14px;
+  }
+  .value{
+    font-size: 14px;
+  }
+  .mixEchartsGauge{
+    top:-39%;
+  }
+  .backChina{
+    right: 2%;
+  }
+  .fenxi{
+    width: 6%;
+    .fenxiSpann{
+      width: 20px;
+      font-size: 12px;
+    }
+  }
+}
+// 1280 分辨率
+@media only screen and (min-width: 1025px) and (max-width: 1280px){
+  .containerTop {
+    font-size: 12px;
+  }
+  .titleData{
+    font-size: 16px;
+  }
+  .totalValue,.totalValueWarning{
+    font-size: 20px;
+  }
+  .unit{
+    font-size: 16px;
+  }
+  .fenxi{
+    .fenxiSpann{
+      width: 20px;
+      font-size: 12px;
+    }
+  }
+
+}
+// 1366 分辨率
+@media only screen and (min-width: 1280px) and (max-width: 1441px){
+  .fenxi{
+    .fenxiSpann{
+      width: 20px;
+      font-size: 12px;
+    }
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1871px) and (max-width: 2160px){
+  .titleData{
+    font-size: 20px;
+  }
+  .backChina,.backImg{
+    font-size: 14px;
+  }
+  .totalName{
+    font-size: 14px;
+  }
+  .map{
+    width: 55%;
+  }
+  .fenxi{
+    .fenxiSpann{
+      font-size: 14px;
+    }
+  }
+}

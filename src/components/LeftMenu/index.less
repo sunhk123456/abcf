@@ -1,0 +1,109 @@
+@color-E9E9E9: #E9E9E9;
+@color-F7F9FD: #F7F9FD;
+@color-333333: #333333;
+@color-868686: #868686;
+@color-FFFFFF: #fff;
+.newMenu{
+  width: 13%;
+  z-index: 100;
+  .menuFixed{
+    position: fixed;
+    width: 13%;
+    height: 100%;
+    display: flex;
+  }
+  .leftMenu{
+    flex: 0 0 45px;
+    position: relative;
+    //flex-grow: 1;
+    //flex-shrink: 1;
+    //flex-basis: 45px;
+  }
+  .leftMenuContent{
+    color: #fff;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+  }
+  .rightMenu{
+    flex: 1 1 auto;
+    margin-left: 5px;
+    padding-top: 1vh;
+    //flex-grow: 0;
+    //flex-shrink: 0;
+    //flex-basis: auto;
+    height: calc((100%) - (8vh));
+  }
+  .secondMenu{
+    border: 1px solid @color-E9E9E9;
+    background-color: @color-F7F9FD;
+    border-radius: 5px;
+    height: 100%;
+    overflow-y: auto;
+    .secondMenuItem{
+      padding: 15px 10px 10px 10px;
+      //margin: 15px 10px 0 10px;
+      //border-bottom: 1px solid @color-E9E9E9;
+      position: relative;
+    }
+    .subtitle:after{
+      width: calc((100%) - (20px));
+      height: 1px;
+      content:"";
+      position: absolute;
+      left: 10px;
+      bottom: 0;
+      background-color: @color-E9E9E9;
+    }
+    .secondMenuItemHighlight{
+      background-color: @color-FFFFFF;
+      //box-shadow: 0px 12px 8px -12px #000;
+      box-shadow: 0 -4px 10px -9px #000,0 4px 10px -9px #000;
+      position: relative;
+      z-index: 2;
+    }
+    .itemName{
+      color: @color-333333;
+      font-size: 16px;
+      margin-bottom: 5px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .subtitle{
+      color: @color-868686;
+      font-size: 13px;
+      margin: 0;
+      padding: 0;
+      height: 23px;
+      width: 100%;
+      overflow: hidden;
+      li{
+        display: inline-block;
+        padding-right: 10px;
+      }
+    }
+
+  }
+  .rightMenuPop{
+    position: fixed;
+    left: calc((13%) - (1px));
+    top: 9vh;
+    height: 85%;
+    width: 72%;
+    background: #fff;
+    z-index: 1;
+    box-shadow:0 0 10px -3px #000;
+    border-radius: 5px;
+  }
+
+}
+
+@media screen and (min-width: 1920px) {
+  .newMenu{
+    .itemName {
+      font-size: 20px;
+    }
+  }
+}
+

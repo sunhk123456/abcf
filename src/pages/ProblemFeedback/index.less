@@ -1,0 +1,827 @@
+:global{
+
+  .ant-select-dropdown-menu-item:hover {
+    background-color: #D44545 ;
+    color: white ;
+  }
+  .ant-select-dropdown-menu-item-active:hover {
+    background-color: #D44545 ;
+    color: white ;
+  }
+  .ant-select-dropdown-menu-item-active {
+    background-color: #D44545 ;
+    color: white ;
+  }
+  .ant-table table {
+    table-layout: fixed;
+    font-size: 12px; //历史问题表格字体大小
+  }
+  .ant-select{
+    //.ant-select-arrow{
+    //  display: none;
+    //}
+    .ant-select-selection:hover{
+      border-color: #d9d9d9 ;
+      box-shadow: none ;
+    }
+    .ant-select-selection:focus{
+      border-color: #d9d9d9 ;
+      box-shadow: none ;
+    }
+  }
+
+  .ant-calendar-year-panel-year{
+    width: 70px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 8px;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+  .ant-calendar-year-panel-year:hover{
+    background: #c91717;
+    cursor: pointer;
+  }
+
+  .ant-calendar-month-panel-month {
+    width: 70px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 8px;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+  .ant-calendar-month-panel-month:hover {
+    background: #c91717;
+    cursor: pointer;
+  }
+  .ant-calendar-header a:hover {
+    color:#fff;
+  }
+  .ant-calendar-month-panel-header a.ant-calendar-month-panel-prev-year-btn:hover{
+    color:#c91717;
+  }
+  .ant-calendar-month-panel-header a.ant-calendar-month-panel-year-select:hover{
+    color:#c91717;
+  }
+  .ant-calendar-month-panel-header a.ant-calendar-month-panel-next-year-btn:hover{
+    color:#c91717;
+  }
+  .ant-calendar-month-panel-cell.ant-calendar-month-panel-selected-cell .ant-calendar-month-panel-month {
+    background: #c91717;
+    color: #fff;
+  }
+  .ant-calendar-month-panel-cell.ant-calendar-month-panel-selected-cell .ant-calendar-month-panel-month:hover {
+    background: #c91717;
+    color: #fff;
+  }
+  td.ant-calendar-month-panel-cell.ant-calendar-month-panel-cell-disabled.ant-calendar-month-panel-selected-cell{
+    a.ant-calendar-month-panel-month{
+      cursor: not-allowed;
+      color: #bcbcbc;
+      background: #f5f5f5;
+    }
+  }
+
+
+  .ant-calendar-cell{
+    .ant-calendar-date{
+      border-radius: 5px ;
+    }
+  }
+  .ant-calendar-selected-day{
+    .ant-calendar-date{
+      background: #fff ;
+      color: #000 ;
+    }
+  }
+  .ant-calendar-selected-day:hover{
+    .ant-calendar-date{
+      background: #c91717 ;
+      color: #fff ;
+    }
+  }
+  .ant-calendar-selected-date{
+    .ant-calendar-date{
+      background: #c91717 ;
+      color: #fff ;
+    }
+  }
+  .ant-calendar-disabled-cell{
+    .ant-calendar-date{
+      width: auto;
+      border-radius: 0 ;
+      background: #f5f5f5 ;
+      color: rgba(0,0,0,0.25) ;
+    }
+    .ant-calendar-date:hover{
+      width: auto;
+      border-radius: 0 ;
+      background: #f5f5f5 ;
+      color: rgba(0,0,0,0.25) ;
+    }
+  }
+
+}
+.tabsStyle {
+  :global {
+    .ant-tabs-tab{
+      font-size: 18px;
+      color: #c91717;
+    }
+    .ant-tabs-tab-active {
+      font-size: 18px;
+      color: #c91717;
+    }
+
+    .ant-tabs-tab:hover {
+      font-size: 18px;
+      color: #c91717;
+    }
+
+    .ant-tabs-ink-bar {
+      background-color: #c91717;
+      width: 50%;
+    }
+  }
+}
+.weichuli{
+  color: #999;
+}
+.yichuli{
+  color: #090;
+}
+.conditions{
+
+  width: 100%;
+  position: relative;
+  top: 4px;
+  :global{
+    .ant-btn.antd-pro-pages-problem-feedback-index-button{
+      color: rgba(0,0,0,0.65);
+      border-color: #d9d9d9;;
+    }
+    .ant-btn:focus.antd-pro-pages-problem-feedback-index-button:focus{
+      color: rgba(0,0,0,0.65);
+      border-color: #d9d9d9;;
+    }
+    .ant-select-selection--single{
+      border: 1px dotted #a7a7a7;
+      border-radius: 0;
+    }
+    .ant-select-dropdown-menu-item {
+      background-color: #FAFAFA ;
+    }
+  }
+  .time{
+    padding-bottom: 10px;
+    width: 100%;
+    position: relative;
+    float: left;
+    left: 20px;
+    font-size: 15px;
+  }
+  .proKind{
+    :global{
+      .ant-select{
+        .ant-select-arrow{
+          display: none;
+        }
+      }
+    }
+    position: relative;
+    float: left;
+    left: 180px;
+    .triangle{
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 7px solid #999;
+    }
+  }
+  .button{
+    position: relative;
+    float: right;
+    margin-left: 20px;
+  }
+  .spann{
+    margin-right: 15px;
+  }
+}
+.feedBackCon{
+  width: 100%;
+  .conTitle{
+    position: relative;
+    clear: both;
+    height: 60px;
+    padding-top: 18px;
+    font-size: 16px;
+    .icon{
+      width: 5px;
+      height: 20px;
+      background-color: #C91717;
+      float: left;
+      margin-right: 15px;
+      margin-top: 3px;
+    }
+  }
+  .conCon{
+    width: 100%;
+    .table {
+      :global{
+        .lightRow {
+          background-color: #F0F3F7;
+        }
+        .darkRow {
+          background-color: #F9F9F9;
+        }
+      }
+      tr{
+        height: 40px ;
+      }
+      td{
+        height: 40px ;
+        padding: 0 10px ;
+      }
+      th{
+        height: 50px ;
+        padding: 0 10px ;
+      }
+    }
+  }
+}
+
+.submitProblem_nav {
+  position: relative;
+  top: 40px;
+  font-style: normal;
+  -webkit-box-flex: 1;
+  margin-left: 1%;
+  width: 100%;
+  height: 100%;
+  #u12 {
+    width: 4px;
+    height: 15px;
+    background-color: #C91717;
+  }
+  #u13 {
+    width: 4px;
+    height: 15px;
+    background-color: #C91717;
+    position: relative;
+    top: -30px;
+  }
+  .firForm {
+    position: relative;
+    left: 1%;
+    top: -20px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #1E1E1E;
+    width: 100%;
+    span {
+      width: 20%;
+    }
+    .yuanLabel {
+      position: relative;
+      left: 10%;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 15px;
+      color: #1E1E1E;
+      width: 60%;
+      cursor: default;
+      margin-top: -22px;
+    }
+    #textA {
+      padding: 10px;
+      background-color: #F2F2F2;
+      resize: none;
+      position: relative;
+      left: 10%;
+      top: -20px;
+      cursor: default;
+      outline: none;
+    }
+  }
+  .secForm {
+    position: relative;
+    top: -50px;
+    span {
+      position: relative;
+      width: 20%;
+      left: 15px;
+      line-height: 25px;
+    }
+    .yuanLabel11 {
+      cursor: default;
+      position: relative;
+      left: 11%;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 14px;
+      color: #090;
+      width: 60%;
+      margin-top: -22px;
+    }.yuanLabel12 {
+       cursor: default;
+       position: relative;
+       left: 11%;
+       font-weight: 400;
+       font-style: normal;
+       font-size: 14px;
+       color: #C91717;
+       width: 60%;
+       margin-top: -22px;
+     }
+    .dealReply{
+      position: relative;
+      top:17px;
+    }
+    #textB {
+      padding: 10px;
+      background-color: #F2F2F2;
+      resize: none;
+      margin-left: 15px;
+      position: relative;
+      left: 10%;
+      cursor: default;
+      outline: none;
+    }
+  }
+}
+.tableTd{
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+// 2019.5.21 调整分辨率
+
+@media only screen and (max-width: 960px){
+  :global{
+    .ant-calendar-picker{
+      width: 120px;
+      height: 30px;
+      font-size: 12px;
+    }
+    .ant-input{
+      font-size: 12px;
+      height: 30px;
+    }
+  }
+  .conditions{
+    .proKind{
+      :global{
+        .ant-select{
+          font-size: 12px;
+          max-width: 150px;
+        }
+      }
+      left: 20px;
+      font-size: 12px;
+    }
+    .time{
+      font-size: 12px;
+      padding-bottom: 10px;
+      width: 100%;
+      .spann{
+        margin-right: 0;
+      }
+    }
+    .button{
+      font-size: 12px;
+    }
+  }
+  .feedBackCon{
+    width: 100%;
+    .conTitle{
+      position: relative;
+      font-size: 12px;
+      line-height: 25px;
+    }
+    .conCon{
+      width: 100%;
+      .table {
+        :global{
+          .lightRow {
+            background-color: #F0F3F7;
+          }
+          .darkRow {
+            background-color: #F9F9F9;
+          }
+        }
+        tr{
+          height: 40px ;
+        }
+        td{
+          height: 40px ;
+          padding: 0 10px ;
+        }
+        th{
+          height: 50px ;
+          padding: 0 10px ;
+        }
+      }
+    }
+  }
+  .submitProblem_nav{
+    .firForm {
+      left: 3%;
+      top: -17px;
+      font-weight: 400;
+      font-size: 12px;
+      .yuanLabel {
+        left: 15%;
+        font-size: 12px;
+      }
+      #textA {
+        left: 15%;
+        font-size: 12px;
+      }
+    }
+    .secForm {
+      .yuanLabel11 {
+        left: 15.5%;
+        font-size: 12px;
+      }
+      .yuanLabel12 {
+        left: 15.5%;
+        top:5px;
+        font-size: 12px;
+      }
+      #textB {
+        left: 14%;
+        font-size: 12px;
+      }
+    }
+    form{
+      font-size: 12px;
+    }
+  }
+  .tabsStyle {
+    :global {
+      .ant-tabs-tab{
+        font-size: 12px;
+      }
+      .ant-tabs-tab-active {
+        font-size: 12px;
+      }
+
+      .ant-tabs-tab:hover {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 961px) and (max-width: 1100px){
+  :global{
+    .ant-calendar-picker{
+      width: 120px;
+      height: 30px;
+      font-size: 12px;
+    }
+    .ant-input{
+      font-size: 12px;
+      height: 30px;
+    }
+  }
+  .conditions{
+    .proKind{
+      :global{
+        .ant-select{
+          font-size: 12px;
+          max-width: 150px;
+        }
+      }
+      left: 20px;
+      font-size: 12px;
+    }
+    .time{
+      font-size: 12px;
+      padding-bottom: 10px;
+      width: 100%;
+      .spann{
+        margin-right: 0;
+      }
+    }
+    .button{
+      font-size: 12px;
+    }
+  }
+  .feedBackCon{
+    width: 100%;
+    .conTitle{
+      position: relative;
+      font-size: 12px;
+      line-height: 25px;
+    }
+    .conCon{
+      width: 100%;
+      .table {
+        :global{
+          .lightRow {
+            background-color: #F0F3F7;
+          }
+          .darkRow {
+            background-color: #F9F9F9;
+          }
+        }
+        tr{
+          height: 40px ;
+        }
+        td{
+          height: 40px ;
+          padding: 0 10px ;
+        }
+        th{
+          height: 50px ;
+          padding: 0 10px ;
+        }
+      }
+    }
+  }
+  .submitProblem_nav{
+    .firForm {
+      left: 3%;
+      top: -17px;
+      font-weight: 400;
+      font-size: 12px;
+      .yuanLabel {
+        left: 15%;
+        font-size: 12px;
+      }
+      #textA {
+        left: 15%;
+        font-size: 12px;
+      }
+    }
+    .secForm {
+      .yuanLabel11 {
+        left: 15.5%;
+        font-size: 12px;
+      }
+      .yuanLabel12 {
+        left: 15.5%;
+        top:5px;
+        font-size: 12px;
+      }
+      #textB {
+        left: 14%;
+        font-size: 12px;
+      }
+    }
+    form{
+      font-size: 12px;
+    }
+  }
+  .tabsStyle {
+    :global {
+      .ant-tabs-tab{
+        font-size: 12px;
+      }
+      .ant-tabs-tab-active {
+        font-size: 12px;
+      }
+
+      .ant-tabs-tab:hover {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1101px)  and (max-width: 1315px){
+  :global{
+    .ant-table table {
+      table-layout: fixed;
+      font-size: 14px; //历史问题表格字体大小
+    }
+  }
+  .conditions{
+    .proKind{
+      :global{
+        .ant-select{
+          font-size: 15px;
+          max-width: 150px;
+        }
+      }
+      left: 20px;
+      font-size: 15px;
+    }
+  }
+  .submitProblem_nav{
+    form{
+      font-size: 16px;
+    }}
+  .tabsStyle {
+    :global {
+      .ant-tabs-tab{
+        font-size: 15px;
+      }
+      .ant-tabs-tab-active {
+        font-size: 15px;
+      }
+
+      .ant-tabs-tab:hover {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1316px)  and (max-width: 1389px){
+  :global{
+    .ant-table table {
+      table-layout: fixed;
+      font-size: 14px; //历史问题表格字体大小
+    }
+  }
+  .conditions{
+    .proKind{
+      :global{
+        .ant-select{
+          font-size: 15px;
+          max-width: 150px;
+        }
+      }
+      left: 20px;
+      font-size: 15px;
+    }
+  }
+  .submitProblem_nav{
+    form{
+      font-size: 16px;
+    }}
+  .tabsStyle {
+    :global {
+      .ant-tabs-tab{
+        font-size: 15px;
+      }
+      .ant-tabs-tab-active {
+        font-size: 15px;
+      }
+
+      .ant-tabs-tab:hover {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1390px)  and (max-width: 1869px){
+  :global{
+    .ant-table table {
+      table-layout: fixed;
+      font-size: 15px; //历史问题表格字体大小
+    }
+  }
+  .conditions{
+    .proKind{
+      :global{
+        .ant-select{
+          font-size: 15px;
+          max-width: 150px;
+        }
+      }
+      left: 20px;
+      font-size: 15px;
+    }
+  }
+  .submitProblem_nav{
+    form{
+      font-size: 16px;
+    }}
+  .tabsStyle {
+    :global {
+      .ant-tabs-tab{
+        font-size: 15px;
+      }
+      .ant-tabs-tab-active {
+        font-size: 15px;
+      }
+
+      .ant-tabs-tab:hover {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1870px){
+  :global{
+    .ant-table table {
+      table-layout: fixed;
+      font-size: 18px; //历史问题表格字体大小
+    }
+  }
+  .conditions{
+    :global{
+      .ant-select-selection--single{
+        border: 1px dotted #a7a7a7;
+        border-radius: 0;
+        height: 40px;
+      }
+      .ant-select-selection__rendered{
+        line-height: 40px;
+        height: 40px;
+      }
+    }
+    .proKind{
+      :global{
+        .ant-select{
+          font-size: 18px;
+          max-width: 200px;
+        }
+      }
+      left: 20px;
+      font-size: 18px;
+    }
+    .time{
+      font-size: 18px;
+      padding-bottom: 10px;
+      width: 100%;
+
+    }
+    .button{
+      font-size: 18px;
+    }
+    .spann{
+      margin-right: 0;
+    }
+  }
+  .submitProblem_nav{
+    #u12 {
+      width: 8px;
+      height: 25px;
+      background-color: #C91717;
+    }
+    #u13 {
+      width: 8px;
+      height: 25px;
+      background-color: #C91717;
+      position: relative;
+      top: 0;
+    }
+    .firForm {
+      left: 2%;
+      top: -24px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      .yuanLabel {
+        left: 15%;
+        font-size: 18px;
+      }
+      #textA {
+        left: 15%;
+        font-size: 18px;
+      }
+    }
+    .secForm {
+      left: 1%;
+      top: -23px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      .yuanLabel11 {
+        left: 15%;
+        font-size: 18px;
+      }
+      .yuanLabel12 {
+        left: 15%;
+        top:5px;
+        font-size: 18px;
+      }
+      #textB {
+        left: 15%;
+        font-size: 18px;
+      }
+    }
+    form{
+      font-size: 18px;
+    }
+  }
+  .tabsStyle {
+    :global {
+      .ant-tabs-tab{
+        font-size: 18px;
+      }
+      .ant-tabs-tab-active {
+        font-size: 18px;
+      }
+
+      .ant-tabs-tab:hover {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+

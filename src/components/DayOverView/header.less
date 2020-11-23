@@ -1,0 +1,152 @@
+@import '~@/utils/utils.less';
+// 默认时1366、1440分辨率
+.title{
+  font-family: "Microsoft Yahei", serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #444;
+  padding-bottom: 4px;
+}
+.date{
+  position: absolute;
+  left: 70%;
+  :global{
+    //.ant-calendar-selected-date .ant-calendar-date:hover, .ant-calendar-selected-start-date .ant-calendar-date:hover, .ant-calendar-selected-end-date .ant-calendar-date:hover
+    .ant-calendar-selected-date .ant-calendar-date:hover{
+      background: #c91717;
+    }
+    .ant-calendar-input-wrap{
+      background-color: #c91717;
+    }
+    .ant-calendar-input{
+      color: #fff;
+      background-color: #c91717;
+    }
+  }
+}
+.dateTitle{
+  font-size: 14px;
+  color: #333;
+}
+.moduleTab{
+  //border-bottom: 2px solid #c91717;
+  //margin-bottom: 5px;
+  font-size: 16px;
+  :global{
+    .ant-tabs-bar{
+      margin: 0 0 0 0;
+      border: none;
+    }
+    .ant-tabs-nav-scroll {
+      border-bottom: 2px solid #c91717;
+    }
+    .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab{
+      background-color: white;
+    }
+    .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active{
+      background-color: #c91717;
+      border-radius: 8px 8px 0 0;
+      color: #fff;
+      padding-bottom: 0;
+    }
+    .ant-tabs-tab {
+      color: #c91717;
+    }
+    .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab{
+      border: none;
+      line-height: 28px;
+      height: 28px;
+      font-size: 16px;
+      //background: none;
+    }
+    .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-nav-container{
+      height: 35px;
+    }
+    .ant-tabs-tab:hover{
+      color: #c91717;
+    }
+  }
+}
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 900px){
+  .title{
+    font-size: 16px;
+  }
+  .dateTitle{
+    font-size: 12px;
+  }
+  .date{
+    :global{
+      .ant-input{
+        font-size: 12px;
+      }
+
+    }
+  }
+  .moduleTab{
+    :global{
+      .ant-tabs-nav-container{
+        font-size: 14px;
+      }
+    }
+  }
+}
+// 1024 分辨率
+@media only screen and (min-width: 1000px) and (max-width: 1200px){
+  .title{
+    font-size: 16px;
+  }
+  .dateTitle{
+    font-size: 14px;
+  }
+  .date{
+    :global{
+      .ant-input{
+        font-size: 14px;
+      }
+
+    }
+  }
+  .moduleTab{
+    :global{
+      .ant-tabs-nav-container{
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+// 1440 分辨率
+@media only screen and (min-width: 1390px) and (max-width: 1869px){
+  .dateTitle{
+    font-size: 16px;
+  }
+}
+// 1920分辨率
+@media only screen and (min-width: 1871px) and (max-width: 2160px){
+  .title, .dateTitle{
+    font-size: 20px;
+  }
+  .date{
+    :global{
+      .ant-input{
+        font-size: 19px;
+      }
+      .ant-tabs-tab {
+        line-height: 34px;
+      }
+
+    }
+  }
+  .moduleTab{
+    :global{
+      .ant-tabs-nav-container{
+        font-size: 18px;
+      }
+      .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab{
+        line-height: 32px;
+        height: 32px;
+      }
+    }
+  }
+}

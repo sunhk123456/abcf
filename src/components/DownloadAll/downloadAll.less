@@ -1,0 +1,140 @@
+@import '~@/utils/utils.less';
+.downloadAll{
+  display: block;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(0,0,0, .3);
+  .container{
+    width: 70%;
+    height: 50%;
+    background-color: #fafafa;
+    border-radius: 10px;
+    margin-top: 12%;
+    margin-left: 15%;
+    padding: 25px;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .container > div{
+    margin-bottom: 20px;
+  }
+  .titleDiv{
+    font-size: 14px;
+  }
+  .condition{
+    font-size: 14px;
+  }
+  .titleName{
+    color: #797979;
+  }
+  .screen{
+    margin-left: 50px;
+  }
+  .preparationData{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    color: silver;
+    margin-left: 50px;
+  }
+  .preparationData2{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    color: silver;
+    margin-left: 50px;
+    margin-top: 60px;
+  }
+  .selectName{
+    color: #797979;
+  }
+  .preparing{
+    width: 346px;
+    height: 74px;
+  }
+  .contentText{
+    font-size: 13px;
+    color: #c1c1c1;
+    position: relative;
+    top: 3px;
+  }
+  .prepared {
+    width: 300px;
+    height: 74px;
+    font-size: 28px;
+    display: inline-block;
+    position: relative;
+  }
+  .preparedImg{
+    width: 152px;
+    height: 152px;
+    transform: rotate(324deg);
+    position: absolute;
+    z-index: 99;
+    right: 16px;
+    top: -37px;
+  }
+
+  .btnContent{
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    text-align: right;
+    width: 70%;
+  }
+  .btnStyle{
+    background-color: #C91717;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    color: #f1fafa;
+    cursor: pointer;
+    padding: 8px 20px;
+    margin-left: 50px;
+  }
+
+  .screen{
+    :global{
+      .ant-select-arrow{
+        margin-top: -23px;
+        right: 20px;
+      }
+
+    }
+  }
+}
+
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .downloadAll {
+    .titleDiv{
+      font-size: 20px;
+    }
+    .condition{
+      font-size: 20px;
+    }
+    .screen{
+      :global{
+        .ant-select{
+          height: 40px;
+          font-size: 20px;
+        }
+        .ant-select-selection--single{
+         height: 100%;
+        }
+        .ant-select-selection__rendered{
+          line-height: 35px;
+        }
+        //.ant-select-arrow{
+        //  top:-10%;
+        //  right: 11px;
+        //}
+
+      }
+    }
+  }
+}

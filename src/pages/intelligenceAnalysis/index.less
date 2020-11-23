@@ -1,0 +1,113 @@
+.intelligenceAnalysis {
+  width: 100%;
+  padding-bottom: 15px;
+  .title {
+    font-size: 26px;
+    color: #000;
+  }
+  .condition {
+    padding: 20px 0 10px 0;
+    & > span {
+      margin-right: 30px;
+    }
+
+  }
+  .reason {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .filter{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 50px;
+    .filterContent{
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      .contentLeft{
+        margin: 0 5px;
+      }
+      .contentWrapper{
+        border: 1px solid #DDD;
+        padding-left: 5px;
+        padding-right: 5px;
+        .contentClose{
+          padding: 0 5px;
+
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+      }
+      .contentWrapperLeft{
+        margin-left:4px;
+      }
+    }
+  }
+  .oneColumn{
+    height: 380px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 0 5px;
+  }
+
+  .rowWrapper {
+    width: 100%;
+    margin: 10px 0;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    .chartWrapper {
+      margin: 20px 0 0 0;
+      padding: 0 5px;
+      width: 100%;
+      height: 285px;
+
+      .chartWrapperNext{
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+
+  }
+
+}
+
+.topLine{
+  width: 100%;
+  height: 10px;
+  background: rgb(234,234,234);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.chart{
+  width: 100%;
+  height: calc((100%) - (10px));
+}
+
+@media screen and (min-width: 1870px){
+  .intelligenceAnalysis{
+    .oneColumn{
+      height: 500px;
+    }
+   .threeColumns{
+     .threeColumnsItem{
+       height: 385px;
+     }
+   }
+    .twoColumns{
+      .twoColumnsItem{
+        height: 385px;
+      }
+    }
+  }
+}

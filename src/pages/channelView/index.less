@@ -1,0 +1,82 @@
+.channelView{
+  .titlePart{
+    display: flex;
+    align-items: center;
+  }
+  :global {
+    .ant-tabs{
+      width: 100%;
+    }
+    .ant-tabs-nav .ant-tabs-tab-active {
+      color: #C91717;
+      font-weight: bold;
+    }
+    .ant-tabs-nav-container {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: -3px;
+    }
+    .ant-tabs-nav .ant-tabs-tab{
+      margin-right: 15px;
+      padding: 10px 8px;
+    }
+    .ant-tabs-ink-bar {
+      background-color: #C91717;
+      height: 3px;
+    }
+    .ant-tabs-nav .ant-tabs-tab:hover {
+      color: #C91717;
+    }
+    //.ant-tabs-nav .ant-tabs-tab-active:hover {
+    //  color: rgba(0,0,0,.65);
+    //}
+    .ant-tabs-bar {
+      border-bottom: 3px solid #F2F2F2;
+      margin: 0 0 0 0
+    }
+    .antd-pro-components-until-pro-city-cityList{
+      z-index: 1;
+    }
+  }
+}
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 960px){
+  .channelView {
+    :global{
+      .ant-tabs-tab{
+        font-size: 12px;
+      }
+    }
+  }
+}
+// 1024 1024 分辨率
+@media only screen and (min-width: 961px) and (max-width: 1315px){
+  .channelView {
+    :global{
+      .ant-tabs-tab{
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+// 1366 1440 分辨率
+@media only screen and (min-width: 1316px) and (max-width: 1869px){
+  .channelView {
+    :global{
+      .ant-tabs-tab{
+        font-size: 16px;
+      }
+    }
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .channelView{
+    :global{
+      .ant-tabs-tab{
+        font-size: 22px;
+      }
+    }
+  }
+}

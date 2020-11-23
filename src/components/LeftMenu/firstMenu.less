@@ -1,0 +1,103 @@
+.firstMenu{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 15px 10px;
+  background: #4B5053;
+  .shortButton{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 0;
+    height: 170px;
+    border-left: 20px solid #4B5053;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transform: translate(0,-50%);
+    cursor: pointer;
+  }
+  .shortButtonContent{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    transform: translate(0, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .firstMenuContent{
+    height: 44px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .firstMenuImg{
+      width: 25px;
+      height: 25px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+.firstMenuLong{
+  position: relative;
+  width: 130px;
+  height: 100%;
+  padding: 15px 10px;
+  background: #4B5053;
+  .shortButton{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 0;
+    height: 170px;
+    border-left: 20px solid #4B5053;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transform: translate(0,-50%);
+    cursor: pointer;
+  }
+  .shortButtonContent{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    transform: translate(0, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .firstMenuContent{
+    height: 44px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    .firstMenuImg{
+      width: 25px;
+      height: 25px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .firstMenuName{
+      padding-left: 10px;
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .firstMenuLong{
+    width: 160px !important;
+    .firstMenuName {
+      font-size: 16px !important;
+    }
+  }
+}
+

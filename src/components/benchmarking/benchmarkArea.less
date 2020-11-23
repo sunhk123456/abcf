@@ -1,0 +1,353 @@
+@back-color: #FFFFFF;
+@border-color: #E4E4E4;
+@menu-bac: #FAFAFA;
+@red-bac: #C91717;
+@font-family: "Microsoft YaHei";
+@btn-border: #CCCCCC;
+@tag-btn-border: #E0DFE0;
+@hover-bac: #EAEAEA;
+@font-color: #333333;
+
+.bmArea {
+  width: 100%;
+  height: 100%;
+  color: #333;
+  font-family: @font-family;
+  .bmAreaTitle {
+    font-size: 14px;
+    float: left;
+    position: relative;
+    top: 4px;
+  }
+  .bmAreaBody {
+    width: 80%;
+    height: 28px;
+    border: 1px dotted @btn-border;
+    background-color: @back-color;
+    text-align: center;
+    float: left;
+    .bmAreaName {
+      text-align: center;
+      line-height: 28px;
+      height: 28px;
+      cursor: pointer;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .bmAreaPull {
+      width: 21px;
+      float: right;
+      position: relative;
+      top: 2px;
+      right: 12px;
+      cursor: pointer;
+       .bmPull{
+        width: 21px;
+        height: 21px;
+        position: relative;
+      }
+    }
+    .bmAreaMenu {
+      width: 100%;
+      border: 1px solid @border-color;
+      position: relative;
+      background-color: @menu-bac;
+      z-index: 15;
+      .bmMenuTop {
+        width: 101%;
+        height: 50px;
+        border: 1px solid @border-color;
+        background-color: @menu-bac;
+        position: relative;
+        top: -1px;
+        left: -1px;
+        .bmMenuButton {
+          display: flex;
+          align-items: center;
+          float: left;
+          position: relative;
+          top: 13px;
+          .bmButtonPro {
+            border: 1px solid @tag-btn-border;
+            position: relative;
+            z-index: 10;
+            left: 25px;
+            padding: 0 7px;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+            height: 25px;
+            line-height: 25px;
+            cursor: pointer;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            outline: none;
+            //background: #C91717;
+            //color: white;
+          }
+          .bmButtonCity {
+            border: 1px solid @tag-btn-border;
+            position: relative;
+            z-index: 10;
+            left: 25px;
+            padding: 0 7px;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+            height: 25px;
+            line-height: 25px;
+            cursor: pointer;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            outline: none;
+          }
+        }
+      }
+      .bmMenuContent {
+        width: 164%;
+        height: 279px;
+        div {
+          height: 280px;
+        }
+        p {
+          cursor: pointer;
+          padding: 3px;
+        }
+        span {
+          margin-left: 5%;
+        }
+        .bmMenuLeft {
+          width: 20%;
+          border-right: 1px solid @border-color;
+          border-bottom: 1px solid @border-color;
+          float: left;
+          background-color: @menu-bac;
+          padding-top: 2%;
+        }
+        .bmMenuMid {
+          width: 110%;
+          float: left;
+          overflow: auto;
+          position: absolute;
+          left: 33%;
+          background-color: @menu-bac;
+          border-bottom: 1px solid @border-color;
+          padding-top: 3%;
+        }
+        .bmMenuRight {
+          width: 110%;
+          height: 282px;
+          float: left;
+          background-color: @menu-bac;
+          border: 1px solid @border-color;
+          padding-top: 3%;
+          position: absolute;
+          top: 48px;
+          left: 142%;
+          overflow: auto;
+        }
+      }
+    }
+  }
+}
+.itemStyle{
+  color: @red-bac;
+  background: @hover-bac;
+}
+.areaTitle{
+  font-size: 14px;
+  color: @font-color;
+}
+.proCityName{
+  color: @font-color;
+}
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .bmArea{
+    .bmAreaBody{
+      height: 40px;
+      .bmAreaPull{
+        top: 4px;
+        right: 12px;
+        font-size: 20px;
+      }
+      .bmAreaName{
+        font-size: 20px;
+        height: 40px;
+        line-height: 40px;
+      }
+      .bmAreaMenu{
+        .bmMenuTop{
+          .bmMenuButton{
+            .bmButtonPro{
+              font-size: 16px;
+              height: 28px;
+              line-height: 28px;
+            }
+            .bmButtonCity{
+              font-size: 16px;
+              height: 28px;
+              line-height: 28px;
+            }
+          }
+        }
+        .bmMenuContent{
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .bmAreaTitle{
+      font-size: 20px;
+    }
+  }
+}
+// 1366 分辨率
+@media only screen and (min-width: 1316px) and (max-width: 1389px){
+  .bmArea{
+    .bmAreaBody{
+      .bmAreaMenu{
+        .bmMenuContent{
+          .bmMenuMid{
+            width: 112%;
+          }
+          .bmMenuRight{
+            width: 112%;
+            left: 145%;
+          }
+        }
+      }
+    }
+  }
+}
+// 1280 分辨率
+@media only screen and (min-width: 1101px) and (max-width: 1315px){
+  .bmArea{
+    .bmAreaBody{
+      width: 74%;
+      .bmAreaMenu{
+        .bmMenuContent{
+          .bmMenuMid{
+            width: 130%;
+          }
+          .bmMenuRight{
+            width: 130%;
+            left: 163%;
+          }
+        }
+      }
+    }
+  }
+}
+//  1024分辨率
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+  .bmArea{
+    .bmAreaTitle{
+      font-size: 11px;
+      line-height: 20px;
+    }
+    .bmAreaBody {
+      width: 60%;
+      font-size:11px;
+      .bmAreaPull {
+        top: 4px;
+        right: 4px;
+      }
+      .bmAreaMenu{
+        .bmMenuTop{
+          width: 171%;
+          .bmMenuButton{
+            .bmButtonPro{
+              font-size:11px;
+              height: 21px;
+              line-height: 21px;
+              left: 10px;
+            }
+            .bmButtonCity{
+              font-size:11px;
+              height: 21px;
+              line-height: 21px;
+              left: 10px;
+            }
+          }
+        }
+        .bmMenuContent{
+          width: 184%;
+          p{
+            font-size: 11px;
+          }
+          .bmMenuMid{
+            width:175%;
+            left: 38%;
+          }
+          .bmMenuRight{
+            width:175%;
+            left: 212%;
+          }
+        }
+      }
+    }
+  }
+}
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 960px){
+  .bmArea{
+    .bmAreaTitle{
+      font-size: 10px;
+      line-height: 21px;
+    }
+    .bmAreaBody {
+       width: 65%;
+       font-size:10px;
+      .bmAreaPull {
+        top: 4px;
+        right: 0;
+      }
+      .bmAreaMenu{
+        .bmMenuTop{
+          width: 171%;
+          .bmMenuButton{
+            .bmButtonPro{
+              font-size:10px;
+              height: 20px;
+              line-height: 20px;
+              left: 8px;
+              padding: 0 5px;
+            }
+            .bmButtonCity{
+              font-size:10px;
+              height: 20px;
+              line-height: 20px;
+              left: 8px;
+              padding: 0 5px;
+            }
+          }
+        }
+        .bmMenuContent{
+          width: 220%;
+          height: 199px;
+          p{
+            font-size: 10px;
+          }
+          div {
+            height: 200px;
+          }
+          .bmMenuMid{
+            width:210%;
+            left: 44%;
+          }
+          .bmMenuRight{
+            width:210%;
+            height: 202px;
+            left: 250%;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+

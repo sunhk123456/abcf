@@ -1,0 +1,199 @@
+@back-red: #C91717;
+
+.productTable{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  .thStyle{
+    text-align: center;
+  }
+  .thUnit{
+    font-size: 12px;
+  }
+  :global{
+    .ant-table-thead > tr > th{
+      color: #666;
+      text-align: center;
+      border-right: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      background-color: #F8F8F8;
+    }
+    .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+      padding: 8px 10px;
+    }
+    .ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td, .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td, .ant-table-thead > tr:hover:not(.ant-table-expanded-row) > td, .ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td {
+      background: #f0f0f0;
+    }
+    .ant-table-scroll table{
+      min-width: auto;
+    }
+    .ant-table-thead > tr > th .ant-table-column-sorter .ant-table-column-sorter-inner .ant-table-column-sorter-up.on, .ant-table-thead > tr > th .ant-table-column-sorter .ant-table-column-sorter-inner .ant-table-column-sorter-down.on{
+      color: @back-red;
+    }
+  }
+
+  tbody {
+    .trStyle:nth-child(even){
+      background-color: #F8F8F8;
+    }
+    .trStyle:nth-child(odd){
+      background-color: #EFF2F6;
+    }
+    .trStyle > td{
+      border-right: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      color: #333;
+      text-align: center;
+    }
+    tr.trStyle:hover td {
+      background-color: #f0f0f0;
+    }
+
+  }
+
+  .pageContent{
+    text-align: right;
+    margin: 5px 0;
+    span{
+      display: inline-block;
+      height: 21px;
+      line-height: 21px;
+      margin-left: 5px;
+      font-size: 12px;
+    }
+    .leftBtn,.rightBtn{
+      color: #CECECE;
+      cursor: pointer;
+      font-size: 17px;
+      border-radius: 3px;
+      position: relative;
+      top:2px;
+    }
+    .pageInput{
+      border: 1px solid #CECECE;
+      border-radius: 2px;
+      width: 35px;
+      height: 17px;
+    }
+    .btnJump{
+      color: #7894B1;
+      border: 1px solid #7894B1;
+      border-radius: 2px;
+      height: 16px;
+      line-height: 15px;
+      padding: 0 5px;
+      cursor: pointer;
+      text-align: center;
+    }
+  }
+
+  .foldContent{
+    text-align: center;
+  }
+  .flodBtn{
+    cursor: pointer;
+  }
+  .foldIcon{
+    color: #B5B5B5;
+    margin-left: 5px;
+  }
+
+  .refreshEchartDom{
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .JumpPageDom{
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .trDiv{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .alignRight{
+    text-align: right;
+  }
+
+  .thContent{
+    float: left;
+  }
+  .sort{
+    float: left;
+    height: 39px;
+    width: 20px;
+  }
+  .thStyle:after{
+    content: "";
+    display: block;
+    height: 0;
+    clear:both;
+    visibility: hidden;
+
+  }
+  .tableTitleName{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .sortIcon{
+    float: left;
+    cursor: pointer;
+    height: 10px;
+  }
+
+
+}
+
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .productTable{
+    :global{
+      .ant-table {
+        font-size: 18px;
+      }
+    }
+    .thUnit{
+      font-size: 14px;
+    }
+
+    .pageContent{
+      margin: 8px 0;
+      span{
+        height: 25px;
+        line-height: 25px;
+        margin-left: 8px;
+        font-size: 15px;
+      }
+      .leftBtn,.rightBtn{
+        font-size: 26px;
+        top: 4px;
+      }
+      .pageInput{
+        width: 50px;
+        height: 25px;
+      }
+      .btnJump{
+        height: 25px;
+        line-height: 23px;
+        padding: 0 5px;
+      }
+    }
+    .flodBtn{
+      font-size: 16px;
+    }
+    .foldIcon{
+      font-size: 17px;
+      margin-left: 8px;
+    }
+    .sortIcon{
+      height: 11px;
+      font-size: 15px;
+    }
+  }
+}

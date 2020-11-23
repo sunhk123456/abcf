@@ -1,0 +1,90 @@
+.report{
+  width: 100%;
+  .titleContent{
+    width: 100%;
+  }
+  .Row{
+    height: 100%;
+  }
+  .leftContent{
+    height: 100%;
+    padding: 0 20px 0 0;
+  }
+  .echartPic{
+    height: 100%;
+    //border: 1px solid rgb(239, 239, 239);
+    position: relative;
+    border: 1px solid #c3b295;
+    img{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      cursor: pointer;
+    }
+  }
+  .title{
+    font-size: 16px;
+    color: #4f4f4f;
+    border-bottom: 1px solid #4f4f4f; // 4.29 xingxiaodong 更改下划线
+    //text-decoration: underline ;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  .rowList{
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #8f8f8f;
+  }
+  .moreBtn{
+    text-align: right;
+    cursor: pointer;
+    font-size: 12px;
+    color: #8f8f8f;
+  }
+}
+
+// 1366 分辨率
+@media only screen and (min-width: 1316px) and (max-width: 1389px){
+  .report{
+    .titleContent{
+      padding: 4px 0;
+    }
+    .rowList{
+      margin-top: 8px;
+    }
+  }
+}
+// 1440 分辨率
+@media only screen and (min-width: 1390px) and (max-width: 1869px){
+  .report{
+    .titleContent{
+      padding: 4px 0;
+    }
+    .rowList{
+      margin-top: 10px;
+    }
+  }
+}
+
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .report{
+    .title{
+      font-size: 21px;
+    }
+    :global(.ant-tag){
+      font-size: 17px;
+      line-height: inherit;
+    }
+    .rowList{
+      font-size: 16px;
+    }
+    .moreBtn{
+      font-size: 18px;
+    }
+    .leftContent{
+      max-width: 225px;
+    }
+  }
+}

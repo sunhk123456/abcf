@@ -1,0 +1,323 @@
+@import '~@/components/DayOverView/earlyWarning.less';
+@import '~@/utils/utils.less';
+// 智能预警样式
+.overViewEarlyWarning();
+.IDTable {
+  position: relative;
+  :global{
+    .ant-table-scroll table{
+      min-width: auto;
+    }
+  }
+  .downloadName{
+    position: absolute;
+    top:5px;
+    right: 5px;
+    z-index: 10;
+    :global{
+      .ant-btn > .anticon + span, .ant-btn > span + .anticon{
+        margin: 0;
+      }
+      .ant-btn-sm {
+        padding: 0 4px;
+        font-size: 12px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 761px) and (max-width: 1100px){
+  .IDTable {
+    margin-bottom: 50px;
+    :global {
+
+      .lightRow {
+        background-color: #F0F3F7;
+      }
+      .darkRow {
+        background-color: #F9F9F9;
+      }
+      .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+        padding: 16px 0;
+      }
+    }
+    .provCityButton {
+      float: left;
+      position: relative;
+      top: 10px;
+    }
+    .IDTDateSelector {
+      float: left;
+      position: relative;
+      top: 6px;
+      left: 10%;
+      //font-size: 16px;
+      z-index: 7;
+    }
+    .btnUl {
+      position: relative;
+      left: -39px;
+      z-index: 8;
+      li {
+        display: inline-block;
+        font-size: 12px;
+        background: #f8f7f8;
+        cursor: pointer;
+        padding: 2px 8px;
+        border-color: #e0dfe0;
+        border-style: solid;
+      }
+      li:nth-child(1) {
+        border-width: 1px 0 1px 1px;
+        border-radius: 5px 0 0 5px;
+      }
+      li:nth-child(2) {
+        border-width: 1px;
+        border-radius: 0 5px 5px 0;
+      }
+      .select {
+        background: #6f6e6f;
+        color: #fff;
+      }
+
+    }
+  }
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1315px){
+  .IDTable {
+    margin-bottom: 50px;
+    :global {
+
+      .lightRow {
+        background-color: #F0F3F7;
+      }
+      .darkRow {
+        background-color: #F9F9F9;
+      }
+    }
+    .provCityButton {
+      float: left;
+      position: relative;
+      top: 10px;
+    }
+    .IDTDateSelector {
+      float: left;
+      position: relative;
+      top: 6px;
+      left: 10%;
+      font-size: 18px;
+      z-index: 7;
+    }
+    .btnUl {
+      position: relative;
+      left: -39px;
+      z-index: 8;
+      li {
+        display: inline-block;
+        font-size: 14px;
+        background: #f8f7f8;
+        cursor: pointer;
+        padding: 2px 8px;
+        border-color: #e0dfe0;
+        border-style: solid;
+      }
+      li:nth-child(1) {
+        border-width: 1px 0 1px 1px;
+        border-radius: 5px 0 0 5px;
+      }
+      li:nth-child(2) {
+        border-width: 1px;
+        border-radius: 0 5px 5px 0;
+      }
+      .select {
+        background: #6f6e6f;
+        color: #fff;
+      }
+
+    }
+  }
+}
+
+@media only screen and (min-width: 1316px) and (max-width: 1389px){
+  .IDTable {
+    margin-bottom: 50px;
+    :global {
+
+      .lightRow {
+        background-color: #F0F3F7;
+      }
+      .darkRow {
+        background-color: #F9F9F9;
+      }
+    }
+    .provCityButton {
+      float: left;
+      position: relative;
+      top: 10px;
+    }
+    .IDTDateSelector {
+      float: left;
+      position: relative;
+      top: 6px;
+      left: 10%;
+      font-size: 14px;
+      z-index: 7;
+    }
+    .btnUl {
+      position: relative;
+      left: -39px;
+      z-index: 8;
+      li {
+        display: inline-block;
+        font-size: 14px;
+        background: #f8f7f8;
+        cursor: pointer;
+        padding: 2px 8px;
+        border-color: #e0dfe0;
+        border-style: solid;
+      }
+      li:nth-child(1) {
+        border-width: 1px 0 1px 1px;
+        border-radius: 5px 0 0 5px;
+      }
+      li:nth-child(2) {
+        border-width: 1px;
+        border-radius: 0 5px 5px 0;
+      }
+      .select {
+        background: #6f6e6f;
+        color: #fff;
+      }
+
+    }
+  }
+}
+
+@media only screen and (min-width: 1390px) and (max-width: 1869px){
+  .IDTable {
+    margin-bottom: 50px;
+    :global {
+
+      .lightRow {
+        background-color: #F0F3F7;
+      }
+      .darkRow {
+        background-color: #F9F9F9;
+      }
+    }
+    .provCityButton {
+      float: left;
+      position: relative;
+      top: 10px;
+    }
+    .IDTDateSelector {
+      float: left;
+      position: relative;
+      top: 6px;
+      left: 10%;
+      font-size: 14px;
+      z-index: 7;
+    }
+    .btnUl {
+      position: relative;
+      left: -39px;
+      z-index: 8;
+      li {
+        display: inline-block;
+        font-size: 14px;
+        background: #f8f7f8;
+        cursor: pointer;
+        padding: 2px 8px;
+        border-color: #e0dfe0;
+        border-style: solid;
+      }
+      li:nth-child(1) {
+        border-width: 1px 0 1px 1px;
+        border-radius: 5px 0 0 5px;
+      }
+      li:nth-child(2) {
+        border-width: 1px;
+        border-radius: 0 5px 5px 0;
+      }
+      .select {
+        background: #6f6e6f;
+        color: #fff;
+      }
+
+    }
+  }
+}
+
+@media only screen and (min-width: 1870px) {
+
+
+  .IDTable {
+    margin-bottom: 50px;
+    :global {
+
+      .lightRow {
+        background-color: #F0F3F7;
+      }
+      .darkRow {
+        background-color: #F9F9F9;
+      }
+      .ant-table {
+        font-size: 18px;
+      }
+      .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+        padding: 16px 0;
+      }
+    }
+    .provCityButton {
+      float: left;
+      position: relative;
+      top: 10px;
+    }
+    .IDTDateSelector {
+      float: left;
+      position: relative;
+      top: 6px;
+      left: 10%;
+      font-size: 18px;
+      z-index: 7;
+    }
+    .btnUl {
+      position: relative;
+      left: -39px;
+      z-index: 8;
+      li {
+        display: inline-block;
+        font-size: 20px;
+        background: #f8f7f8;
+        cursor: pointer;
+        padding: 2px 8px;
+        border-color: #e0dfe0;
+        border-style: solid;
+      }
+      li:nth-child(1) {
+        border-width: 1px 0 1px 1px;
+        border-radius: 5px 0 0 5px;
+      }
+      li:nth-child(2) {
+        border-width: 1px;
+        border-radius: 0 5px 5px 0;
+      }
+      .select {
+        background: #6f6e6f;
+        color: #fff;
+      }
+
+    }
+    .downloadName{
+      :global{
+        .ant-btn-sm {
+          padding: 0 8px;
+          font-size: 18px;
+          height: 25px;
+        }
+      }
+    }
+  }
+}

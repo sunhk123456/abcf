@@ -1,0 +1,42 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+**/node_modules
+# roadhog-api-doc ignore
+/src/utils/request-temp.js
+_roadhog-api-doc
+
+# production
+/dist
+/.vscode
+
+# misc
+.DS_Store
+npm-debug.log*
+yarn-error.log
+
+/coverage
+.idea
+yarn.lock
+package-lock.json
+*bak
+.vscode
+
+# visual studio code
+.history
+*.log
+
+functions/mock
+.temp/**
+
+# umi
+# dev 临时目录，需添加到 .gitignore
+.umi
+# build 临时目录，会自动删除
+.umi-production
+
+# screenshot
+screenshot
+.firebase
+/node_modules/.cache/
+/node_modules/puppeteer/.local-chromium/win64-641577/chrome-win/

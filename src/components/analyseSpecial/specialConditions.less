@@ -1,0 +1,441 @@
+.specialConditons{
+  background-color: #F7F7F7;
+  width: 100%;
+  padding: 10px;
+  //margin: 20px 0;
+  .conditionList{
+    display: flex;
+    //justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    .normalList{
+      width: 25%;
+    }
+    .proList{
+      display: flex;
+      width: 50%;
+    }
+  }
+  .dateTitle{
+    text-align: right;
+    display:inline-block;
+    width:75px;
+    font-size:14px;
+  }
+  .dateTitle:after {
+    content: ':';
+    position: relative;
+    top: -0.5px;
+    margin: 0 8px 0 2px;
+  }
+  .singleRegion{
+    display: flex;
+    width: 25%;
+  }
+  .submitButton{
+    >span{
+      margin-left: 15px;
+      color: rgba(0,0,0,0.65);
+    }
+    >button{
+      margin-left: 15px;
+      color: rgba(0,0,0,0.65);
+    }
+  }
+  :global{
+    .ant-input-number-handler-wrap{
+      display: none;
+    }
+    .ant-input-number{
+      width: 158px;
+      border: 1px dotted #a7a7a7;
+      border-radius: 0;
+      font-size: 14px;
+    }
+    .ant-input-number-focused,.ant-input-number:hover,.ant-input-number:hover{
+      border: 1px dotted #a7a7a7;
+      box-shadow:0 0 0 2px rgba(24, 144, 255, 0)
+    }
+    .ant-select-focused .ant-select-selection, .ant-select-selection:focus, .ant-select-selection:active {
+      box-shadow:0 0 0 2px rgba(24, 144, 255, 0)
+    }
+
+    .ant-form-item{
+      display: flex;
+      margin-right: 0;
+    }
+    .ant-form-item label{
+      float: left;
+      color: rgba(0, 0, 0, 0.65)
+    }
+    .ant-form-item-control-wrapper{
+      flex:0 0 158px;
+      flex-grow:0;
+      flex-shrink: 0;
+      flex-basis: 158px;
+      max-width: 158px;
+    }
+    .ant-select-selection--single{
+      width: 158px;
+      border: 1px dotted #a7a7a7;
+      border-radius: 0;
+      font-size: 14px;
+    }
+    // 多选框样式
+    .ant-select-selection--multiple{
+      height: 32px;
+      white-space: nowrap;
+      overflow: hidden;
+      border: 1px dotted #a7a7a7;
+      border-radius: 0;
+    }
+    // 多选框样式
+    .ant-form-item-control {
+      height: 40px;
+    }
+    // 多选框边框选中蓝色
+  .ant-select-selection:focus, .ant-select-selection:active{
+      border-color: transparent;
+    }
+    .ant-select-selection:hover {
+      border-color: transparent;
+    }
+    // 多选框边框选中蓝色
+    .ant-select-focused .ant-select-selection{
+      border-color: transparent;
+    }
+    .ant-form-item-children{
+      >input{
+        width: 158px;
+        font-size: 14px;
+      }
+    }
+    .ant-calendar-picker{
+       width: 158px;
+      font-size: 14px;
+    }
+    .ant-select-selection__rendered{
+      display: flex;
+      justify-content: center;
+    }
+    .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-name{
+      text-align: right;
+      width: 75px;
+    }
+    .ant-form-item-label{
+      text-align: right;
+      width: 75px;
+      >label{
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.selectedItems{
+  :global{
+    .ant-select-dropdown-menu-item:hover{
+      background-color:#FAE8E8 ;
+    }
+    .ant-select-dropdown-menu-item-active{
+      background-color: #FAE8E8;
+    }
+    .ant-select-dropdown{
+      z-index: 1;
+    }
+  }
+}
+.moreSelect{
+  :global{
+    .ant-select-selection__rendered{
+      height: 100%;
+      justify-content: left;
+      width: 100%;
+      display: flex;
+    }
+  }
+}
+
+:global{
+    .ant-select-dropdown>div{
+      transform: inherit !important;
+  }
+
+  .ant-select-selection--multiple .ant-select-selection__rendered {
+    overflow: hidden;
+  }
+  .ant-select-selection--multiple .ant-select-selection__rendered ul {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    float: left;
+  }
+  .ant-select-selection--multiple .ant-select-selection__choice {
+    float: none;
+    overflow: visible;
+    padding: 0 15px 0 5px;
+  }
+  .ant-select-selection--multiple .ant-select-search--inline {
+    float: none;
+    position: absolute;
+  }
+  .ant-select-selection--multiple {
+    max-height: 32px;
+    overflow: hidden;
+  }
+
+  // 下拉选择框hover,active的样式
+  .ant-select-dropdown-menu-item{
+    font-family: "Microsoft YaHei", serif;
+  }
+  .ant-select-dropdown-menu-item-active{
+    background: #C91717;
+    color: white;
+  }
+  .ant-select-dropdown-menu-item:hover{
+    background: #C91717;
+    color: white;
+  }
+  .ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected .ant-select-selected-icon, .ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:hover .ant-select-selected-icon{
+    color:#c91717;
+  }
+  .antd-pro-components-analyse-special-special-conditions-specialConditons .ant-select-selection:hover{
+    border: 1px dotted #a7a7a7;
+  }
+  //.ant-select-selection--multiple .ant-select-selection__choice{
+  //  padding: 0 15px 0 5px;
+  //}
+
+}
+
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 960px){
+  .specialConditons{
+    padding: 10px 0;
+    :global{
+      .ant-input-number{
+        width: 100px;
+      }
+      .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-name{
+        width: 60px;
+      }
+      .ant-form-item-label{
+        width: 60px;
+        >label{
+          font-size: 14px;
+        }
+      }
+      .ant-form-item-control-wrapper{
+        flex:0 0 100px;
+        flex-grow:0;
+        flex-shrink: 0;
+        flex-basis: 100px;
+        max-width: 100px;
+      }
+      .ant-select-selection--single{
+        width: 100px;
+      }
+      .ant-form-item-children{
+        >input{
+          width: 100px;
+        }
+      }
+      .ant-calendar-picker{
+        width: 100px;
+      }
+    }
+    .dateTitle{
+      width:60px;
+      font-size:14px;
+    }
+    .submitButton{
+      >span{
+        margin-left: 0;
+      }
+      >button{
+        margin-left: 2px;
+      }
+    }
+  }
+}
+// 1024 分辨率
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+  .specialConditons{
+    padding: 10px 10px;
+    :global{
+      .ant-input-number{
+        width: 120px;
+      }
+      .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-name{
+        width: 70px;
+      }
+      .ant-form-item-label{
+        width: 70px;
+        >label{
+          font-size: 14px;
+        }
+      }
+      .ant-form-item-control-wrapper{
+        flex:0 0 120px;
+        flex-grow:0;
+        flex-shrink: 0;
+        flex-basis: 120px;
+        max-width: 120px;
+      }
+      .ant-select-selection--single{
+        width: 120px;
+      }
+      .ant-calendar-picker{
+        width: 120px;
+      }
+      .ant-form-item-children{
+        >input{
+          width: 120px;
+        }
+      }
+    }
+    .dateTitle{
+      width:70px;
+      font-size:14px;
+    }
+    .submitButton{
+      >span{
+        margin-left: 8px;
+      }
+      >button{
+        margin-left: 4px;
+      }
+    }
+  }
+}
+// 1240 分辨率
+@media only screen and (min-width: 1101px) and (max-width: 1315px){
+  .specialConditons{
+    :global{
+      .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-name{
+        width: 67px;
+      }
+      .ant-form-item-label{
+        width: 67px;
+        >label{
+          font-size: 14px;
+        }
+      }
+    }
+    .dateTitle{
+      width:67px;
+      font-size:14px;
+    }
+    .submitButton{
+      >span{
+        margin-left: 8px;
+      }
+      >button{
+        margin-left: 8px;
+      }
+    }
+  }
+}
+// 1366 分辨率
+@media only screen and (min-width: 1316px) and (max-width: 1389px){
+  .specialConditons{
+    :global{
+      .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-name{
+        width: 75px;
+      }
+      .ant-form-item-label{
+        width: 75px;
+        >label{
+          font-size: 14px;
+        }
+      }
+    }
+    .dateTitle{
+      width:75px;
+      font-size:14px;
+    }
+  }
+}
+// 1440 分辨率
+@media only screen and (min-width: 1390px) and (max-width: 1869px){
+  .specialConditons{
+    :global{
+      .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-name{
+        width: 85px;
+      }
+      .ant-form-item-label{
+        width: 85px;
+        >label{
+          font-size: 14px;
+        }
+      }
+    }
+    .dateTitle{
+      width:85px;
+      font-size:14px;
+    }
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1870px) {
+  .specialConditons {
+    .conditionList{
+      .normalList{
+        margin-top: 15px;
+      }
+      .proList{
+        margin-top: 15px;
+      }
+    }
+    :global {
+      .ant-calendar-picker{
+        width: 240px;
+      }
+      .ant-input-number {
+        width: 240px;
+        font-size: 20px;
+      }
+      .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-name {
+        width: 95px;
+      }
+      .ant-form-item-label {
+        width: 95px;
+        > label {
+          font-size: 20px;
+        }
+      }
+      .ant-form-item-control-wrapper{
+        flex:0 0 240px;
+        flex-grow:0;
+        flex-shrink: 0;
+        flex-basis: 240px;
+        max-width: 240px;
+      }
+      .ant-select-selection--single {
+        width: 240px;
+        height: 40px;
+        font-size: 20px;
+      }
+      .ant-form-item-children {
+        > input {
+          width: 240px;
+          height: 40px;
+          font-size: 20px;
+        }
+      }
+    }
+    .dateTitle {
+      width: 95px;
+      font-size: 20px;
+    }
+    .submitButton {
+      > span {
+        font-size: 18px;
+      }
+      > button {
+        font-size: 18px;
+      }
+    }
+  }
+}

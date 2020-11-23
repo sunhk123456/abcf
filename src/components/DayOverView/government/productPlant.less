@@ -1,0 +1,96 @@
+.productPlant{
+  padding-top: 20px;
+  width: 100%;
+  height: 100%;
+  .header{
+    margin-top: 15px;
+    padding: 0 15px;
+    width: 100%;
+    height: 63px;
+    background: #f7f8fc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .headerTitle{
+      font-weight: 400;
+      font-style: normal;
+      font-size: 16px;
+    }
+    .headerListFirst{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #666;
+      font-size: 14px;
+      font-weight: 900;
+      .headerListFirstValue{
+        font-size: 20px;
+        padding: 0 15px;
+      }
+    }
+    .headerListSecond{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #999;
+      font-weight: 900;
+      .headerListSecondValue{
+        padding-left: 15px;
+      }
+    }
+  }
+  .main{
+    margin-top: 20px;
+    width: 100%;
+    height: 336px;
+    background: #f7f8fc;
+  }
+}
+
+.moduleTitle{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  .line{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 16px;
+    background: #C91717;
+  }
+  .moduleTitleText{
+    font-weight: 900;
+    font-style: normal;
+    font-size: 16px;
+    padding-left: 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+// 1024 分辨率
+@media only screen and (min-width: 700px) and (max-width: 1230px){
+  .productPlant{
+    .header{
+      .headerTitle{
+        font-size: 12px;
+      }
+      .headerListFirst{
+        font-size: 12px;
+        .headerListFirstValue{
+          padding: 2px 2px;
+          font-size: 12px;
+        }
+      }
+      .headerListSecond{
+        font-size: 12px;
+        .headerListSecondValue{
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+}

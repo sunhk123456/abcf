@@ -1,0 +1,137 @@
+//@import '~antd/lib/style/themes/default.less';
+
+.wrapper{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .title{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    .img{
+      height: 20px;
+      width: 40px;
+      padding: 0 10px 0 10px;
+    }
+  }
+  .line{
+    margin-top:5px;
+    width: 100%;
+    height: 3px;
+    background-color: #C91717;
+  }
+  .dropdown{
+    font-size: 12px;
+    color: #c91717;
+    display: inline-block;
+    position: relative;
+    float: right;
+  }
+  .dropdownIcon{
+    cursor: pointer;
+  }
+  .downUl{
+    position: absolute;
+    top:25px;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+    background-color: rgb(250, 250, 250);
+    border: 2px solid #E7E7E7;
+    border-radius: 4px;
+
+    li{
+      text-align: center;
+      cursor: pointer;
+      padding: 2px 5px;
+      width: 50px;
+      background-color: #FFF;
+      border-bottom: 1px solid #E7E7E7;
+    }
+    li:nth-child(1){
+      color: rgb(138, 120, 86);
+    }
+    li:nth-child(2){
+      color: rgb(151, 191, 156);
+    }
+    li:nth-child(3){
+      color: rgb(113, 132, 168);
+    }
+    li:nth-child(4){
+      color: rgb(192, 153, 169);
+    }
+    li:nth-child(5){
+      color: rgb(138, 120, 86);
+    }
+    li:hover{
+      background-color: rgb(250, 250, 250);
+    }
+  }
+  .downUl:before{
+    box-sizing: content-box;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -15px;;
+    right:2px;
+    padding:0;
+    border-bottom:8px solid #FFF;
+    border-top:8px solid transparent;
+    border-left:8px solid transparent;
+    border-right:8px solid transparent;
+    display: block;
+    content:'';
+    z-index: 12;
+  }
+  .downUl:after{
+    box-sizing: content-box;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -19px;;
+    right:1px;
+    padding:0;
+    border-bottom:9px solid #E7E7E7;
+    border-top:9px solid transparent;
+    border-left:9px solid transparent;
+    border-right:9px solid transparent;
+    display: block;
+    content:'';
+    z-index:10
+  }
+
+  .content{
+    height: 365px;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+  }
+};
+
+// 1920 分辨率
+//@media only screen and (min-width: 1870px){
+//
+//}
+
+@media screen and (min-width: 1920px) {
+  .wrapper{
+    .title{
+      font-size: 20px;
+      .img{
+        height: 27px;
+        width: 47px;
+        padding: 0 10px 0 10px;
+      }
+    }
+    .dropdown, .downUl{
+      font-size: 17px;
+    }
+    .content{
+      height: 500px;
+    }
+  }
+}

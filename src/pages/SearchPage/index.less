@@ -1,0 +1,47 @@
+.list {
+  .itemContent{
+    justify-content: flex-start;
+    display: flex;
+    flex: 1 1;
+    .listImg{
+      width: 30px;
+      height: 30px;
+    }
+    .listImg:hover{
+      cursor: pointer;
+    }
+  }
+  :global {
+    .ant-spin-container {
+      //border-top: 1px solid #e8e8e8;
+      border-bottom: 1px solid #e8e8e8;
+    }
+  }
+  .wholeTip{
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+.rightContent{
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+.confirmText{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+:global {
+  .ant-btn-primary{
+    background-color: #C91917;
+    border-color: #C91917;
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .list {
+    .wholeTip{
+      font-size: 19px;
+    }
+  }
+}

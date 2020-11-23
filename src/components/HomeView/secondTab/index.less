@@ -1,0 +1,93 @@
+.eightProvinces{
+  .header{
+    z-index: 1;
+    position: relative;
+    padding: 0 10px;
+    margin-top:10px;
+    width: 100%;
+    height: 50px;
+    background: #F7F8FC;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .date{
+      :global{
+        //.ant-calendar-selected-date .ant-calendar-date:hover, .ant-calendar-selected-start-date .ant-calendar-date:hover, .ant-calendar-selected-end-date .ant-calendar-date:hover
+        .ant-calendar-selected-date .ant-calendar-date:hover{
+          background: #c91717;
+        }
+        .ant-calendar-input-wrap{
+          background-color: #c91717;
+        }
+        .ant-calendar-input{
+          color: #fff;
+          background-color: #c91717;
+        }
+      }
+      .dateTitle{
+        font-size: 14px;
+        color: #333;
+      }
+    }
+    .area{
+      margin-left: 20px;
+      height: 100%;
+      width: 450px;
+      display: flex;
+      align-items: center;
+      :global{
+        .antd-pro-components-until-pro-city-proContent:nth-child(2){
+          display: none;
+        }
+      }
+    }
+    .query{
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      border-radius: 4px;
+      border: 1px dotted #CCC;
+      padding: 5px 8px;
+      cursor: pointer;
+      background: #fff;
+    }
+  }
+  .twoEchart{
+    margin-top:10px;
+    width: 100%;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .twoEchartItem{
+      flex: 0 0 49.5%;
+      height: 100%;
+      background: #F7F8FC;
+    }
+  }
+}
+.dateDropdown{
+  z-index: 1;
+}
+.dateTriangle{
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #999;
+  position: absolute;
+  top: 21px;
+}
+
+
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .eightProvinces{
+    .header{
+      .area{
+        width: 650px;
+      }
+    }
+  }
+}

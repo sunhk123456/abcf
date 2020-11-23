@@ -1,0 +1,194 @@
+.textOverflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  white-space: nowrap;
+}
+
+.textOverflowMulti(@line: 3, @bg: #fff) {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.5em;
+  max-height: @line * 1.5em;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+  &:before {
+    background: @bg;
+    content: '...';
+    padding: 0 1px;
+    position: absolute;
+    right: 14px;
+    bottom: 0;
+  }
+  &:after {
+    background: white;
+    content: '';
+    margin-top: 0.2em;
+    position: absolute;
+    right: 14px;
+    width: 1em;
+    height: 1em;
+  }
+}
+
+// mixins for clearfix
+// ------------------------
+.clearfix() {
+  zoom: 1;
+  &:before,
+  &:after {
+    content: ' ';
+    display: table;
+  }
+  &:after {
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    height: 0;
+  }
+}
+
+// 预警提示背景色修改
+// ------------------------
+.earlyTip(){
+  .early{
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  .earlyTip{
+    :global{
+      .ant-tooltip-arrow{
+        border-bottom-color: #F9E9E9;
+      }
+      .ant-tooltip-inner{
+        background-color: #F9E9E9;
+        color: #D44545;
+      }
+    }
+  }
+}
+
+// 日期组件样式修改
+:global{
+  // 多选框颜色
+  .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+  .ant-checkbox:hover .ant-checkbox-inner,
+  .ant-checkbox-input:focus + .ant-checkbox-inner{
+    border: 1px solid #C91717 ;
+  }
+
+  .ant-checkbox-checked .ant-checkbox-inner,
+  .ant-checkbox-indeterminate .ant-checkbox-inner {
+    background-color: transparent;
+    border: 1px solid #C91717;
+  }
+  .ant-checkbox-checked .ant-checkbox-inner::after{
+    border-color:#C91717;
+  }
+
+
+  .ant-calendar-input-wrap {
+    display: none; //隐藏掉可以搜索日期的框
+  }
+   // input框位置
+  .ant-calendar {
+    position: relative;
+    top:40px;
+    left:0;
+    width: 250px;
+  }
+
+
+  .ant-calendar-selected-date .ant-calendar-date{
+    background: #D44545;
+  }
+  .ant-calendar-selected-date .ant-calendar-date:hover{
+    background: #D44545;
+  }
+  .ant-calendar-date:active{
+    background: #D44545;
+  }
+  .ant-calendar-date:hover{
+    background: #D44545;
+    color: #FFF;
+  }
+
+  .ant-calendar-year-panel-selected-cell .ant-calendar-year-panel-year{
+    background: #D44545;
+  }
+  .ant-calendar-year-panel-selected-cell .ant-calendar-year-panel-year:hover{
+    background: #D44545;
+  }
+  //.ant-calendar-header a:hover{
+  //  background: #D44545;
+  //  color: #FFF;
+  //}
+  .ant-calendar-decade-panel-selected-cell .ant-calendar-decade-panel-decade{
+    background: #D44545;
+  }
+
+
+  .ant-calendar-month-panel-selected-cell .ant-calendar-month-panel-month{
+    background: #D44545;
+  }
+  .ant-calendar-month-panel-selected-cell .ant-calendar-month-panel-month:hover{
+    background: #D44545;
+  }
+
+  // 输入框颜色
+  .ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled){
+    border-color: #d9d9d9 ;
+  }
+  .ant-input{
+    border: 1px dotted #a7a7a7;
+    cursor: text;
+    border-radius: 0;
+  }
+  .ant-input:focus {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9);
+    border: 1px dotted #a7a7a7;
+  }
+  .ant-input:hover{
+    border: 1px dotted #a7a7a7;
+  }
+  //.ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled) {
+  //  border-color: #a7a7a7;
+  //}
+  .ant-layout.ant-layout-has-sider > .ant-layout, .ant-layout.ant-layout-has-sider > .ant-layout-content {
+    overflow: hidden;
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  :global{
+    .ant-input{
+     line-height: 30px;
+    }
+    .ant-calendar-picker>div{
+      width: 240px;
+      height: 40px;
+
+    }
+    .ant-calendar-picker-container{
+      width: 300px;
+      height: 300px;
+      z-index: 1050;
+    }
+    .ant-calendar-picker-input,.ant-calendar-input,.ant-calendar{
+      font-size: 18px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.dateTriangle{
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #999;
+  position: absolute;
+  top: 21px;
+}

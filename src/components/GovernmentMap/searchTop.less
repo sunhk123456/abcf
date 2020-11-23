@@ -1,0 +1,137 @@
+.condition{
+  position: relative;
+  padding: 10px 15px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #F7F8FC;
+  .dateDom{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 20px;
+    .dateDropdown{
+      z-index: 99;
+    }
+  }
+  .indexSelect{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 20%;
+    min-width: 250px;
+    :global{
+      .ant-select{
+        width: 70%;
+      }
+      .ant-select-selection{
+        border: 1px dotted #a7a7a7;
+        border-radius:0;
+      }
+    }
+  }
+  .queryDownload{
+    position: absolute;
+    top:50%;
+    right:20px;
+    transform: translateY(-50%);
+    .query{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      padding: 0 10px;
+      background: #fff;
+      border: 1px solid #EAEAEB;
+      border-radius: 4px;
+    }
+    .query:hover{
+      cursor: pointer;
+    }
+    .download:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+:global{
+  .ant-dropdown-menu{
+    opacity: 1;
+    padding: 0;
+    background-color:unset;
+    box-shadow: unset;
+  }
+  .ant-dropdown-menu-item{
+    margin: 0 0 5px 0;
+    padding: 5px 0;
+    background-color: #fff;
+    border: 1px solid #EAEAEB;
+    color: rgb(121,121,121);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+  .ant-select-dropdown-menu-item-selected{
+    background-color: #C91717;
+    color:#fff;
+  }
+  .ant-select-dropdown-menu-item:hover {
+    background-color: #C91717;
+    color:#fff;
+  }
+  .ant-select-dropdown-menu-item-active{
+    background-color: #C91717;
+    color: #fff;
+  }
+  .ant-select-dropdown{
+    z-index: 1;
+  }
+}
+
+@media screen and(min-width: 1870px) {
+  .condition {
+    font-size: 20px;
+    .indexSelect{
+      min-width: 350px;
+    }
+    .queryDownload {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      .query {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        padding: 0 13px;
+        background: #fff;
+        border: 1px solid #EAEAEB;
+        border-radius: 4px;
+      }
+    }
+    :global {
+      .ant-select-selection--single {
+        position: relative;
+        height: 40px;
+        line-height: 40px;
+        cursor: pointer;
+        font-size: 20px;
+      }
+      .ant-select-selection__rendered {
+        position: relative;
+        display: block;
+        margin-right: 11px;
+        margin-left: 11px;
+        line-height: 40px;
+        font-size: 20px;
+      }
+      .ant-select-dropdown-menu-item{
+        font-size: 20px;
+      }
+    }
+  }
+
+
+}

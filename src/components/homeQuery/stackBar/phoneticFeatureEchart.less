@@ -1,0 +1,47 @@
+.page{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  //border: 1px solid red;
+  .wrapper{
+    min-width: 200px;
+    min-height: 200px;
+    width: 100%;
+    height: 100%;
+  }
+  .downLoad {
+    z-index: 1;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    height: 22px;
+    border: 0.5px solid #eaeaea;
+    border-radius: 5px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .titleDiv{
+    z-index: 1;
+    width: 100%;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    left: 5px;
+  }
+}
+
+.basisBarEchartToolTip{
+  :global{
+    .ant-tooltip-inner{
+      background: #fff;
+      color: #C91717;
+    }
+    .ant-tooltip-arrow{
+      opacity: 0;
+    }
+  }
+}

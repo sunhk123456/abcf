@@ -1,0 +1,1022 @@
+@import '~@/utils/utils.less';
+.page {
+  background-color: white;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  .DownloadShow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+  }
+  .DownloadHidden {
+    display: none;
+  }
+
+  .title {
+    display: flex;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: #444;
+    margin-bottom: 10px;
+    .icon {
+        vertical-align: top;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        position: relative;
+        .iconContent{
+          z-index: 100;
+          flex-wrap: nowrap;
+          position: absolute;
+          top: 25px;
+          left: 100%;
+          font-size: 13px;
+          padding: 5px;
+          background-color: #fbf8e7;
+          border: 1px solid #e1d8ca;
+          width: 172px;
+        }
+        svg{
+          color: rgb(208,208,208);
+        }
+      }
+
+  }
+
+  header {
+    background-color: rgb(247, 247, 247);
+    height: 120px;
+    padding: 20px 124px 20px 12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .row {
+      width: 100%;
+      display: flex;
+      position: relative;
+      justify-content: start;
+      align-items: center;
+      .item {
+        flex: 1 0 470px;
+        display: flex;
+        font-weight: 400;
+        font-style: normal;
+        color: #666;
+
+        .option {
+          width: 80px;
+          height: 30px;
+          line-height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 10px;
+        }
+
+        .selected {
+          background-color: #FFF;
+          cursor: pointer;
+          flex: 1;
+          max-width: 158px;
+          height: 30px;
+          text-align: center;
+          line-height: 30px;
+          //border: 1px solid #d9d9d9;
+          //border-radius: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+      }
+    }
+    .row2 {
+      width: 100%;
+      display: flex;
+      position: relative;
+      justify-content: start;
+      align-items: center;
+      .item {
+        flex: 0 0 276px;
+        display: flex;
+        font-weight: 400;
+        font-style: normal;
+        color: #666;
+
+        .option {
+          width: 80px;
+          height: 30px;
+          line-height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 10px;
+        }
+
+        .selected {
+          background-color: #FFF;
+          cursor: pointer;
+          flex: 0 0 158px;
+          //max-width: 158px;
+          height: 30px;
+          text-align: center;
+          line-height: 30px;
+          //border: 1px solid #d9d9d9;
+          //border-radius: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+      }
+    }
+    .button {
+      padding-left: 10px;
+      width: 120px;
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      right: 12px;
+      bottom: 20px;
+
+      div {
+        background-color: #FFF;
+        cursor: pointer;
+        padding: 0 10px;
+        text-align: center;
+        line-height: 30px;
+        //border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        border: 1px dotted #a7a7a7;
+      }
+    }
+  }
+
+
+  .formTitle {
+    padding: 12px 15px;
+    font-size: 18px;
+    position: relative;
+
+    .line {
+      position: absolute;
+      top: 13px;
+      left: 0;
+      height: 24px;
+      width: 7px;
+      background-color: #c91717;
+    }
+
+    .checked {
+      font-size: 14px;
+      position: absolute;
+      top: 20px;
+      right: 50px;
+
+      input {
+        cursor: pointer
+      }
+    }
+  }
+
+  .form {
+    background-color: rgb(247, 247, 247);
+
+    .column0 {
+      text-align: left;
+      background: #FAFAFA;
+    }
+
+    .column1 {
+      text-align: center;
+    }
+
+    td {
+      height: 30px;
+      padding: 0 10px;
+    }
+
+    th {
+      height: 30px;
+      padding: 0 10px;
+    }
+  }
+  .disable{
+    display: none;
+  }
+  .popNone{
+    animation: myPop 1s;
+    height: 70%;
+    background-color: #f7f7f7;
+    border-top: 1px solid red;
+    -moz-animation: myPop 1s;	/* Firefox */
+    -webkit-animation: myPop 1s;	/* Safari 和 Chrome */
+    -o-animation: myPop 1s;
+    position: fixed;
+    top:30%;
+    width:85%;
+    right: -90%;
+    z-index: 10;
+    .popTitle{
+      display: flex;
+      color: #999;
+      padding: 5px;
+    }
+    .chartPop{
+      position: absolute;
+      right: -1%;
+      top:15%;
+      width: 64px;
+      height: 64px;
+      z-index: 10;
+      background-color: rgb(223,116,116);
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .none{
+      display: none;
+    }
+  }
+  .pop{
+    animation: myfirst 1s;
+    -moz-animation: myfirst 1s;	/* Firefox */
+    -webkit-animation: myfirst 1s;	/* Safari 和 Chrome */
+    -o-animation: myfirst 1s;
+    position: fixed;
+    right: 1%;
+    top:30%;
+    z-index: 10; // 原值100 风信子修改为10 处理菜单层级问题
+    width:85%;
+    height:70%;
+    background-color: #f7f7f7;
+    border-top: 1px solid red;
+    .popTitle{
+      display: flex;
+      color: #999;
+      padding: 5px;
+    }
+    .chartPop{
+      position: absolute;
+      right: -1.5%;
+      top:15%;
+      width: 50px;
+      height: 50px;
+      border-radius: 2px;
+      z-index: 10;
+      padding: 5px;
+      background-color: rgb(223,116,116);
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .none{
+      display: none;
+    }
+  }
+  @keyframes myfirst
+  {
+    0%   {right: -90%;}
+    100% {right: 1%;}
+  }
+
+  @-moz-keyframes myfirst /* Firefox */
+  {
+    0%   {right: -90%;}
+    100% {right: 1%;}
+  }
+
+  @-webkit-keyframes myfirst /* Safari 和 Chrome */
+  {
+    0%   {right: -90%;}
+    100% {right: 1%;}
+  }
+
+  @-o-keyframes myfirst /* Opera */
+  {
+    0%   {right: -90%;}
+    100% {right: 1%;}
+  }
+
+
+
+  @keyframes myPop
+  {
+    0%      { right: 0;}
+    100% {
+      right: -90%;
+      display: none}
+  }
+
+  @-moz-keyframes myPop /* Firefox */
+  {
+    0%      { right: 0}
+    100% {
+      right: -90%;
+      display: none}
+  }
+
+  @-webkit-keyframes myPop /* Safari 和 Chrome */
+  {
+    0%      { right: 0;}
+    100% {
+      right: -90%;
+      display: none}
+  }
+
+  @-o-keyframes myPop /* Opera */
+  {
+    0%      { right: 0;}
+    100% {
+      right: -90%;
+      display: none}
+  }
+}
+
+
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 960px) {
+  .page {
+    .title {
+      font-size: 16px;
+      div {
+        width: 25px;
+        height: 25px;
+
+        .icon {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    header {
+      font-size: 12px;
+
+      .row {
+        .item {
+          flex: 1 0 340px;
+          padding-right: 10px;
+
+          .option {
+            margin-right: 0;
+          }
+
+          .selected {
+            min-width: 100px;
+            max-width: 100px;
+            width: 100px;
+            :global(.ant-input) {
+              text-align: center;
+              font-size: 12px;
+              padding: 4px 11px;
+            }
+          }
+        }
+      }
+
+      .row2 {
+        .item {
+          flex: 0 0 150px;
+          margin-right: 0;
+
+          .option {
+            margin-right: 0;
+          }
+
+          .selected {
+            flex: 1;
+            min-width: 100px;
+            max-width: 100px;
+            width: 100px;
+          }
+
+        }
+      }
+
+      .formTitle {
+        padding: 12px 15px;
+        font-size: 16px;
+      }
+
+      :global {
+        .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-name {
+          padding: 5px 0 5px 27px;
+        }
+
+        .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-cityFrame {
+          width: 100px;
+        }
+        tr.ant-table-row.ant-table-row-level-1 {
+          background-color: #f0f3f7;
+
+          td.antd-pro-pages-product-analysis-index-column0 {
+            background-color: #FAFAFA;
+            display: block;
+            width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            div {
+              font-size: 14px;
+              color: black;
+            }
+          }
+        }
+
+        thead {
+          th {
+            font-size: 13px;
+            font-weight: 400;
+            font-style: normal;
+            color: #999;
+          }
+
+          th.ant-table-column-has-sorters {
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            color: rgba(0, 0, 0, .65);
+          }
+
+          th.antd-pro-pages-product-analysis-index-column0 {
+            background-color: #fff;
+            display: block;
+            width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            div {
+              font-size: 14px;
+              color: rgba(0, 0, 0, .65);;
+            }
+          }
+        }
+
+        .ant-table {
+          font-size: 12px;
+        }
+      }
+    }
+    .formTitle{
+      padding: 13px 15px;
+      font-size: 14px;
+    }
+    :global{
+      tr.ant-table-row.ant-table-row-level-1 {
+        background-color: #f0f3f7;
+        td.antd-pro-pages-product-analysis-index-column0{
+          background-color: #FAFAFA;
+          display: block;
+          width: 200px;
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+          div{
+            font-size: 14px;
+            color:black;
+          }
+        }
+      }
+      thead{
+        th{
+          font-size: 13px;
+          font-weight: 400;
+          font-style: normal;
+          color: #999;
+        }
+        th.ant-table-column-has-sorters{
+          font-size: 14px;
+          font-weight: 400;
+          font-style: normal;
+          color: rgba(0,0,0,.65);
+        }
+        th.antd-pro-pages-product-analysis-index-column0{
+          background-color: #fff;
+          display: block;
+          width: 200px;
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+          div{
+            font-size: 14px;
+            color: rgba(0,0,0,.65);;
+          }
+        }
+      }
+      .ant-table {
+        font-size: 12px;
+      }
+    }
+  }
+}
+// 1024 分辨率
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+  .page{
+    .title {
+      font-size: 16px;
+      div {
+        width: 25px;
+        height: 25px;
+
+        .icon {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    header{
+      font-size: 12px;
+      .row {
+        .item {
+          flex: 1 0 420px;
+          padding-right: 10px;
+          .option {
+            margin-right: 0;
+          }
+          .selected {
+            min-width: 100px;
+            max-width: 100px;
+            width:100px;
+            :global(.ant-input){
+              font-size: 12px;
+              text-align: center;
+            }
+          }
+        }
+      }
+      .row2 {
+        .item {
+          flex: 0 0 180px;
+          margin-right: 10px;
+          .option {
+            margin-right: 0;
+          }
+          .selected {
+            flex: 1;
+            min-width: 120px;
+            max-width: 120px;
+            width:120px;
+          }
+
+        }
+      }
+      :global{
+        .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-name{
+          padding: 5px 0 5px 27px;
+        }
+        .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-cityFrame{
+          width: 120px;
+        }
+      }
+    }
+    .formTitle{
+      padding: 12px 15px;
+      font-size: 16px;
+    }
+    :global{
+      tr.ant-table-row.ant-table-row-level-1 {
+        background-color: #f0f3f7;
+        td.antd-pro-pages-product-analysis-index-column0{
+          background-color: #FAFAFA;
+          display: block;
+          width: 200px;
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+          div{
+            font-size: 14px;
+            color:black;
+          }
+        }
+      }
+      thead{
+        th{
+          font-size: 13px;
+          font-weight: 400;
+          font-style: normal;
+          color: #999;
+        }
+        th.ant-table-column-has-sorters{
+          font-size: 14px;
+          font-weight: 400;
+          font-style: normal;
+          color: rgba(0,0,0,.65);
+        }
+        th.antd-pro-pages-product-analysis-index-column0{
+          background-color: #fff;
+          display: block;
+          width: 200px;
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+          div{
+            font-size: 14px;
+            color: rgba(0,0,0,.65);;
+          }
+        }
+      }
+      .ant-table {
+        font-size: 12px;
+      }
+    }
+  }
+}
+// 1240 分辨率
+@media only screen and (min-width: 1101px) and (max-width: 1315px){
+  .page{
+    .title {
+      font-size: 18px;
+      div {
+        width: 25px;
+        height: 25px;
+
+        .icon {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    header{
+      font-size: 14px;
+      .row {
+        .item {
+          flex: 1 0 300px;
+          padding-right: 10px;
+          .option {
+            margin-right: 0;
+          }
+          .selected {
+            min-width: 120px;
+            max-width: 120px;
+            width:120px;
+            :global(.ant-input){
+              font-size: 14px;
+              text-align: center;
+            }
+          }
+        }
+      }
+      .row2 {
+        .item {
+          flex: 0 0 204px;
+          margin-right: 10px;
+          .option {
+            margin-right: 0;
+          }
+          .selected {
+            flex: 1;
+            min-width: 120px;
+            max-width: 120px;
+            width:120px;
+          }
+
+        }
+      }
+      :global{
+        .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-name{
+          padding: 5px 0 5px 27px;
+        }
+        .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-cityFrame{
+          width: 120px;
+        }
+      }
+    }
+    .formTitle{
+      padding: 12px 15px;
+      font-size: 18px;
+    }
+    :global{
+      tr.ant-table-row.ant-table-row-level-1 {
+        background-color: #f0f3f7;
+        td.antd-pro-pages-product-analysis-index-column0{
+          background-color: #FAFAFA;
+          display: block;
+          width: 200px;
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+          div{
+            font-size: 16px;
+            color:black;
+          }
+        }
+      }
+      thead{
+        th{
+          font-size: 15px;
+          font-weight: 400;
+          font-style: normal;
+          color: #999;
+        }
+        th.ant-table-column-has-sorters{
+          font-size: 16px;
+          font-weight: 400;
+          font-style: normal;
+          color: rgba(0,0,0,.65);
+        }
+        th.antd-pro-pages-product-analysis-index-column0{
+          background-color: #fff;
+          display: block;
+          width: 200px;
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+          div{
+            font-size: 16px;
+            color: rgba(0,0,0,.65);;
+          }
+        }
+      }
+      .ant-table {
+        font-size: 14px;
+      }
+    }
+  }
+}
+// 1366 分辨率
+@media only screen and (min-width: 1316px) and (max-width: 1389px){
+  .page{
+    header{
+      font-size: 16px;
+      .row2 {
+        .item {
+          flex: 0 0 259px;
+        }
+      }
+      :global{
+        .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-name{
+          padding: 5px 15px 5px 27px;
+        }
+      }
+    }
+  }
+
+}
+// 1440 分辨率
+@media only screen and (min-width: 1390px) and (max-width: 1869px){
+  .page{
+    header{
+      font-size: 16px;
+      :global{
+        .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-name{
+          padding: 5px 15px 5px 27px;
+        }
+      }
+    }
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+   .page{
+     .title {
+       display: flex;
+       height: 30px;
+       line-height: 30px;
+       font-size: 26px;
+       div {
+         width: 30px;
+         height: 30px;
+         .icon {
+           width: 25px;
+           height: 25px;
+         }
+       }
+     }
+     header{
+       height: 140px;
+       .row {
+         font-size: 20px;
+         .item {
+           .option {
+
+             width: 120px;
+             height: 40px;
+             line-height: 40px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             margin-right: 10px;
+           }
+
+           .selected {
+
+             background-color: #FFF;
+             cursor: pointer;
+             flex: 1;
+             max-width: 158px;
+             height: 40px;
+             text-align: center;
+             line-height: 40px;
+             //border: 1px solid #d9d9d9;
+             //border-radius: 4px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+           }
+
+         }
+       }
+       .row2 {
+         .item {
+           flex: 0 0 372px;
+           .option {
+             font-size: 20px;
+             width: 120px;
+             height: 40px;
+             line-height: 40px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             margin-right: 10px;
+           }
+           .selected {
+             background-color: #FFF;
+             cursor: pointer;
+             flex: 0 0 180px;
+             width: 180px;
+             height: 40px;
+             text-align: center;
+             line-height: 40px;
+             //border: 1px solid #d9d9d9;
+             //border-radius: 4px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+           }
+         }
+       }
+       :global {
+         .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-name{
+           padding: 5px 20px 5px 48px;
+         }
+         .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-cityFrame{
+           width: 180px;
+         }
+         .ant-calendar-picker > div{
+           width: 158px;
+         }
+         .ant-input{
+           height: 40px;
+           font-size: 18px;
+           text-align: center;
+         }
+       }
+     }
+     .formTitle{
+       padding: 10px 15px;
+       font-size: 20px;
+     }
+     .popNone{
+       top:20%;
+     }
+     .pop{
+       top:26%;
+     }
+   }
+
+}
+
+:global {
+  // 表格排序图标放大，变红
+  :root .ant-table-thead > tr > th .ant-table-column-sorter-up,
+  :root .ant-table-thead > tr > th .ant-table-column-sorter-down {
+    font-size: 16px;
+  }
+  .ant-table-thead > tr > th .ant-table-column-sorter-up.on,
+  .ant-table-thead > tr > th .ant-table-column-sorter-down.on {
+    color: #c91717;
+  }
+  // 表格样式调整
+  .ant-table-fixed-left table,
+  .ant-table-fixed-right table {
+    width: auto;
+    background: #FAFAFA;
+  }
+  tr.ant-table-row.ant-table-row-level-1 {
+    background-color: #f0f3f7;
+    td.antd-pro-pages-product-analysis-index-column0{
+      background-color: #FAFAFA;
+      display: block;
+      width: 200px;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+      div{
+        font-size: 14px;
+        color:black;
+      }
+    }
+  }
+  thead{
+    th{
+      font-size: 13px;
+      font-weight: 400;
+      font-style: normal;
+      color: #999;
+    }
+    th.ant-table-column-has-sorters{
+      font-size: 16px;
+      font-weight: 400;
+      font-style: normal;
+      color: rgba(0,0,0,.65);
+    }
+    th.antd-pro-pages-product-analysis-index-column0{
+      background-color: #fff;
+      display: block;
+      width: 200px;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+      div{
+        font-size: 16px;
+        color: rgba(0,0,0,.65);;
+      }
+    }
+  }
+  .ant-table {
+    font-size: 14px;
+  }
+
+  // 表头组件分布
+  .antd-pro-components-until-pro-city-indexContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .antd-pro-components-until-pro-city-proContent{
+      flex: 1;
+    }
+  }
+  .ant-calendar-month-panel-month {
+    width: 70px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 8px;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+  .ant-calendar-month-panel-month:hover {
+    background: #c91717;
+    cursor: pointer;
+  }
+  .ant-calendar-header a:hover {
+    color:#fff;
+  }
+  .ant-calendar-month-panel-header a.ant-calendar-month-panel-prev-year-btn:hover{
+    color:#c91717;
+  }
+  .ant-calendar-month-panel-header a.ant-calendar-month-panel-year-select:hover{
+    color:#c91717;
+  }
+  .ant-calendar-month-panel-header a.ant-calendar-month-panel-next-year-btn:hover{
+    color:#c91717;
+  }
+  .ant-calendar-month-panel-cell.ant-calendar-month-panel-selected-cell .ant-calendar-month-panel-month {
+    background: #c91717;
+    color: #fff;
+  }
+  .ant-calendar-month-panel-cell.ant-calendar-month-panel-selected-cell .ant-calendar-month-panel-month:hover {
+    background: #c91717;
+    color: #fff;
+  }
+  td.ant-calendar-month-panel-cell.ant-calendar-month-panel-cell-disabled.ant-calendar-month-panel-selected-cell{
+    a.ant-calendar-month-panel-month{
+      cursor: not-allowed;
+      color: #bcbcbc;
+      background: #f5f5f5;
+    }
+  }
+
+
+
+  // 日期框样式
+  .ant-calendar-input-wrap {
+    display: none; //隐藏掉可以搜索日期的框
+  }
+  .ant-calendar {
+    position: relative;
+    top:44px;
+    left:0;
+    width: 250px;
+  }
+}
+
+
+

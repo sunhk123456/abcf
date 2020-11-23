@@ -1,0 +1,61 @@
+const iceCreamTable={
+  "thData":{
+  "thDataAll":[
+    {"name":"省份","indexId":"1","parentId":"-1"},
+    {"name":"有效产品量","indexId":"2","parentId":"-1"},
+    {"name":"用户总数","indexId":"3","parentId":"-1"},
+    {"name":"上网流量","indexId":"4","parentId":"merge01"},
+    {"name":"计费时长","indexId":"5","parentId":"merge01"},
+    {"name":"上网流量","indexId":"6","parentId":"merge02"},
+    {"name":"计费时长","indexId":"7","parentId":"merge02"},
+    {"name":"上网流量","indexId":"8","parentId":"merge03"},
+    {"name":"计费时长","indexId":"9","parentId":"merge03"},
+    {"name":"上网流量","indexId":"10","parentId":"merge04"},
+    {"name":"计费时长","indexId":"11","parentId":"merge04"},
+    {"name":"上网流量","indexId":"12","parentId":"mergeAll"},
+    {"name":"计费时长","indexId":"13","parentId":"mergeAll"},
+  ],
+  "thParent":[
+    {"name":"省际漫游","id":"merge01"},
+    {"name":"非漫游","id":"merge02"},
+    {"name":"省内漫游","id":"merge03"},
+    {"name":"国际及港澳台漫游","id":"merge04"},
+    {"name":"整体","id":"mergeAll"}]
+},
+  "tbodyData":[
+  {
+    "areaId":"111",
+    "level":"0",
+    "areaName":"全国",
+    "parentId":"-1",
+    "values":["145","7598","4396","443","12138","4541","1578","12138","4541","1578","4541","1578"],
+    "showEarlyWarning":"1",
+    "warningLevel":"一级",
+    "desc":"预警描述信息"
+  },
+  {
+    "areaId":"019",
+    "level":"0",
+    "areaName":"山西",
+    "parentId":"-1",
+    "values":["145","7598","4396","443","12138","145","7598","4396","443","12138","443","12138"],
+    "showEarlyWarning":"1",
+    "warningLevel":"一级",
+    "desc":"预警描述信息"
+  },
+  {
+    "areaId":"019",
+    "level":"1",
+    "areaName":"太原",
+    "parentId":"019",
+    "values":["145","7598","4396","443","12138","4396","443","12138","443","12138","4396","443","12138"],
+    "showEarlyWarning":"1",
+    "warningLevel":"一级",
+    "desc":"预警描述信息"
+  }
+]
+};
+
+export default {
+  'POST /api/IceCream/fetchFakerTable': iceCreamTable,
+}

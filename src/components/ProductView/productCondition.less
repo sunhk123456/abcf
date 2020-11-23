@@ -1,0 +1,325 @@
+.productView-condition{
+  width: 100%;
+  background-color: rgb(247, 247, 247);
+  padding: 10px 30px;
+  margin: 20px 0;
+  .conditionList{
+    display: flex;
+    //justify-content: space-between;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    .normalList{
+      width: 25%;
+    }
+    .proList{
+      width: 50%;
+    }
+    .productList{
+      width: 50%;
+    }
+  }
+  :global{
+    .ant-input-number-handler-wrap{
+      display: none;
+    }
+    .ant-input-number{
+      width: 158px;
+      border: 1px dotted #a7a7a7;
+      border-radius: 0;
+      font-size: 14px;
+    }
+    .ant-input-number-focused,.ant-input-number:hover,.ant-input-number:hover{
+      border: 1px dotted #a7a7a7;
+      box-shadow:0 0 0 2px rgba(24, 144, 255, 0)
+    }
+    .ant-select-focused .ant-select-selection, .ant-select-selection:focus, .ant-select-selection:active {
+      box-shadow:0 0 0 2px rgba(24, 144, 255, 0)
+    }
+
+    .ant-form-item{
+      display: flex;
+      margin-right: 0;
+    }
+    .ant-form-item label{
+      float: left;
+      color: rgba(0, 0, 0, 0.65)
+    }
+    .ant-form-item-control-wrapper{
+      flex:1;
+    }
+    .ant-select-selection--single{
+      width: 158px;
+      border: 1px dotted #a7a7a7;
+      border-radius: 0;
+      font-size: 14px;
+    }
+    .antd-pro-components-product-view-product-condition-productList{
+      .ant-select-selection--single{
+        width: 91%;
+      }
+    }
+    .ant-form-item-children{
+      >input{
+        width: 158px;
+        font-size: 14px;
+      }
+    }
+    .ant-calendar-picker{
+      width: 158px;
+      font-size: 14px;
+    }
+    .ant-select-selection__rendered{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .dateTitle{
+    display:inline-block;
+  }
+  .submitButton{
+    >span{
+      margin-left: 15px;
+      color: rgba(0,0,0,0.65);
+    }
+    >button{
+      margin-left: 15px;
+      color: rgba(0,0,0,0.65);
+    }
+  }
+}
+.productViewSelectItme{
+  z-index: 10;
+  :global{
+    .ant-select-dropdown-menu-item:hover{
+      background: #C91717;
+      color: white;
+    }
+    .ant-select-dropdown-menu-item-active{
+      background: #C91717;
+      color: white;
+    }
+    .ant-select-dropdown{
+      z-index: 1;
+    }
+  }
+}
+
+
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 960px){
+  .productView-condition{
+    padding: 10px 0;
+    :global{
+      .ant-input-number{
+        width: 100px;
+      }
+      .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-name{
+        width: 60px;
+      }
+      .ant-form-item-label{
+        width: 60px;
+        >label{
+          font-size: 14px;
+        }
+      }
+      .ant-select-selection--single{
+        width: 100px;
+      }
+      .antd-pro-components-product-view-product-condition-productList{
+        .ant-select-selection--single{
+          width: 97%;
+        }
+      }
+      .ant-form-item-children{
+        >input{
+          width: 100px;
+        }
+      }
+      .ant-calendar-picker{
+        width: 100px;
+      }
+    }
+    .dateTitle{
+      width:60px;
+      font-size:14px;
+    }
+    .submitButton{
+      >span{
+        margin-left: 0;
+      }
+      >button{
+        margin-left: 2px;
+      }
+    }
+  }
+}
+// 1024 分辨率
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+  .productView-condition{
+    padding: 10px 10px;
+    :global{
+      .ant-input-number{
+        width: 120px;
+      }
+      .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-name{
+        width: 70px;
+      }
+      .ant-form-item-label{
+        width: 70px;
+        >label{
+          font-size: 14px;
+        }
+      }
+      .ant-select-selection--single{
+        width: 120px;
+      }
+      .antd-pro-components-product-view-product-condition-productList{
+        .ant-select-selection--single{
+          width: 94%;
+        }
+      }
+      .ant-calendar-picker{
+        width: 120px;
+      }
+      .ant-form-item-children{
+        >input{
+          width: 120px;
+        }
+      }
+    }
+    .dateTitle{
+      width:70px;
+      font-size:14px;
+    }
+    .submitButton{
+      >span{
+        margin-left: 8px;
+      }
+      >button{
+        margin-left: 4px;
+      }
+    }
+  }
+}
+// 1240 分辨率
+@media only screen and (min-width: 1101px) and (max-width: 1315px){
+  .productView-condition{
+    :global{
+      .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-name{
+        width: 67px;
+      }
+      .ant-form-item-label{
+        width: 67px;
+        >label{
+          font-size: 14px;
+        }
+      }
+      .antd-pro-components-product-view-product-condition-productList{
+        .ant-select-selection--single{
+          width: 93%;
+        }
+      }
+    }
+    .dateTitle{
+      width:67px;
+      font-size:14px;
+    }
+    .submitButton{
+      >span{
+        margin-left: 8px;
+      }
+      >button{
+        margin-left: 8px;
+      }
+    }
+  }
+}
+// 1366 分辨率
+@media only screen and (min-width: 1316px) and (max-width: 1389px){
+  .productView-condition{
+    :global{
+      .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-name{
+        width: 75px;
+      }
+      .ant-form-item-label{
+        width: 75px;
+        >label{
+          font-size: 14px;
+        }
+      }
+    }
+    .dateTitle{
+      width:75px;
+      font-size:14px;
+    }
+  }
+}
+// 1440 分辨率
+@media only screen and (min-width: 1390px) and (max-width: 1869px){
+  .productView-condition{
+    :global{
+      .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-name{
+        width: 85px;
+      }
+      .ant-form-item-label{
+        width: 85px;
+        >label{
+          font-size: 14px;
+        }
+      }
+    }
+    .dateTitle{
+      width:85px;
+      font-size:14px;
+    }
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .productView-condition{
+    :global{
+      .ant-input-number{
+        width: 240px;
+        font-size: 20px;
+      }
+      .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-name{
+        width: 95px;
+      }
+      .ant-form-item-label{
+        width: 95px;
+        >label{
+          font-size: 20px;
+        }
+      }
+      .ant-select-selection--single{
+        width: 240px;
+        height: 40px;
+        font-size: 20px;
+      }
+      .antd-pro-components-product-view-product-condition-productList{
+        .ant-select-selection--single{
+          width: 92%;
+        }
+      }
+      .ant-form-item-children{
+        >input{
+          width: 240px;
+          height: 40px;
+          font-size: 20px;
+        }
+      }
+    }
+    .dateTitle{
+      width:95px;
+      font-size:20px;
+    }
+    .submitButton{
+      >span{
+        font-size: 18px;
+      }
+      >button{
+        font-size: 18px;
+      }
+    }
+  }
+}

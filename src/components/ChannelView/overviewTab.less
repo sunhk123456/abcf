@@ -1,0 +1,281 @@
+.overviewTab{
+  margin-top: 15px;
+  .condition{
+    padding: 10px 15px;
+    background-color: #F7F7F7;
+  }
+  .condition:after{
+    content:"";
+    height:0;
+    line-height:0;
+    display:block;
+    visibility:hidden;
+    clear:both;
+  }
+  .dateDom{
+    float: left;
+    margin-right: 20px;
+  }
+  .ProCityDiv{
+    float: left;
+    height: 32px;
+    width: 40%;
+  }
+
+  .channelType{
+    float: left;
+    height: 32px;
+    //width: 20%;
+    :global{
+      .ant-select{
+        width: 158px;
+        //border: 1px dotted #a7a7a7;
+      }
+      .ant-select-selection{
+        border: 1px dotted #a7a7a7;
+        border-radius:0;
+      }
+    }
+  }
+  .queryDownload{
+    float: right;
+  }
+
+  .query,.download{
+    display: inline-block;
+    background-color: #fff;
+    border: 1px dotted #E1E1E1;
+    border-radius: 3px;
+    padding: 4px 10px;
+    cursor:pointer;
+    margin-left: 5px;
+  }
+
+  .tableTop{
+    position: relative;
+    margin: 1% 0;
+  }
+  .iconRed{
+    position: absolute;
+    width: 5px;
+    height: 14px;
+    top:4px;
+    background-color: #C91717;
+  }
+  .tableName{
+    margin-left: 11px;
+  }
+  .selectedIndex{
+    margin-bottom: 1%;
+    font-size: 14px;
+  }
+  .echartsList{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    >div{
+      background-color: #f9f9f9;
+      width:49.5%;
+      height: 320px;
+      margin-bottom: 1%;
+    }
+  }
+}
+.dateDropdown{
+  z-index: 1;
+}
+
+.channelTypeSelectItme{
+  z-index: 1;
+  :global{
+    .ant-select-dropdown-menu-item:hover{
+      background-color: #C91717;
+      color: #fff;
+    }
+    .ant-select-dropdown-menu-item-active{
+      background-color: #C91717;
+      color: #fff;
+    }
+    .ant-select-dropdown{
+      z-index: 1;
+    }
+  }
+}
+// 800 分辨率
+@media only screen and (min-width: 700px) and (max-width: 960px){
+  .overviewTab {
+    .inputStyle{
+      font-size: 12px;
+      >input{
+        width: 100px;
+      }
+    }
+    .baseInfo{
+      font-size: 12px;
+    }
+    .selectedIndex{
+      font-size: 12px;
+    }
+    .dateDom{
+      margin-right: 15px;
+    }
+    .ProCityDiv{
+      width: 50%;
+    }
+    :global{
+      .ant-calendar-picker{
+        width: 100px;
+      }
+      .ant-select{
+        width: 100px;
+      }
+    }
+  }
+  :global{
+    .ant-calendar-picker{
+      width: 120px;
+    }
+    .ant-calendar-month .ant-calendar-month-header-wrap{
+      height: 210px;
+    }
+    .ant-calendar{
+      font-size: 12px;
+      width: 220px;
+    }
+    .ant-calendar-month-panel-month {
+      width: 55px;
+      height: 28px;
+      line-height: 28px;
+    }
+  }
+}
+// 1024 分辨率
+@media only screen and (min-width: 961px) and (max-width: 1100px){
+  .overviewTab {
+    .tableName{
+      font-size: 12px;
+    }
+    .selectedIndex{
+      font-size: 12px;
+    }
+    .dateDom{
+      margin-right: 30px;
+    }
+    .ProCityDiv{
+      width: 48%;
+    }
+    :global{
+      .ant-calendar-picker{
+        width: 120px;
+      }
+      .ant-select{
+        width: 120px;
+      }
+    }
+  }
+
+  :global{
+    .ant-calendar-month .ant-calendar-month-header-wrap{
+      height: 210px;
+    }
+    .ant-calendar{
+      font-size: 12px;
+      width: 220px;
+    }
+    .ant-calendar-month-panel-month {
+      width: 55px;
+      height: 28px;
+      line-height: 28px;
+    }
+  }
+}
+// 1280 分辨率
+@media only screen and (min-width: 1101px) and (max-width: 1315px){
+  .overviewTab {
+    .tableName{
+      font-size: 12px;
+    }
+    .selectedIndex{
+      font-size: 12px;
+    }
+  }
+}
+// 1366 分辨率
+@media only screen and (min-width: 1316px) and (max-width: 1389px){
+  .overviewTab {
+    .tableName{
+      font-size: 14px;
+    }
+  }
+}
+// 1440 分辨率
+@media only screen and (min-width: 1390px) and (max-width: 1869px){
+  .overviewTab {
+    .tableName{
+      font-size: 14px;
+    }
+  }
+}
+// 1920 分辨率
+@media only screen and (min-width: 1870px){
+  .overviewTab{
+    .tableName{
+      font-size: 16px;
+    }
+    .selectedIndex{
+      font-size: 16px;
+    }
+    .dateDom{
+      margin-right: 20px;
+      font-size: 20px;
+    }
+    .queryDownload{
+      font-size: 16px;
+    }
+    .channelType{
+      height: 40px;
+      font-size: 20px;
+      :global{
+        .ant-select{
+          width: 240px;
+        }
+        .ant-input-number{
+          width: 240px;
+          font-size: 20px;
+        }
+        .antd-pro-components-until-pro-city-indexContainer .antd-pro-components-until-pro-city-name{
+          width: 95px;
+        }
+        .ant-form-item-label{
+          width: 95px;
+          >label{
+            font-size: 20px;
+          }
+        }
+        .ant-select-selection--single{
+          width: 240px;
+          height: 40px;
+          font-size: 20px;
+        }
+        .antd-pro-components-product-view-product-condition-productList{
+          .ant-select-selection--single{
+            width: 92%;
+          }
+        }
+        .ant-form-item-children{
+          >input{
+            width: 240px;
+            height: 40px;
+            font-size: 20px;
+          }
+        }
+        .ant-select-selection__placeholder{
+          line-height: 40px;
+          height: 40px;
+          top: 0;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
