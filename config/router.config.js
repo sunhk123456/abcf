@@ -59,6 +59,11 @@ export default [
         name: 'demojs',
         component: './demojs/index',
       },
+      {
+        path: '/tabledata',
+        name: 'tabledata',
+        component: './yrzForm/form',
+      },
       // 客户洞察标签查询
       {
         path: '/labelSearch',
@@ -443,6 +448,10 @@ export default [
         component: './ProblemFeedback',
       },
       {
+        path: '/plamUsing',
+        component: './plamUsing',
+      },
+      {
         path: '/systemManager/ProblemFeedback',
         component: './ProblemFeedback',
       },
@@ -456,6 +465,7 @@ export default [
         name: 'DaySpecialChange',
         component: './RangeRelease/DaySpecialChange',
       },
+
       {
         path: '/MonthDateChange',
         name: 'MonthDateChange',

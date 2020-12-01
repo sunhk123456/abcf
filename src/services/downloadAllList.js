@@ -7,6 +7,7 @@ import Url from '@/services/urls.json';
 
 // 如果请求为单个的话添加default  默认导出
 async function downloadAllListTableData(
+
   params = {}
 ) {
   return request(`${Url.urls[13].url}/downloadTable`, {
